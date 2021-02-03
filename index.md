@@ -1,6 +1,7 @@
+---
+title: "DbGate"
 layout: page
-title: "Download"
-permalink: /download/
+---
 
 | File name  | OS | Description |
 | --- | --- | --- | --- |
