@@ -1,22 +1,36 @@
-- src: assets/screenshots/datagrid.png
-  description: Master/detail view
-- src: assets/screenshots/query.png
-  description: Query editor
-- src: assets/screenshots/querydesigner.png
-  description: Query designer
-- src: assets/screenshots/export.png
-  description: Export data screen
-- src: assets/screenshots/charts.png
-  description: Charts
-- src: assets/screenshots/formview.png
-  description: Form view
-- src: assets/screenshots/structure.png
-  description: View table structure
-- src: assets/screenshots/dbshell.png
-  description: View table structure
-- src: assets/screenshots/darkmode.png
-  description: JavaScript scripting
-- src: assets/screenshots/freetable.png
-  description: Free table editor with macro preview
-- src: assets/screenshots/importpreview.png
-  description: Preview of imported MS Excel file
+- feature: datagrid
+  items:
+  - src: datagrid.png
+    description: Master/detail view
+  - src: formview.png
+    description: Form view
+- feature: sqledit
+  items:
+  - src: query.png
+    description: Query editor
+- feature: designer
+  items:
+  - src: querydesigner.png
+    description: Query designer
+- feature: export
+  items:
+  - src: export.png
+    description: Export data screen
+  - src: importpreview.png
+    description: Preview of imported MS Excel file
+  - src: dbshell.png
+    description: View table structure
+- feature: charts
+  items:
+  - src: charts.png
+    description: Charts
+- feature: freetable
+  items:
+  - src: freetable.png
+    description: Free table editor with macro preview
+- feature: base
+  items:
+  - src: darkmode.png
+    description: JavaScript scripting
+  - src: structure.png
+    description: View table structure

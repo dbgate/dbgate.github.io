@@ -11,3 +11,5 @@ layout: page
 - Runs on Windows, Linux and Mac, as standalone application or in web browser
 
 {% include carousel.html %}
+
+{% include features.html %}

@@ -1,4 +1,6 @@
 - name: Download
   link: /download/
+# - name: Features
+#   link: /features/
 - name: Screenshots
   link: /screenshots/

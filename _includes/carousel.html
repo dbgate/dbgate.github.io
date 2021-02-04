@@ -1,13 +1,16 @@
 <img id='carousel-image' onClick="activateCarousel((carouselIndex + 1) % screenshots.length)" />
 
-<div class='carousel-dots'>
+<div class='carousel-dots mb-6'>
     {% for item in site.data.screenshots %}
     <div class="carousel-dot" id="carousel-dot-{{forloop.index0}}" onClick="activateCarousel({{forloop.index0}})"></div>
     {% endfor %}
 </div>
 
+<p class='title is-2'>Features</p>
+
 <script>
-    screenshots = {{ site.data.screenshots | jsonify }}
+    screenshotsGrouped = {{ site.data.screenshots | jsonify }}
+    screenshots = screenshotsGrouped.map(x => x.items).flat()
     carouselIndex = null;
 
     function activateCarousel(index) {
@@ -15,7 +18,7 @@
             document.getElementById('carousel-dot-' + carouselIndex).classList.remove('is-active')
         }
         carouselIndex = index;
-        document.getElementById('carousel-image').src = screenshots[carouselIndex].src
+        document.getElementById('carousel-image').src = '/assets/screenshots/' + screenshots[carouselIndex].src
         document.getElementById('carousel-dot-' + carouselIndex).classList.add('is-active')
     }
 

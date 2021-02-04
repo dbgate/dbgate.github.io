@@ -24,3 +24,9 @@ sass:
 
 markdown: kramdown
 highlighter: rouge
+
+collections:
+  features: 
+    output: true
+    layout: page
+    image: https://via.placeholder.com/800x600

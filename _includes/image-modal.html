@@ -1,22 +1,22 @@
 <div>
-    <a onClick="document.getElementById('image-modal-{{include.link}}').classList.add('is-active')"
+    <a onClick="document.getElementById('image-modal-{{include.src}}').classList.add('is-active')"
         title="View large image">
         <figure class="image {{ include.ratio | default: is-16by9 }}">
-            <img src="{{ include.link | absolute_url }}" alt="{{ include.alt }}">
+            <img src="/assets/screenshots/{{ include.src }}" alt="{{ include.alt }}">
         </figure>
     </a>
-    <div class="modal" id='image-modal-{{include.link}}'>
+    <div class="modal" id='image-modal-{{include.src}}'>
         <div class="modal-background"
-            onClick="document.getElementById('image-modal-{{include.link}}').classList.remove('is-active')"></div>
+            onClick="document.getElementById('image-modal-{{include.src}}').classList.remove('is-active')"></div>
         <div class="modal-content">
-            {% if include.large_link %}
-            <img src="{{ include.large_link | absolute_url }}" alt="{{ include.alt }}">
+            {% if include.src %}
+            <img src="/assets/screenshots/{{ include.src }}" alt="{{ include.alt }}">
             {% else %}
-            <img src="{{ include.link | absolute_url }}" alt="{{ include.alt }}">
+            <img src="/assets/screenshots/{{ include.src }}" alt="{{ include.alt }}">
             {% endif %}
         </div>
         <button class="modal-close is-large" aria-label="close"
-            onClick="document.getElementById('image-modal-{{include.link}}').classList.remove('is-active')"></button>
+            onClick="document.getElementById('image-modal-{{include.src}}').classList.remove('is-active')"></button>
     </div>
 
 </div>

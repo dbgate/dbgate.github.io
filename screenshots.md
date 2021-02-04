@@ -5,4 +5,4 @@ layout: page
 permalink: /screenshots/
 ---
 
-{% include screenshots.html %}
+{% include allscreenshots.html %}
