@@ -1,14 +1,16 @@
-{% for image in site.data.screenshots %}
-<div class="column is-4-desktop is-6-tablet">
-    <div class="card">
-        <div class="card-image">
-            {% include image-modal.html ratio="is-16by9" link=image.src alt=image.description large_link=image.src %}
-        </div>
-        <div class="card-content">
-            <div class="content">
-                {{ image.description | markdownify }}
+<div class="columns is-multiline">
+    {% for image in site.data.screenshots %}
+    <div class="column is-4-desktop is-6-tablet">
+        <div class="card">
+            <div class="card-image">
+                {% include image-modal.html link=image.src alt=image.description large_link=image.src %}
+            </div>
+            <div class="card-content">
+                <div class="content">
+                    {{ image.description | markdownify }}
+                </div>
             </div>
         </div>
     </div>
+    {% endfor %}
 </div>
-{% endfor %}
