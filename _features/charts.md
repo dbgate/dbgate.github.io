@@ -8,7 +8,7 @@ icon: chart.svg
 * Visualise query result or any tabular data
 * Supported chart types:
   * Bar
-  * line
-  * pie
-  * polar area
+  * Line
+  * Pie
+  * Polar area
 * Customize chart colors

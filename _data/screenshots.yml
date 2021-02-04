@@ -8,6 +8,8 @@
   items:
   - src: query.png
     description: Query editor
+  - src: joinwizard.png
+    description: SQL join wizard
 - feature: designer
   items:
   - src: querydesigner.png
@@ -19,7 +21,7 @@
   - src: importpreview.png
     description: Preview of imported MS Excel file
   - src: dbshell.png
-    description: View table structure
+    description: JavaScript scripting
 - feature: charts
   items:
   - src: charts.png
@@ -31,6 +33,14 @@
 - feature: base
   items:
   - src: darkmode.png
-    description: JavaScript scripting
+    description: Dark mode
   - src: structure.png
     description: View table structure
+- feature: database
+  items:
+  - src: connection.png
+    description: Connection to database
+- feature: plugin
+  items:
+  - src: plugin.png
+    description: View MS Excel plugin details
