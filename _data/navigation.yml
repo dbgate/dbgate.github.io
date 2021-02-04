@@ -1,2 +1,4 @@
 - name: Download
   link: /download/
+- name: Screenshots
+  link: /screenshots/
