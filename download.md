@@ -5,7 +5,7 @@ layout: page
 permalink: /download/
 ---
 
-| File name  | OS | Description |
-| --- | --- | --- | --- |
-| [dbgate-latest.exe](https://github.com/dbgate/dbgate/releases/latest/download/dbgate-latest.exe) | Windows | Installer |
-| [dbgate-latest.AppImage](https://github.com/dbgate/dbgate/releases/latest/download/dbgate-latest.AppImage) | Linux | AppImage |
+{% include download.html %}
+
+Download most recent stable version of DbGate.  
+Older releases or BETA version could be found on [github releases](https://github.com/dbgate/dbgate/releases) page

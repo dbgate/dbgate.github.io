@@ -1,0 +1,23 @@
+{% for system in site.data.download %}
+<div class="columns mb-6 ">
+    <div class="column is-3">
+        <button class="button is-large is-static mr-5 is-fullwidth">
+            <i class="{{system.icon}} mr-2"></i>
+            {{system.text}}
+        </button>
+    </div>
+    <div class="column">
+        <div class="columns is-multiline">
+            {% for file in system.items %}
+            <div class="column is-4">
+                <a class="button is-large is-primary is-fullwidth" href="{{file.link}}">
+                    <i class="{{file.icon}} mr-2"></i>
+                    {{file.text}}
+                </a>
+            </div>
+            {% endfor %}
+
+        </div>
+    </div>
+</div>
+{% endfor %}
