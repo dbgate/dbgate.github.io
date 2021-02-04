@@ -28,3 +28,9 @@
     - text: Docker
       icon: fab fa-docker
       link: https://hub.docker.com/r/dbgate/dbgate
+- text: Source code
+  icon: fas fa-code
+  items:
+    - text: GitHub
+      icon: fab fa-github
+      link: https://github.com/dbgate/dbgate

@@ -24,6 +24,15 @@
                             {% endfor %}
                         </div>
                     </div>
+                    {% elsif item.features %}
+                    <div class="navbar-item has-dropdown is-hoverable {% if site.fixed_navbar == 'bottom' %} has-dropdown-up {% endif %}">
+                        <a href="{{ item.link | relative_url }}" class="navbar-link {% if item.link == page.url %}is-active{% endif %}">{{ item.name }}</a>
+                        <div class="navbar-dropdown">
+                            {% for subitem in site.features %}
+                            <a href="{{ subitem.url | relative_url }}" class="navbar-item {% if subitem.link == page.url %}is-active{% endif %}">{{ subitem.title }}</a>
+                            {% endfor %}
+                        </div>
+                    </div>
                     {% else %}
                     <a href="{{ item.link | relative_url }}" class="navbar-item {% if item.link == page.url %}is-active{% endif %}">{{ item.name }}</a>
                     {% endif %}
@@ -32,12 +41,10 @@
             </div>
 
             <div class="navbar-end">
-                {% if site.gh_sponsor %}
-                <a class="navbar-item" href="https://github.com/sponsors/{{ site.gh_sponsor }}">
-                    <span class="icon gh-sponsor"><i class="fas fa-heart"></i></span>
-                    <span>Sponsor</span>
+                <a class="navbar-item" href="https://github.com/dbgate/dbgate">
+                    <span class="icon gh-icon"><i class="fab fa-github"></i></span>
+                    <span>GitHub</span>
                 </a>
-                {% endif %}
             </div>
 
         </div>
