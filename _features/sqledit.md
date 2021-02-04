@@ -9,3 +9,4 @@ layout: feature
 - Code completion
 - Join wizard - add SQL joins effectively
 - SQL formatter
+- Save to "Saved queries" tab, or save to disk
