@@ -1,0 +1,24 @@
+<!-- <section class="section">
+    <div class="container">
+        <div id="carousel-screens" class="carousel">
+            {% for item in site.data.carousel %}
+            <div class="item-{{forloop.index}}">
+                <img src="{{item.src}}" class='carousel-image' />
+                nejaky popis
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section> -->
+<img id='carousel-image' />
+
+<script>
+    carouselIndex = 0
+    screenshots = {{ site.data.screenshots | jsonify }}
+    document.getElementById('carousel-image').src = screenshots[carouselIndex].src
+    // bulmaCarousel.attach('#carousel-screens', {
+    //     slidesToScroll: 1,
+    //     slidesToShow: 1,
+    //     effect: 'fade'
+    // });
+</script>

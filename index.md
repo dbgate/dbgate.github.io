@@ -1,9 +1,13 @@
 ---
 title: "DbGate"
+subtitle: Opensource database manager
 layout: page
+# hero_link: /download/
+# hero_link_text: Download
 ---
 
-| File name  | OS | Description |
-| --- | --- | --- | --- |
-| [dbgate-latest.exe](https://github.com/dbgate/dbgate/releases/latest/download/dbgate-latest.exe) | Windows | Installer |
-| [dbgate-latest.AppImage](https://github.com/dbgate/dbgate/releases/latest/download/dbgate-latest.AppImage) | Linux | AppImage |
+- Free and opensource
+- Supports MS SQL, MySQL, PostgreSQL
+- Runs on Windows, Linux and Mac, as standalone application or in web browser
+
+{% include carousel.html %}
