@@ -30,7 +30,3 @@ collections:
     output: true
     layout: page
     image: https://via.placeholder.com/800x600
-    order:
-      - database.md
-      - datagrid.md
-      - designer.md

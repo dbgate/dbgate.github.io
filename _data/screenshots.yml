@@ -4,14 +4,14 @@
     description: Master/detail view
   - src: formview.png
     description: Form view
+  - src: freetable.png
+    description: Free table editor with macro preview
 - feature: sqledit
   items:
   - src: query.png
     description: Query editor
   - src: joinwizard.png
     description: SQL join wizard
-- feature: designer
-  items:
   - src: querydesigner.png
     description: Query designer
 - feature: export
@@ -22,16 +22,10 @@
     description: Preview of imported MS Excel file
   - src: dbshell.png
     description: JavaScript scripting
-- feature: charts
+- feature: other
   items:
   - src: charts.png
     description: Charts
-- feature: freetable
-  items:
-  - src: freetable.png
-    description: Free table editor with macro preview
-- feature: base
-  items:
   - src: darkmode.png
     description: Dark mode
   - src: structure.png
