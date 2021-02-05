@@ -1,6 +1,6 @@
 title: DbGate
-description: >
-  Opensource database manager for MySql, POstgreSQL and SQL Server
+# description: >
+#   Opensource database manager for MySQL, PostgreSQL and SQL Server
 
 exclude: 
   - Gemfile
@@ -30,3 +30,7 @@ collections:
     output: true
     layout: page
     image: https://via.placeholder.com/800x600
+    order:
+      - database.md
+      - datagrid.md
+      - designer.md
