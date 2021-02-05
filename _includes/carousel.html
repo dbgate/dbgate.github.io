@@ -10,16 +10,18 @@
 
 <script>
     screenshotsGrouped = {{ site.data.screenshots | jsonify }}
-    screenshots = screenshotsGrouped.map(x => x.items).flat()
+    screenshots = screenshotsGrouped.map(function (x) { return x.items[0]; } )
     carouselIndex = null;
 
     function activateCarousel(index) {
         if (carouselIndex != null) {
-            document.getElementById('carousel-dot-' + carouselIndex).classList.remove('is-active')
+            el = document.getElementById('carousel-dot-' + carouselIndex)
+            if (el) el.classList.remove('is-active')
         }
         carouselIndex = index;
         document.getElementById('carousel-image').src = '/assets/screenshots/' + screenshots[carouselIndex].src
-        document.getElementById('carousel-dot-' + carouselIndex).classList.add('is-active')
+        el = document.getElementById('carousel-dot-' + carouselIndex)
+        if (el) el.classList.add('is-active')
     }
 
     activateCarousel(0);
