@@ -4,3 +4,5 @@
   features: true
 - name: Screenshots
   link: /screenshots/
+- name: About
+  link: /about/

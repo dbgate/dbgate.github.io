@@ -1,6 +1,6 @@
 ---
 title: Other
-subtitle: Dark theme, Charts, table structure viewer
+subtitle: Dark theme, charts, table structure viewer
 layout: feature
 icon: chart.svg
 ---
