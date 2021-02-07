@@ -26,3 +26,7 @@ order: 3
 - GROUP BY, aggregate functions
 - Filters
 - Ordering
+
+## Demo links
+These links points to demo.dbgate.org, feel free to play with it
+* [Query designer](https://demo.dbgate.org/#favorite=designer)

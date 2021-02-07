@@ -27,3 +27,7 @@ Quick and simple tabular data editor, allows to simple organize columns and rows
   * Remove diacritics
   * Current data  
   * Generate UUID
+
+## Demo links
+These links points to demo.dbgate.org, feel free to play with it
+* [Master-detail view](https://demo.dbgate.org/#favorite=master-detail)
