@@ -16,4 +16,4 @@ You can see, what wrote about DbGate [Softpedia](https://www.softpedia.com/get/I
 
 # Feedback
 
-Any feedback is welcome, please use [GitHub discussions](https://github.com/dbgate/dbgate/discussions) for your comments
+Any feedback is welcome, please create issue on [GitHub](https://github.com/dbgate/dbgate/issues/new/choose)
