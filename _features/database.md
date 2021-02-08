@@ -1,6 +1,7 @@
 ---
 title: DB connections
-subtitle: Connect to multiple connections
+subtitle: Connect to multiple databases simultaneously
+description: Connect to multiple databases, open tables and queries in multiple tabs
 layout: feature
 icon: database.svg
 order: 1

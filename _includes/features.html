@@ -12,7 +12,7 @@
 
                     <img src="/assets/img/{{feature.icon}}" class='feature-avatar mr-4' />
 
-                    {{ feature.subtitle }}
+                    {{ feature.description | default: feature.subtitle }}
                 </div>
             </div>
 
