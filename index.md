@@ -15,3 +15,7 @@ layout: page
 {% include carousel.html %}
 
 {% include features.html %}
+
+# Download
+
+{% include download.html %}
