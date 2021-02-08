@@ -1,5 +1,6 @@
 ---
-title: "DbGate"
+title: DbGate
+headTitle: Opensource database manager
 subtitle: Opensource database manager
 layout: page
 # hero_link: /download/
