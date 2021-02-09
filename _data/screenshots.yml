@@ -1,6 +1,8 @@
 - feature: datagrid
   items:
   - src: datagrid.png
+    description: Data grid with expandable columns
+  - src: masterdetail.png
     description: Master/detail view
   - src: formview.png
     description: Form view
