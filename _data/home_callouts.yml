@@ -1,0 +1,14 @@
+style: is-light
+items:
+  - title: Free and opensource
+    subtitle: Free to use for any purpose, source code available under MIT license
+    icon: fas fa-copy
+  - title: Cross database
+    subtitle: Supports MySQL, PostgreSQL, SQL Server
+    icon: fas fa-database
+  - title: Cross platform
+    subtitle: Works on Windows, Linux, MacOS and in WEB browser
+    icons: 
+      - fab fa-windows
+      - fab fa-linux
+      - fab fa-apple
