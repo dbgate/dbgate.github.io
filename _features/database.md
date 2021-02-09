@@ -5,6 +5,7 @@ description: Connect to multiple databases, open tables and queries in multiple 
 layout: feature
 icon: database.svg
 order: 1
+features_left: true
 ---
 
 * Connect to:

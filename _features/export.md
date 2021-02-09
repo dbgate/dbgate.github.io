@@ -5,6 +5,7 @@ description: Export and import from/to CSV, JSON or Excel. Use JavaScript script
 icon: export.svg
 layout: feature
 order: 5
+features_left: true
 ---
 
 - Supported formats: 

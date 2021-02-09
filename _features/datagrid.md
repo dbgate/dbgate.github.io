@@ -4,6 +4,7 @@ subtitle: Browse or edit data in your tables or views
 layout: feature
 icon: table.svg
 order: 2
+features_left: true
 ---
 
 * Easy-to-use quick filters

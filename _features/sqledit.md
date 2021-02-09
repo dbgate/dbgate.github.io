@@ -3,6 +3,7 @@ title: Query editor and designer
 subtitle: Edit SQL queries, or use query designer
 icon: sql.svg
 layout: feature
+features_left: true
 order: 3
 ---
 

@@ -1,7 +1,7 @@
 <div class="columns is-multiline">
     {% assign features = site.features | sort: "order", "last" %}
     {% for feature in features %}
-    <div class="column is-4-desktop is-6-tablet">
+    <div class="{{ include.column_class | default: 'column is-4-desktop is-6-tablet'}}">
         <a href="{{ feature.url | relative_url }}">
             <div class="card">
                 <div class="card-header">

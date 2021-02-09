@@ -3,6 +3,7 @@ title: Other
 subtitle: Dark theme, charts, table structure viewer
 layout: feature
 icon: chart.svg
+features_left: true
 ---
 
 * **Archive folders** - save your data locally. For this storage, JSON lines format is used (the same, as Mongo uses for collections backups)

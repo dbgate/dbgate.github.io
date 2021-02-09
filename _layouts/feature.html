@@ -6,12 +6,11 @@ layout: page
 {% assign contentsTitle = page.toc_title | default: 'Contents' %}
 {% include toc.html html=content class='menu-list' h_min=2 h_max=3 contents_title=contentsTitle %}
 {% endif %}
-<div class="content">
 
-    <p class="title is-3">{{ page.title }}</p>
-    {{ content }}
+<p class="title is-3">{{ page.title }}</p>
+{{ content }}
 
-    <!-- <div class="columns is-multiline">
+<!-- <div class="columns is-multiline">
 
         <div class="column is-6">
             <figure class="image is-4by3">
@@ -23,9 +22,8 @@ layout: page
         </div>
 
     </div> -->
-    {% assign shot=site.data.screenshots | where:"feature",page.slug | first %}
+{% assign shot=site.data.screenshots | where:"feature",page.slug | first %}
 
-    <div class="columns is-multiline">
-        {% include screenshots.html collection=shot.items %}
-    </div>
+<div class="columns is-multiline">
+    {% include screenshots.html collection=shot.items columns_class='column is-6-desktop is-6-tablet' %}
 </div>

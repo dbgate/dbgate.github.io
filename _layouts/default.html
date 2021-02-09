@@ -2,10 +2,8 @@
     {% assign has_left_sidebar = true %}
 {% endif %}
 
-{% if page.show_sidebar and has_left_sidebar  %} 
-    {% assign content_width = 'is-4' %} 
-{% elsif page.show_sidebar or has_left_sidebar %} 
-    {% assign content_width = 'is-8' %} 
+{% if page.features_left  %} 
+    {% assign content_width = 'is-8-desktop is-12-tablet' %} 
 {% else %} 
     {% assign content_width = 'is-12' %} 
 {% endif %}
@@ -22,14 +20,9 @@
     <section class="section">
         <div class="container">
             <div class="columns">
-                {% if page.menubar_toc %}
-                <div class="column is-4-desktop is-4-tablet">
-                    {% assign contentsTitle = page.toc_title | default: 'Contents' %}
-                    {% include toc.html html=content class='menu-list' h_min=2 h_max=3 contents_title=contentsTitle %}
-                </div>
-                {% elsif page.menubar %}
-                <div class="column is-4-desktop is-4-tablet">
-                    {% include menubar.html %}
+                {% if page.features_left %}
+                <div class="column is-4-desktop is-hidden-tablet-only is-hidden-mobile mr-6">
+                    {% include features.html column_class='column is-12' %}
                 </div>
                 {% endif %}
                 <div class="column {{ content_width }}">

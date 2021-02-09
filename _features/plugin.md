@@ -4,6 +4,7 @@ subtitle: Use custom plugins for import/export formats
 layout: feature
 icon: plugin.svg
 order: 9
+features_left: true
 ---
 
 * Extension plugin architecture
