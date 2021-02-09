@@ -12,6 +12,11 @@ callouts: home_callouts
 
 {% include features.html %}
 
+# Latest news
+{% assign post = site.posts.first %}
+{% include post-card.html %}
+
+
 # Download
 
 {% include download.html %}
