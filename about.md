@@ -21,7 +21,7 @@ My name is Jan Prochazka, I live in Czech Republic. I was specialized to realtim
 You can see, what wrote about DbGate [Softpedia](https://www.softpedia.com/get/Internet/Servers/Database-Utils/DbGate.shtml) software catalog portal
 
 # Sources of inspiration
-I am playing with creating database management quit long time. These inspired me at most:
+I am playing with creating database management quite a long time. This software inspired me at most:
 * Visual Studio Code - great IDE, simple but powerful
 * DatAdmin, DbMouse - DB management tools, which I created in past
 * Beekeeper Studio - simple but nice SQL client written in nodejs/electron
