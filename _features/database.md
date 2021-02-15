@@ -12,6 +12,8 @@ features_left: true
   * MySQL
   * PostgreSQL
   * SQL Server (under windows allows Windows authentification)
+* Support connection over SSH tunnel, for accessing production databases behind firewall
+* Support SSL
 * Allows work with multiple database connections simultaneously
 * Every opened tab (eg. query, table data, query desinger) is marked with database, to which it belongs
 * Stored encrypted password
