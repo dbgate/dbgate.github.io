@@ -8,8 +8,10 @@ permalink: /about/
 I started to develop DbGate at the end of 2019. Main reason was, that I switched from Windows to Linux, where it was quite hard to find any usable database tool. 
 
 # DbGate goals
+* Complete free and open source, no paid enterprise editions
 * Simple, but powerful. One toolbar, no milions of icons without description. Heavy use of context menu
 * Should runs everywhere - Windows, Linux, Mac, web browser, maybe also mobile web in future
+* Stable and robust. Critical error in one database driver must not influence stability of app
 * Scriptable, using dbgate [nodejs packages](https://www.npmjs.com/package/dbgate-api)
 
 I have experiences with commercial database tools DatAdmin and DbMouse. DbGate tries to take the best and only the best from them, and offers it under opensource MIT license.
