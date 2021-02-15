@@ -5,7 +5,7 @@ layout: page
 permalink: /about/
 ---
 
-I started to develop DbGate at the beginning of 2020. Main reason was, that I switched from Windows to Linux, where it was quite hard to find any usable database tool. 
+I started to develop DbGate at the end of 2019. Main reason was, that I switched from Windows to Linux, where it was quite hard to find any usable database tool. 
 
 # DbGate goals
 * Simple, but powerful. One toolbar, no milions of icons without description. Heavy use of context menu
