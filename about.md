@@ -14,7 +14,7 @@ I started to develop DbGate at the end of 2019. Main reason was, that I switched
 * Stable and robust. Critical error in one database driver must not influence stability of app
 * Scriptable, using dbgate [nodejs packages](https://www.npmjs.com/package/dbgate-api)
 
-I have experiences with commercial database tools DatAdmin and DbMouse. DbGate tries to take the best and only the best from them, and offers it under opensource MIT license.
+In past, I have created commercial database tools DatAdmin and DbMouse. DbGate tries to take the best and only the best from them, and offers it under opensource MIT license.
 
 # About author
 My name is Jan Prochazka, I live in Czech Republic. I was specialized to realtime computation software, which used heavy Miccrosoft SQL Server. Now I work mainly with JavaScript and modern techology stack around it.
