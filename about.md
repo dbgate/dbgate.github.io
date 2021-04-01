@@ -20,6 +20,12 @@ My name is Jan Prochazka, I live in Czech Republic. I was specialized to realtim
 # Wrote about us
 You can see, what wrote about DbGate [Softpedia](https://www.softpedia.com/get/Internet/Servers/Database-Utils/DbGate.shtml) software catalog portal
 
+# DbGate technology stack
+* DbGate frontend is build with excellent [Svelte](https://svelte.dev) framework. Formerly is was build with React
+* Backend uses node.js
+* Application uses electron
+* Web version is distributed as docker container
+
 # Sources of inspiration
 I am playing with creating database management quite a long time. This software inspired me at most:
 * Visual Studio Code - great IDE, simple but powerful

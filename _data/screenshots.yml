@@ -8,6 +8,8 @@
     description: Form view
   - src: freetable.png
     description: Free table editor with macro preview
+  - src: macros.png
+    description: Macros in table data editor
 - feature: sqledit
   items:
   - src: query.png
@@ -16,6 +18,8 @@
     description: SQL join wizard
   - src: querydesigner.png
     description: Query designer
+  - src: sqlgen.png
+    description: SQL Generator
 - feature: export
   items:
   - src: export.png
@@ -32,6 +36,8 @@
     description: Dark mode
   - src: structure.png
     description: View table structure
+  - src: commandpalette.png
+    description: Command palette
 - feature: database
   items:
   - src: connection.png
