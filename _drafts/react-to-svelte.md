@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Rewrite app from React to Svelte, what you can expect
-date: 2021-04-14 12:00:00
 categories: development
 ---
 
