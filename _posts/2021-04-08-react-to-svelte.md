@@ -100,7 +100,7 @@ As you can see, you have two variants, how to execute code on unmount - with onD
 
 ### useEffect - reactive statement
 
-When you want to execute some code on expression change, you could use Svelte reactive statement.
+When you want to execute some code on expression change, you could use Svelte [reactive statement](https://svelte.dev/tutorial/reactive-statements).
 
 ```js
 // React
@@ -172,10 +172,10 @@ Last line ( $: $effect ) manages automatic store subscription ([tutorial](https:
 
 Of course, there are also props in Svelte. They works in similar way as in React. But in React, the only external interface of component are props. In svelte, you have several mechanism, how to manage behaviour of your components:
 
-* props - works as in React
-* events - use special syntax, events are not part of $$props object containing all props
-* actions (syntax use:action) - mechanism, how to reuse logic bind to HTML elements
-* slots - purpose is the same as React property children, with some extensions
+* [props](https://svelte.dev/tutorial/declaring-props) - works as in React
+* [events](https://svelte.dev/tutorial/component-events) - use special syntax, events are not part of $$props object containing all props
+* [actions](https://svelte.dev/tutorial/actions) (syntax use:action) - mechanism, how to reuse logic bind to HTML elements
+* [slots](https://svelte.dev/tutorial/slots) - purpose is the same as React property children, with some extensions
 
 All of these mechanisms are very useful, but they don't have unified access like props in React. Below are discussed some problems, which I have came across.
 
