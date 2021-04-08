@@ -2,6 +2,7 @@
 layout: post
 title: Rewrite app from React to Svelte, what you can expect
 categories: development
+date:   2021-04-08 20:00:00
 ---
 
 Recently I have rewritten a medium sized app in React (~250 React components) into Svelte. The result of this action is app, which is more efficient, with easier maintenance and much more readable code. But there were some problems, some situations, which are not streightforward to transform into Svelte code. This article describes some of these situations.
