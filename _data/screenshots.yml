@@ -10,6 +10,10 @@
     description: Free table editor with macro preview
   - src: macros.png
     description: Macros in table data editor
+  - src: mongosave.png
+    description: MongoDB data editor with save data preview
+  - src: collection.png
+    description: Browse and expand Mongo collection
 - feature: sqledit
   items:
   - src: query.png
@@ -20,6 +24,8 @@
     description: Query designer
   - src: sqlgen.png
     description: SQL Generator
+  - src: mongoquery.png
+    description: Run query on MognoDB database
 - feature: export
   items:
   - src: export.png
@@ -38,6 +44,8 @@
     description: View table structure
   - src: commandpalette.png
     description: Command palette
+  - src: keyboard.png
+    description: Configure keyboard shortcuts
 - feature: database
   items:
   - src: connection.png

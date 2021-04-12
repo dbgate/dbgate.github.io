@@ -12,6 +12,7 @@ features_left: true
   * MySQL
   * PostgreSQL
   * SQL Server (under windows allows Windows authentification)
+  * MongoDB
 * Support connection over SSH tunnel, for accessing production databases behind firewall
 * Support SSL
 * Allows work with multiple database connections simultaneously
