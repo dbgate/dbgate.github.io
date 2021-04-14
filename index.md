@@ -1,7 +1,7 @@
 ---
 title: DbGate
-headTitle: Opensource database manager
-subtitle: Opensource database manager
+headTitle: DbGate | Your database management tool
+subtitle: Easy to use and powerful database manager
 layout: page
 callouts: home_callouts
 # hero_link: /download/

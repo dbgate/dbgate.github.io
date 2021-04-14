@@ -1,6 +1,6 @@
 ---
 title: Query editor, designer and SQL generator
-subtitle: Edit SQL queries, use query designer or generate SQL scripts
+subtitle: Edit SQL queries with auto-complete suggestions or use query designer
 icon: sql.svg
 layout: feature
 features_left: true

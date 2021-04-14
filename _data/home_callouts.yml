@@ -1,6 +1,6 @@
 style: is-light
 items:
-  - title: Free and opensource
+  - title: Free and open source
     subtitle: Free to use for any purpose, source code available under MIT license
     icon: fas fa-copy
   - title: Cross database

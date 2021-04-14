@@ -10,10 +10,6 @@
     description: Free table editor with macro preview
   - src: macros.png
     description: Macros in table data editor
-  - src: mongosave.png
-    description: MongoDB data editor with save data preview
-  - src: collection.png
-    description: Browse and expand Mongo collection
 - feature: sqledit
   items:
   - src: query.png
@@ -54,3 +50,9 @@
   items:
   - src: plugin.png
     description: View MS Excel plugin details
+- feature: mongo
+  items:
+  - src: mongosave.png
+    description: MongoDB data editor with save data preview
+  - src: collection.png
+    description: Browse and expand MongoDB collection

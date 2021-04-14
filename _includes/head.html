@@ -3,12 +3,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content={{ site.theme_color | default: '#ffffff' }}>
   <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/app.css">
-  <meta name="description" content="Opensource database manager for MS SQL, MySQL, PostgreSQL and MongoDB with JavaScript scripting support." />
-  <title>{{page.headTitle | default: page.title}} | DbGate</title>
+  <meta name="description"
+    content="Open source database manager for MS SQL, MySQL, PostgreSQL and MongoDB with JavaScript scripting support." />
+  <title>{% if page.headTitle %}{{page.headTitle}}{% else %}{{page.title}} | DbGate{% endif %}</title>
 
   <!-- Favicon-->
   <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico" />
-  
+
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
   {% unless site.hide_share_buttons %}
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@1/bin/bulma-social.min.css">
@@ -17,11 +18,11 @@
 
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-187623490-1"></script>
   <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'UA-187623490-1');
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-187623490-1');
   </script>
 
-{%- include head-scripts.html -%}
+  {%- include head-scripts.html -%}
 </head>

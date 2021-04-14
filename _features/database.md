@@ -1,7 +1,7 @@
 ---
 title: DB connections
 subtitle: Connect to multiple databases simultaneously
-description: Connect to multiple databases, open tables and queries in multiple tabs
+description: Connect to multiple databases, directly or through SSH tunnel
 layout: feature
 icon: database.svg
 order: 1
