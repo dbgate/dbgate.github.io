@@ -15,7 +15,7 @@ Almost all operations, which are possible in DbGate with SQL databases, are impl
 * Filter and sort collection data, expand JSON structures
 * Edit data filter mongo shell script preview
 * Export and import (to different DB or JSON, CSV or MS Excel file)
-* Run mongo queries (using nodejs mogno API syntax)
+* Run mongo queries (using nodejs MongoDB API syntax)
 * Script collection (drop, find), script current table view
 
 ![screenshot](/assets/screenshots/mongosave.png)

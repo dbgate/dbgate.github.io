@@ -14,5 +14,5 @@ DbGate has wide support of MongoDB database. It uses native MongoDB driver, so i
 * Filter and sort collection data, expand JSON structures
 * Edit data filter MongoDB shell script preview
 * Export and import (to different DB or JSON, CSV or MS Excel file)
-* Run MongoDB queries (using nodejs mogno API syntax)
+* Run MongoDB queries (using nodejs MongoDB API syntax)
 * Script collection (drop, find), script current table view

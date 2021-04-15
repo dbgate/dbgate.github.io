@@ -21,7 +21,7 @@
   - src: sqlgen.png
     description: SQL Generator
   - src: mongoquery.png
-    description: Run query on MognoDB database
+    description: Run query on MongoDB database
 - feature: export
   items:
   - src: export.png
