@@ -12,7 +12,8 @@ I started to develop DbGate at the end of 2019. Main reason was, that I switched
 - Complete free and open source, no paid enterprise editions
 - Simple, but powerful. One toolbar, no milions of icons without description. Heavy use of context menu
 - Should runs everywhere - Windows, Linux, Mac, web browser, maybe also mobile web in future
-- Stable and robust. Critical error in one database driver must not influence stability of app
+- Stable and robust. Critical error in one database driver must not influence stability of the app
+- Prepared for big databases - never load full table or query result into memory, use streams everywhere
 - Scriptable, using dbgate [nodejs packages](https://www.npmjs.com/package/dbgate-api)
 
 # About author
@@ -32,7 +33,7 @@ You can see, what wrote about DbGate [Softpedia](https://www.softpedia.com/get/I
 
 # Sources of inspiration
 
-I am playing with creating database management quite a long time. This software inspired me at most:
+I am playing with creating database management tools quite a long time. This software inspired me at most:
 
 - Visual Studio Code - great IDE, simple but powerful
 - DatAdmin, DbMouse - DB management tools, which I created in past
