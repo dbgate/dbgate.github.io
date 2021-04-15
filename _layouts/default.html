@@ -1,9 +1,5 @@
-{% if page.menubar or page.menubar_toc %}
-    {% assign has_left_sidebar = true %}
-{% endif %}
-
 {% if page.features_left  %} 
-    {% assign content_width = 'is-8-desktop is-12-tablet' %} 
+    {% assign content_width = 'is-9-desktop is-12-tablet' %} 
 {% else %} 
     {% assign content_width = 'is-12' %} 
 {% endif %}
@@ -21,8 +17,8 @@
         <div class="container">
             <div class="columns">
                 {% if page.features_left %}
-                <div class="column is-4-desktop is-hidden-tablet-only is-hidden-mobile mr-6">
-                    {% include features.html column_class='column is-12' %}
+                <div class="column is-3-desktop is-hidden-tablet-only is-hidden-mobile mr-6">
+                    {% include features-menu.html %}
                 </div>
                 {% endif %}
                 <div class="column {{ content_width }}">

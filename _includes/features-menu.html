@@ -1,0 +1,14 @@
+<aside class="menu">
+    <p class="menu-label">Features</p>
+
+    {% assign features = site.features | sort: "order", "last" %}
+    <ul class="menu-list">
+        {% for feature in features %}
+        <li>
+            <a href="{{ feature.url }}" class="{% if feature.url == page.url %}is-active{% endif %}">
+                {{ feature.title }}
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
+</aside>

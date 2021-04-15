@@ -1,6 +1,6 @@
 ---
 title: Other
-subtitle: Dark theme, charts, table structure viewer
+subtitle: Dark theme, charts, table structure viewer. Configurable keyboard shortcuts
 layout: feature
 icon: chart.svg
 features_left: true

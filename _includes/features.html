@@ -1,30 +1,32 @@
 <div class="columns is-multiline">
     {% assign features = site.features | sort: "order", "last" %}
     {% for feature in features %}
-    <div class="{{ include.column_class | default: 'column is-4-desktop is-6-tablet'}}">
-        <a href="{{ feature.url | relative_url }}">
-            <div class="card">
-                <div class="card-header">
-                    <p class="card-header-title">
-                        {{ feature.title }}</p>
-                </div>
-                <div class="card-content is-flex">
-
-                    <img src="/assets/img/{{feature.icon}}" class='feature-avatar mr-4' />
-
-                    {{ feature.description | default: feature.subtitle }}
-                </div>
+    <div class="column is-4-desktop is-6-tablet">
+        <div class="card">
+            <div class="card-header">
+                <p class="card-header-title">
+                    {{ feature.title }}</p>
             </div>
 
+            <div class="card-content is-flex">
 
-            <footer class="card-footer">
-                <p class="card-footer-item">
-                    <span>
-                        View details
-                    </span>
-                </p>
-            </footer>
-        </a>
+                <img src="/assets/img/{{feature.icon}}" class='feature-avatar mr-4' />
+
+                {{ feature.description | default: feature.subtitle }}
+            </div>
+        </div>
+
+
+        <footer class="card-footer">
+            <a href="{{ feature.url | relative_url }}" class="card-footer-item">
+                View details
+            </a>
+            {%if feature.demo_url %}
+            <a href="{{ feature.demo_url }}" class="card-footer-item" target='_blank'>
+                Try demo
+            </a>
+            {% endif %}
+        </footer>
     </div>
     {% endfor %}
 </div>

@@ -1,7 +1,7 @@
 ---
 title: DbGate
 headTitle: DbGate | Your database management tool
-subtitle: Easy to use and powerful database manager
+subtitle: Powerful and easy to use database manager
 layout: page
 callouts: home_callouts
 # hero_link: /download/

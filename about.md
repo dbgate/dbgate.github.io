@@ -17,7 +17,7 @@ I started to develop DbGate at the end of 2019. Main reason was, that I switched
 
 # About author
 
-My name is Jan Prochazka, I live in Czech Republic. I was specialized to realtime computation software, which used heavy Miccrosoft SQL Server. Now I work mainly with JavaScript and modern techology stack around it.
+My name is [Jan Prochazka](https://github.com/janproch/), I live in Czech Republic. I was specialized to realtime computation software, which used heavy Miccrosoft SQL Server. Now I work mainly with JavaScript and modern techology stack around it.
 
 # Wrote about us
 

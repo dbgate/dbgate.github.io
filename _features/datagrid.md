@@ -5,6 +5,7 @@ layout: feature
 icon: table.svg
 order: 2
 features_left: true
+demo_url: https://demo.dbgate.org/#favorite=master-detail
 ---
 
 * Easy-to-use quick filters

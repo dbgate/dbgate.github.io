@@ -4,6 +4,7 @@ subtitle: Edit SQL queries with auto-complete suggestions or use query designer
 icon: sql.svg
 layout: feature
 features_left: true
+demo_url: https://demo.dbgate.org/#favorite=designer
 order: 3
 ---
 
