@@ -23,16 +23,26 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function getOS() {
+  const userAgent = window.navigator.userAgent;
   const platform = window.navigator.platform;
   const macosPlatforms = ["Macintosh", "MacIntel", "MacPPC", "Mac68K"];
+  const iosPlatforms = ["iPhone", "iPad", "iPod"];
   const windowsPlatforms = ["Win32", "Win64", "Windows", "WinCE"];
 
   if (macosPlatforms.indexOf(platform) !== -1) {
     return "mac";
   }
 
+  if (iosPlatforms.indexOf(platform) !== -1) {
+    return "ios";
+  }
+
   if (windowsPlatforms.indexOf(platform) !== -1) {
     return "windows";
+  }
+
+  if (/Android/.test(userAgent)) {
+    return "android";
   }
 
   if (/Linux/.test(platform)) {
