@@ -12,8 +12,8 @@
         <div class="container">
             <h1 class="title is-2">{{ page.title }}</h1>
             <p class="subtitle is-3">{{ page.subtitle }}</p>
-            {% if page.hero_link %}
-            <a href="{{ page.hero_link | relative_url }}" class="button is-info is-large">{{ page.hero_link_text }}</a>
+            {% if page.download_button %}
+            {% include download-button.html %}
             {% endif %}
         </div>
     </div>

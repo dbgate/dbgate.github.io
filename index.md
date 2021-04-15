@@ -4,8 +4,7 @@ headTitle: DbGate | Your database management tool
 subtitle: Powerful and easy to use database manager
 layout: page
 callouts: home_callouts
-# hero_link: /download/
-# hero_link_text: Download
+download_button: true
 ---
 
 {% include carousel.html %}
