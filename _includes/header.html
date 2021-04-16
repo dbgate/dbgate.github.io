@@ -30,7 +30,9 @@
                         <div class="navbar-dropdown">
                             {% assign features = site.features | sort: "order", "last" %}
                             {% for subitem in features %}
+                            {% if subitem.hide_menu != true %}
                             <a href="{{ subitem.url | relative_url }}" class="navbar-item {% if subitem.link == page.url %}is-active{% endif %}">{{ subitem.title }}</a>
+                            {% endif %}
                             {% endfor %}
                         </div>
                     </div>

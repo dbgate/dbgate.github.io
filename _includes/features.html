@@ -1,7 +1,7 @@
 <div class="columns is-multiline">
     {% assign features = site.features | sort: "order", "last" %}
     {% for feature in features %}
-    <div class="column is-4-desktop is-6-tablet">
+    <div class="column is-4-desktop is-6-tablet {{feature.additional_class}}">
         <div class="card">
             <div class="card-header">
                 <p class="card-header-title">
@@ -18,9 +18,11 @@
 
 
         <footer class="card-footer">
+            {% if feature.hide_menu != true %}
             <a href="{{ feature.url | relative_url }}" class="card-footer-item">
                 View details
             </a>
+            {% endif %}
             {%if feature.demo_url %}
             <a href="{{ feature.demo_url }}" class="card-footer-item is-hidden-mobile" target='_blank'>
                 Try demo

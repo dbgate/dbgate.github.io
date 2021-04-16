@@ -3,6 +3,7 @@ title: Other
 subtitle: Dark theme, charts, table structure viewer. Configurable keyboard shortcuts
 layout: feature
 icon: chart.svg
+order: 10
 features_left: true
 ---
 

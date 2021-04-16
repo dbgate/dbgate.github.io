@@ -4,11 +4,13 @@
     {% assign features = site.features | sort: "order", "last" %}
     <ul class="menu-list">
         {% for feature in features %}
+        {% if feature.hide_menu != true %}
         <li>
             <a href="{{ feature.url }}" class="{% if feature.url == page.url %}is-active{% endif %}">
                 {{ feature.title }}
             </a>
         </li>
+        {% endif %}
         {% endfor %}
     </ul>
 </aside>
