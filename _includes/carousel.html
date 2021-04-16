@@ -1,4 +1,54 @@
-<img id='carousel-image' onClick="activateCarousel((carouselIndex + 1) % screenshots.length)" />
+<!-- Slider main container -->
+<div class="swiper-container mb-6">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+
+        {% for item in site.data.slider_images %}
+        <div class="swiper-slide"><img src="/assets/screenshots/{{item.src}}" /></div>
+        {% endfor %}
+        ...
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+    <!-- If we need scrollbar -->
+    <!-- <div class="swiper-scrollbar"></div> -->
+</div>
+
+<script>
+    const swiper = new Swiper('.swiper-container', {
+        // Optional parameters
+        // direction: 'horizontal',
+        loop: true,
+
+        slidesPerView: 'auto',
+        centeredSlides: true,      
+        spaceBetween: 30,  
+
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        // // And if we need scrollbar
+        // scrollbar: {
+        //   el: '.swiper-scrollbar',
+        // },
+    });
+</script>
+
+<!-- <img id='carousel-image' onClick="activateCarousel((carouselIndex + 1) % screenshots.length)" />
 
 <div class='carousel-dots mb-6'>
     {% for item in site.data.slider_images %}
@@ -24,4 +74,4 @@
     }
 
     activateCarousel(0);
-</script>
+</script> -->
