@@ -11,13 +11,14 @@ features_left: true
 * Connect to:
   * MySQL
   * PostgreSQL
-  * SQL Server (under windows allows Windows authentification)
+  * SQL Server (supports Windows authentification)
   * MongoDB
 * Support connection over SSH tunnel, for accessing production databases behind firewall
 * Support SSL
 * Allows work with multiple database connections simultaneously
 * Every opened tab (eg. query, table data, query desinger) is marked with database, to which it belongs
-* Stored encrypted password
+![Tabs](/assets/fragments/dbtabs.png)
+* Stored password is encrypted by default
 * Browse database structure
 * Explore tables, views, stored procedures, functions
 * Test connections before save

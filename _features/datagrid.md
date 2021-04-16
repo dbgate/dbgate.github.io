@@ -8,28 +8,41 @@ features_left: true
 demo_url: https://demo.dbgate.org/#favorite=master-detail
 ---
 
-* Easy-to-use quick filters
+DbGate has very powerful data browser and editor. It allows you quickly find or modify, what you need, even when using complicated relations. In most cases, using datab browser is far more efficient than typing query by hand or use query designer (but you can of course use all these variants in DbGate too).
+
+## Filtering data
+You can directly type filtering expression (eg. substring, which is searched in column). Or you can use menu, which helps you to create filtering expreesion, if you want to use somthing not obvious.
+
+![Tabs](/assets/fragments/filter.png)
+
+## Expanding foreign key columns
+Sometimes, it is useful to view directly columns of references table. In DbGate, you can achieve this without creating query, references columns can be added to view in columns manager. You can even filter table by references columns.
+
+![Tabs](/assets/fragments/refcolumn.png)
+
+## Form view
+Often you could come across very wide tables, with plenty of columns. When you need to see only one row, classic table view is not effective. Form view could help you to solve this situation with elegance. As addition, you could expand foreign key columns in form view.
+
+![Tabs](/assets/fragments/formview.png)
+
+## Data editor
+DbGate supports also table data editing. None of changes are saved to database immediately, at first you edit table data in similar way as  in Excel, if you are finished, you press Ctrl+S (or use command in context menu), and confirm changes are saved to database
+
+![Tabs](/assets/fragments/savechange.png)
+
+## Other features
+That's not all, DbGate has next amazing data view/edit features:
+
 * Master/detail views nbase on foreign keys
 * Foreign key lookups
-* Expandable columns, allowing to view and filter by columns from related tables
 * One-click group by function
-* Form view for tables with many columns
 * Group by master/detail view + group by year, month, day
-
-## Free table editor
-
-Quick and simple tabular data editor, allows to simple organize columns and rows and in-memory tables.
-
-* Batch (macro) operation with preview support
-* Undo, redo
-* Save to JSON lines format, organize into archives
-* Can be used eg. for editing data exported from DB before export to CSV, or to edit data before importing into DB
-* Some of macros:
+* Free table editor - edit data in JSON lines file, without database
+* Batch operations (called macros):
   * Change text case
   * Remove diacritics
   * Current data  
   * Generate UUID
 
-## Demo links
-These links points to demo.dbgate.org, feel free to play with it
-* [Master-detail view](https://demo.dbgate.org/#favorite=master-detail)
+## Try it online
+If you would like to try some of this, but you don't want to install DbGate yet, you could use online demo application [demo.dbgate.org](https://demo.dbgate.org/#favorite=master-detail)

@@ -1,7 +1,7 @@
 ---
 title: DbGate
 headTitle: DbGate | Your database management tool
-subtitle: Powerful and easy to use database manager
+subtitle: The smartest (no)SQL database client
 layout: page
 callouts: home_callouts
 download_button: true
