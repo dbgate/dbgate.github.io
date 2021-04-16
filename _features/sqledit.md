@@ -10,7 +10,9 @@ order: 3
 
 - Syntax highlighting
 - Code completion
-- Join wizard - add SQL joins effectively
+- Join wizard - add SQL joins, when you are master of SQL language, but you don't remember all of those tables, which must be joined together
+![Join wizard](/assets/fragments/joinwizard.png)
+
 - SQL formatter
 - Save to "Saved queries" tab, or save to disk
 - SQL generator - script your database structure and data
