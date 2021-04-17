@@ -1,6 +1,6 @@
 ---
 title: Online demo application
-description: Try all these amazing features immediately without installing, just use our online demo app
+description: Still not convinced? Try this compelling list of features in our online demo app
 icon: chrome.svg
 order: 20
 demo_url: https://demo.dbgate.org/
