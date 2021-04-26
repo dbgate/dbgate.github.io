@@ -22,6 +22,8 @@ My name is [Jan Prochazka](https://github.com/janproch/), I live in Czech Republ
 
 # Wrote about us
 
+DbGate was published on [Hacker News](https://news.ycombinator.com/item?id=26899100). You can read large discussion about DbGate and other SQL clients.
+
 You can see, what wrote about DbGate [Softpedia](https://www.softpedia.com/get/Internet/Servers/Database-Utils/DbGate.shtml) software catalog portal
 
 # DbGate technology stack
