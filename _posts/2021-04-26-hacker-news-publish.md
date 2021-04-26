@@ -19,3 +19,4 @@ The most repeated feature request was supporting SQLite database, so this would 
 - ADDED: Show database server version in status bar
 - ADDED: Show detailed info about error, when connect to database fails
 - FIX: Bundle size optimalization for Windows
+- ADDED: Portable ZIP distribution for Windows

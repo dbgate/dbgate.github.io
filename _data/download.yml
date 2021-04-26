@@ -4,6 +4,9 @@
     - text: Installer
       icon: fa fa-download
       link: https://github.com/dbgate/dbgate/releases/latest/download/dbgate-latest.exe
+    - text: Portable ZIP
+      icon: fa fa-download
+      link: https://github.com/dbgate/dbgate/releases/latest/download/dbgate-windows-latest.zip
 - text: Linux
   icon: fab fa-linux
   items:
