@@ -1,6 +1,6 @@
 ---
 title: DbGate
-headTitle: DbGate | Your database management tool
+headTitle: DbGate | Open Source (no)SQL Database Client
 subtitle: The smartest (no)SQL database client
 layout: page
 callouts: home_callouts
