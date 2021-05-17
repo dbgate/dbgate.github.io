@@ -1,7 +1,8 @@
 ---
 title: PostgreSQL Client for Windows, Linux, MacOS and Web
 name: PostgreSQL
-layout: page
+layout: feature
+features_left: true
 icon: postgres.svg
 order: 3
 ---

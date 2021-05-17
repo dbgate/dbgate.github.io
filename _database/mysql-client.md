@@ -1,7 +1,8 @@
 ---
 title: MySQL Client for Windows, Linux, MacOS and Web
 name: MySQL
-layout: page
+layout: feature
+features_left: true
 icon: mysql.svg
 order: 1
 ---

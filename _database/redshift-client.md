@@ -1,7 +1,8 @@
 ---
 title: Amazon Redshift Client for Windows, Linux, MacOS and Web
 name: Redshift
-layout: page
+layout: feature
+features_left: true
 icon: redshift.svg
 order: 7
 ---
