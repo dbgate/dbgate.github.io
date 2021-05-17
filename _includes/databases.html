@@ -1,0 +1,8 @@
+<div class='dblist'>
+    {% for db in site.data.databases %}
+    <div class='dblistitem'>
+        <img src="/assets/db/{{db.icon}}" width='60' height='60' />
+        <div class='dbname'>{{db.name}}</div>
+    </div>
+    {% endfor %}
+</div>

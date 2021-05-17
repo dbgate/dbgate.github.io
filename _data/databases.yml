@@ -1,0 +1,16 @@
+- name: MySQL
+  icon: mysql.svg
+- name: SQL Server
+  icon: mssql.svg
+- name: PostgreSQL
+  icon: postgres.svg
+- name: SQLite
+  icon: sqlite.svg
+- name: MongoDB
+  icon: mongo.svg
+- name: MariaDB
+  icon: mariadb.svg
+- name: Redshift
+  icon: redshift.svg
+- name: Cockroach
+  icon: cockroachdb.svg

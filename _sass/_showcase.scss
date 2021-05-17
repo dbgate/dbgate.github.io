@@ -1,13 +1,36 @@
 .showcase {
-    margin-bottom: 3rem;
-    box-shadow: $box-shadow;
+  margin-bottom: 3rem;
+  box-shadow: $box-shadow;
 
-    &-content {
-        padding: 1.5rem;
-        text-align: center;
-    }
+  &-content {
+    padding: 1.5rem;
+    text-align: center;
+  }
 
-    .block-list {
-        margin-bottom: 1.5rem;
-    }
+  .block-list {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.dblist {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.dblistitem {
+  margin: 10px;
+  padding: 10px;
+  background: #eee;
+  border: 4px solid #bbb;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.dbname {
+  margin-top: 15px;
+  font-size: 8pt;
+  text-align: center;
 }
