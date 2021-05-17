@@ -1,5 +1,5 @@
 ---
-title: Export and import
+title: Export and Import
 subtitle: Export and import from/to CSV, JSON or Excel
 description: Export and import from/to CSV, JSON or Excel. Use JavaScript scripting support
 icon: export.svg

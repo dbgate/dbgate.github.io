@@ -1,5 +1,5 @@
 ---
-title: Data editor
+title: Data Editor
 subtitle: Browse or edit data in your tables or views, filter by column value
 layout: feature
 icon: table.svg

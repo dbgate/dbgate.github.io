@@ -1,5 +1,5 @@
 ---
-title: DB connections
+title: DB Connections
 subtitle: Connect to multiple databases simultaneously
 description: Connect to multiple databases, directly or through SSH tunnel
 layout: feature
@@ -13,6 +13,10 @@ features_left: true
   * PostgreSQL
   * SQL Server (supports Windows authentification)
   * MongoDB
+  * SQLite (quick open files with drag & drop)
+  * Amazon Redshift
+  * CockroachDB
+  * MariaDB
 * Support connection over SSH tunnel, for accessing production databases behind firewall
 * Support SSL
 * Allows work with multiple database connections simultaneously

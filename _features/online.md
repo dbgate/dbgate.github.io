@@ -1,5 +1,5 @@
 ---
-title: Online demo application
+title: Online Demo Application
 description: Still not convinced? Try this compelling list of features in our online demo app
 icon: chrome.svg
 order: 20

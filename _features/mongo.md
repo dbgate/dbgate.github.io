@@ -1,5 +1,5 @@
 ---
-title: NoSQL database support
+title: NoSQL Database Support
 subtitle: Connect to MongoDB, browse or filter JSON document data
 layout: feature
 icon: mongo.svg

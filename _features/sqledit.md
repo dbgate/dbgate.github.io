@@ -1,5 +1,5 @@
 ---
-title: Query editor, designer and SQL generator
+title: Query Editor, Designer and SQL Generator
 subtitle: Edit SQL queries with auto-complete suggestions or use query designer
 icon: sql.svg
 layout: feature
@@ -32,7 +32,7 @@ order: 3
 - Filters
 - Ordering
 
-## SQL Generator
+## SQL generator
 SQL Generator allows to create SQL scripts from database. It has following options:
 * Tables
   * Create (with or without foreign keys)
