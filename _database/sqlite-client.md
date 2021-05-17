@@ -6,4 +6,4 @@ icon: sqlite.svg
 order: 4
 ---
 
-{% include client.html name='SQLite' %}
+{% include client.html name='SQLite' skipSsh='1' %}

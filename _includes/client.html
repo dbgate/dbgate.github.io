@@ -1,12 +1,27 @@
 DbGate for {{include.name}} is free and open source client for Linux, Windows and MacOS. Also runs in Web browser, 
 when started from Docker container.
 
+{% include carousel.html %}
+
 <h2>{{include.name}} Client Features</h2>
 
 <ul>
+    {% if include.skipSsh != '1' %}
     <li>Connect to multiple databases, directly or through SSH tunnel</li>
+    {% endif %}
     <li>Browse or edit data in your tables or views, filter by column value</li>
+    <li>Master/detail views</li>
+    {% if include.nosql != '1' %}
     <li>{{include.name}} SQL editor - edit SQL queries with auto-complete suggestions or use query designer</li>
+    <li>Form view for comfortable work with tables with many columns</li>
+    {% endif %}
+    {% if include.nosql == '1' %}
+    <li>MongoDB JavaScript editor, execute MongoDB script (with NodeJs syntax)</li>
+    <li>JSON view on collections</li>
+    {% endif %}
     <li>Export and import from/to CSV, JSON or Excel. Use JavaScript scripting support</li>
-    <li>Dark theme, charts, table structure viewer. Configurable keyboard shortcuts</li>
+    <li>Archives - backup your data in JSON files on local filesystem (or on DbGate server, when using web application)</li>
+    <li>Light and dark theme</li>
+    <li>Charts</li>
+    <li>Configurable keyboard shortcuts</li>
 </ul>
