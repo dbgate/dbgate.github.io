@@ -1,4 +1,4 @@
-DbGate for {{include.name}} is free and open source client for Linux, Windows and MacOS. Also runs in Web browser, 
+DbGate for {{include.name}} is free and open source client for Linux, Windows and MacOS. Also runs in Web browser,
 when started from Docker container.
 
 {% include carousel.html %}
@@ -12,7 +12,7 @@ when started from Docker container.
     <li>Browse or edit data in your tables or views, filter by column value</li>
     <li>Master/detail views</li>
     {% if include.nosql != '1' %}
-    <li>{{include.name}} SQL editor - edit SQL queries with auto-complete suggestions or use query designer</li>
+    <li>{{include.name}} editor - edit SQL queries with auto-complete suggestions or use query designer</li>
     <li>Form view for comfortable work with tables with many columns</li>
     {% endif %}
     {% if include.nosql == '1' %}
@@ -20,8 +20,22 @@ when started from Docker container.
     <li>JSON view on collections</li>
     {% endif %}
     <li>Export and import from/to CSV, JSON or Excel. Use JavaScript scripting support</li>
-    <li>Archives - backup your data in JSON files on local filesystem (or on DbGate server, when using web application)</li>
+    <li>Archives - backup your data in JSON files on local filesystem (or on DbGate server, when using web application)
+    </li>
     <li>Light and dark theme</li>
     <li>Charts</li>
     <li>Configurable keyboard shortcuts</li>
+</ul>
+
+<h2>DbGate for {{include.name}} goals</h2>
+
+<ul>
+    <li>Complete free and open source, no paid enterprise editions</li>
+    <li>Simple, but powerful. One toolbar, no milions of icons without description. Heavy use of context menu
+    </li>
+    <li>Should runs everywhere - Windows, Linux, Mac, web browser, maybe also mobile web in future</li>
+    <li>Stable and robust. Critical error in one database driver must not influence stability of the app</li>
+    <li>Prepared for big databases - never load full table or query result into memory, use streams everywhere
+    </li>
+    <li>Scriptable, using dbgate <a href='https://www.npmjs.com/package/dbgate-api'>nodejs packages</a></li>
 </ul>
