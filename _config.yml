@@ -38,3 +38,5 @@ highlighter: rouge
 collections:
   features: 
     output: true
+  database: 
+    output: true

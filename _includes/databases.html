@@ -1,8 +1,10 @@
+{% assign databases = site.database | sort: "order", "last" %}
+
 <div class='dblist'>
-    {% for db in site.data.databases %}
-    <div class='dblistitem'>
+    {% for db in databases %}
+    <a href="{{ db.url | relative_url }}" class='dblistitem'>
         <img src="/assets/db/{{db.icon}}" width='60' height='60' />
         <div class='dbname'>{{db.name}}</div>
-    </div>
+    </a>
     {% endfor %}
 </div>
