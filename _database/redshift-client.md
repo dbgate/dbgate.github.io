@@ -5,6 +5,7 @@ layout: feature
 features_left: true
 icon: redshift.svg
 order: 7
+isClient: 1
 ---
 
 {% include client.html name='Amazon Redshift' %}

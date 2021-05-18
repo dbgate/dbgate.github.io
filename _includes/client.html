@@ -1,9 +1,9 @@
-DbGate for {{include.name}} is free and open source client for Linux, Windows and MacOS. Also runs in Web browser,
+DbGate for {{include.name}} is free and open source database manager for Linux, Windows and MacOS. Also runs in Web browser,
 when started from Docker container.
 
 {% include carousel.html %}
 
-<h2>{{include.name}} Client Features</h2>
+<h2>{{include.name}} Database Manager Features</h2>
 
 <ul>
     {% if include.skipSsh != '1' %}
@@ -35,7 +35,7 @@ when started from Docker container.
     </li>
     <li>Should runs everywhere - Windows, Linux, Mac, web browser, maybe also mobile web in future</li>
     <li>Stable and robust. Critical error in one database driver must not influence stability of the app</li>
-    <li>Prepared for big databases - never load full table or query result into memory, use streams everywhere
+    <li>Prepared for big databases - never load full table or {{include.name}} query result into memory, use streams everywhere
     </li>
     <li>Scriptable, using dbgate <a href='https://www.npmjs.com/package/dbgate-api'>nodejs packages</a></li>
 </ul>

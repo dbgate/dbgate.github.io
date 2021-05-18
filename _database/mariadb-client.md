@@ -5,6 +5,7 @@ layout: feature
 features_left: true
 icon: mariadb.svg
 order: 6
+isClient: 1
 ---
 
 {% include client.html name='MariaDB' %}

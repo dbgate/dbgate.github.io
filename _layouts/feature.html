@@ -7,7 +7,13 @@ layout: page
 {% include toc.html html=content class='menu-list' h_min=2 h_max=3 contents_title=contentsTitle %}
 {% endif %}
 
-<p class="title is-3">{{ page.title }}</p>
+<p class="title is-3">
+    {% if page.isClient %}
+    DbGate for {{ page.name }} Client
+    {% else %}
+    {{ page.title }}
+    {% endif %}
+</p>
 {{ content }}
 
 <!-- <div class="columns is-multiline">
