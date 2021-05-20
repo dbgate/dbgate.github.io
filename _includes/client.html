@@ -6,6 +6,13 @@ when started from Docker container.
 <h2>{{include.name}} Database Manager Features</h2>
 
 <ul>
+    
+    {% if include.isSqlite == '1' %}
+    <li>Open SQLite files with drag & drop, with open-file dialog or as commandline parameter</li>
+    {% endif %}
+    {% if include.isMssql == '1' %}
+    <li>Supports both SQL server and Windows authentification on Windows (on Linux and MacOS, only SQL server authentization is supported)</li>
+    {% endif %}
     {% if include.skipSsh != '1' %}
     <li>Connect to multiple databases, directly or through SSH tunnel</li>
     {% endif %}

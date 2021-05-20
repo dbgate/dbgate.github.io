@@ -9,14 +9,14 @@ features_left: true
 ---
 
 * Connect to:
-  * MySQL
-  * PostgreSQL
-  * SQL Server (supports Windows authentification)
-  * MongoDB
-  * SQLite (quick open files with drag & drop)
-  * Amazon Redshift
-  * CockroachDB
-  * MariaDB
+  * [MySQL](/database/mysql-client.html)
+  * [PostgreSQL](/database/postgresql-client.html)
+  * [SQL Server](/database/mssql-client.html) (supports Windows authentification)
+  * [MongoDB](/database/mongodb-client.html)
+  * [SQLite](/database/sqlite-client.html) (quick open files with drag & drop)
+  * [Amazon Redshift](/database/redshift-client.html)
+  * [CockroachDB](/database/cockroachdb-client.html)
+  * [MariaDB](/database/mariadb-client.html)
 * Support connection over SSH tunnel, for accessing production databases behind firewall
 * Support SSL
 * Allows work with multiple database connections simultaneously
