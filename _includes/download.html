@@ -10,9 +10,14 @@
         <div class="columns is-multiline">
             {% for file in system.items %}
             <div class="column is-4">
-                <a class="button is-medium is-primary is-fullwidth" href="{{file.link}}">
+                <a class="button is-medium is-primary is-fullwidth" href="{{file.link}}" onClick="{{file.onClick}}">
                     <i class="{{file.icon}} mr-2"></i>
                     {{file.text}}
+                    {% if file.platform %}
+                    <span class='has-text-grey-light ml-2'>
+                        {{file.platform}}
+                    </span>
+                    {% endif %}
                 </a>
             </div>
             {% endfor %}
