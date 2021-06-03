@@ -1,6 +1,6 @@
 ---
-title: DbGate - CockroachDB Client
-subtitle: The Smartest (no)SQL Database Manager
+title: CockroachDB Client for Linux, Windows, MacOS
+subtitle: DbGate - the Smartest (no)SQL Database Manager
 name: CockroachDB
 layout: feature
 features_left: true

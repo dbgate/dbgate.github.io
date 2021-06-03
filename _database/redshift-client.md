@@ -1,6 +1,6 @@
 ---
-title: DbGate - Amazon Redshift Client
-subtitle: The Smartest (no)SQL Database Manager
+title: Amazon Redshift Client for Linux, Windows, MacOS
+subtitle: DbGate - the Smartest (no)SQL Database Manager
 name: Redshift
 layout: feature
 features_left: true

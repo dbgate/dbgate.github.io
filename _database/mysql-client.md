@@ -1,6 +1,6 @@
 ---
-title: DbGate - MySQL Client
-subtitle: The Smartest (no)SQL Database Manager
+title: MySQL Client for Linux, Windows, MacOS
+subtitle: DbGate - the Smartest (no)SQL Database Manager
 name: MySQL
 layout: feature
 features_left: true

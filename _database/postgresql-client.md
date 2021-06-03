@@ -1,6 +1,6 @@
 ---
-title: DbGate - PostgreSQL Client
-subtitle: The Smartest (no)SQL Database Manager
+title: PostgreSQL Client for Linux, Windows, MacOS
+subtitle: DbGate - the Smartest (no)SQL Database Manager
 name: PostgreSQL
 layout: feature
 features_left: true

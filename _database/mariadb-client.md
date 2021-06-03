@@ -1,6 +1,6 @@
 ---
-title: DbGate - MariaDB Client
-subtitle: The Smartest (no)SQL Database Manager
+title: MariaDB Client for Linux, Windows, MacOS
+subtitle: DbGate - the Smartest (no)SQL Database Manager
 name: MariaDB
 layout: feature
 features_left: true

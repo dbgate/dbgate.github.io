@@ -1,6 +1,6 @@
 ---
-title: DbGate - MongoDB Client
-subtitle: The Smartest (no)SQL Database Manager
+title: MongoDB Client for Linux, Windows, MacOS
+subtitle: DbGate - the Smartest (no)SQL Database Manager
 name: MongoDB
 layout: feature
 features_left: true

@@ -4,7 +4,7 @@ items:
     subtitle: Free to use for any purpose, source code available under MIT license
     icon: fas fa-copy
   - title: Cross database
-    subtitle: Supports MySQL, PostgreSQL, SQL Server, MongoDB, SQLite and others
+    subtitle: Supports MySQL, PostgreSQL, MS SQL, MongoDB, SQLite and others
     icon: fas fa-database
   - title: Cross platform
     subtitle: Works on Windows, Linux, MacOS and in WEB browser

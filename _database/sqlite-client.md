@@ -1,6 +1,6 @@
 ---
-title: DbGate - SQLite Client
-subtitle: The Smartest (no)SQL Database Manager
+title: SQLite Client for Linux, Windows, MacOS
+subtitle: DbGate - the Smartest (no)SQL Database Manager
 name: SQLite
 layout: feature
 features_left: true
