@@ -1,7 +1,7 @@
 ---
-title: MongoDB Client for Linux, Windows, MacOS
+title: Online MongoDB Client and database Editor
 subtitle: DbGate - the Smartest (no)SQL Database Manager
-headDescription: Fast and easy to use MongoDB client, SQL editor and database manager. Is free, open-source and cross-platform.
+headDescription: Free and open-source MongoDB client, editor and database manager. Online or as app for Linux, Windows, MacOS.
 name: MongoDB
 layout: feature
 features_left: true
