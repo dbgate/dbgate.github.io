@@ -1,7 +1,7 @@
 ---
 title: CockroachDB Client for Linux, Windows, MacOS
 subtitle: DbGate - the Smartest (no)SQL Database Manager
-headDescription: Fast and easy to use CockroachDB client, SQL editor and database manager. Is free, open-source and cross-platform.
+headDescription: Free and open-source CockroachDB client, SQL editor and database manager. Runs as desktop app or as web app in Docker.
 name: CockroachDB
 layout: feature
 features_left: true
