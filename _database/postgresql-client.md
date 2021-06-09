@@ -1,7 +1,7 @@
 ---
 title: Cross-platform PostgreSQL Client
 subtitle: DbGate - the Smartest (no)SQL Database Manager
-headDescription: Free and open-source PostgreSQL client, SQL editor and database manager. Runs as desktop app or as web app in Docker.
+headDescription: Free and open-source PostgreSQL client, SQL editor and database manager. Desktop app in Linux, Windows, MacOS and web app in Docker.
 name: PostgreSQL
 layout: feature
 features_left: true

@@ -1,7 +1,7 @@
 ---
 title: Cross-platform SQLite Client
 subtitle: DbGate - the Smartest (no)SQL Database Manager
-headDescription: Free and open-source SQLite client, SQL editor and database manager. Runs as desktop app or as web app in Docker.
+headDescription: Free and open-source SQLite client, SQL editor and database manager. Desktop app in Linux, Windows, MacOS and web app in Docker.
 name: SQLite
 layout: feature
 features_left: true

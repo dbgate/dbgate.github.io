@@ -1,8 +1,7 @@
 ---
 title: Cross-platform MySQL Client
 subtitle: DbGate - the Smartest (no)SQL Database Manager
-headDescription: Free and open-source MySQL client, SQL editor and database manager. Runs as desktop app or as web app in Docker.
-name: MySQL
+headDescription: Free and open-source MySQL client, SQL editor and database manager. Desktop app in Linux, Windows, MacOS and web app in Docker.
 layout: feature
 features_left: true
 icon: mysql.svg

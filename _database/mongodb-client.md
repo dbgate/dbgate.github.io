@@ -1,7 +1,7 @@
 ---
 title: Online MongoDB Client and database Editor
 subtitle: DbGate - the Smartest (no)SQL Database Manager
-headDescription: Free and open-source MongoDB client, editor and database manager. Web application or as app for Linux, Windows, MacOS.
+headDescription: Free and open-source MongoDB client, editor and database manager. Web application or desktop app for Linux, Windows, MacOS.
 name: MongoDB
 layout: feature
 features_left: true
