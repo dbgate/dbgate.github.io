@@ -1,5 +1,5 @@
 ---
-title: MS SQL Database Manager for Windows, MacOS, Linux
+title: Cross-platform MS SQL Database Manager
 subtitle: DbGate - the Smartest (no)SQL Database Client
 headDescription: Free and open-source Microsoft SQL Server client, SQL editor and database manager. Runs as desktop app or as web app in Docker.
 name: SQL Server

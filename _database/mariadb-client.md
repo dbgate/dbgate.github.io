@@ -1,5 +1,5 @@
 ---
-title: MariaDB Client for Linux, Windows, MacOS
+title: Cross-platform MariaDB Client
 subtitle: DbGate - the Smartest (no)SQL Database Manager
 headDescription: Free and open-source MariaDB client, SQL editor and database manager. Runs as desktop app or as web app in Docker.
 name: MariaDB

@@ -1,5 +1,5 @@
 ---
-title: Amazon Redshift Client for Linux, Windows, MacOS
+title: Cross-platform Amazon Redshift Client
 subtitle: DbGate - the Smartest (no)SQL Database Manager
 headDescription: Fast and easy to use Amazon Redshift client, SQL editor and database manager. Is free, open-source and cross-platform.
 name: Redshift
