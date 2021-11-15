@@ -56,3 +56,9 @@
     description: MongoDB data editor with save data preview
   - src: collection.png
     description: Browse and expand MongoDB collection
+- feature: dbedit
+  items:
+  - src: fkeditor.png
+    description: Foreign key editor
+  - src: dbcompare.png
+    description: Database compare tool

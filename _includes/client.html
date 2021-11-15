@@ -17,10 +17,12 @@ when started from Docker container.
     <li>Connect to multiple databases, directly or through SSH tunnel</li>
     {% endif %}
     <li>Browse or edit data in your tables or views, filter by column value</li>
-    <li>Master/detail views</li>
+    <li>Master/detail views, quick view lookup tables</li>
     {% if include.nosql != '1' %}
     <li>{{include.name}} editor - edit SQL queries with auto-complete suggestions or use query designer</li>
     <li>Form view for comfortable work with tables with many columns</li>
+    <li>Schema editor - edit tables, indexes, and other databas eobjects (views, procedures, functions)</li>
+    <li>Compare, synchronize and deploy DB models</li>
     {% endif %}
     {% if include.nosql == '1' %}
     <li>MongoDB JavaScript editor, execute MongoDB script (with NodeJs syntax)</li>
@@ -30,7 +32,7 @@ when started from Docker container.
     <li>Archives - backup your data in JSON files on local filesystem (or on DbGate server, when using web application)
     </li>
     <li>Light and dark theme</li>
-    <li>Charts</li>
+    <li>Charts, export chart to HTML page</li>
     <li>Configurable keyboard shortcuts</li>
 </ul>
 
