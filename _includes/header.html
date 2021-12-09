@@ -12,42 +12,50 @@
         </div>
         <div class="navbar-menu" id="navMenu">
             <div class="navbar-start">
-                <a href="{{ site.baseurl }}/" class="navbar-item {% if page.url == "/" %}is-active{% endif %}">Home</a>
+                <a href="{{ site.baseurl }}/" class="navbar-item {% if page.url == " /" %}is-active{% endif %}">Home</a>
                 {% if site.data.navigation %}
                 {% for item in site.data.navigation %}
-                    {% if item.dropdown %}
-                    <div class="navbar-item has-dropdown is-hoverable {% if site.fixed_navbar == 'bottom' %} has-dropdown-up {% endif %}">
-                        <a href="{{ item.link | relative_url }}" class="navbar-link {% if item.link == page.url %}is-active{% endif %}">{{ item.name }}</a>
-                        <div class="navbar-dropdown">
-                            {% for subitem in item.dropdown %}
-                            <a href="{{ subitem.link | relative_url }}" class="navbar-item {% if subitem.link == page.url %}is-active{% endif %}">{{ subitem.name }}</a>
-                            {% endfor %}
-                        </div>
+                {% if item.dropdown %}
+                <div
+                    class="navbar-item has-dropdown is-hoverable {% if site.fixed_navbar == 'bottom' %} has-dropdown-up {% endif %}">
+                    <a href="{{ item.link | relative_url }}"
+                        class="navbar-link {% if item.link == page.url %}is-active{% endif %}">{{ item.name }}</a>
+                    <div class="navbar-dropdown">
+                        {% for subitem in item.dropdown %}
+                        <a href="{{ subitem.link | relative_url }}"
+                            class="navbar-item {% if subitem.link == page.url %}is-active{% endif %}">{{ subitem.name
+                            }}</a>
+                        {% endfor %}
                     </div>
-                    {% elsif item.features %}
-                    <div class="navbar-item has-dropdown is-hoverable {% if site.fixed_navbar == 'bottom' %} has-dropdown-up {% endif %}">
-                        <a href="{{ item.link | relative_url }}" class="navbar-link {% if item.link == page.url %}is-active{% endif %}">{{ item.name }}</a>
-                        <div class="navbar-dropdown">
-                            {% assign features = site.features | sort: "order", "last" %}
-                            {% for subitem in features %}
-                            {% if subitem.hide_menu != true %}
-                            <a href="{{ subitem.url | relative_url }}" class="navbar-item {% if subitem.link == page.url %}is-active{% endif %}">{{ subitem.title }}</a>
-                            {% endif %}
-                            {% endfor %}
-                        </div>
+                </div>
+                {% elsif item.features %}
+                <div
+                    class="navbar-item has-dropdown is-hoverable {% if site.fixed_navbar == 'bottom' %} has-dropdown-up {% endif %}">
+                    <a href="{{ item.link | relative_url }}"
+                        class="navbar-link {% if item.link == page.url %}is-active{% endif %}">{{ item.name }}</a>
+                    <div class="navbar-dropdown">
+                        {% assign features = site.features | sort: "order", "last" %}
+                        {% for subitem in features %}
+                        {% if subitem.hide_menu != true %}
+                        <a href="{{ subitem.url | relative_url }}"
+                            class="navbar-item {% if subitem.link == page.url %}is-active{% endif %}">{{ subitem.title
+                            }}</a>
+                        {% endif %}
+                        {% endfor %}
                     </div>
-                    {% else %}
-                    <a href="{{ item.link | relative_url }}" class="navbar-item {% if item.link == page.url %}is-active{% endif %}">{{ item.name }}</a>
-                    {% endif %}
+                </div>
+                {% else %}
+                <a href="{{ item.link | relative_url }}"
+                    class="navbar-item {% if item.link == page.url %}is-active{% endif %}">{{ item.name }}</a>
+                {% endif %}
                 {% endfor %}
                 {% endif %}
             </div>
 
-            <div class="navbar-end">
-                <a class="navbar-item" href="https://github.com/dbgate/dbgate">
-                    <span class="icon"><i class="far fa-star mr-2 mb-1"></i></span>
-                    <span>Star on GitHub</span>
-                </a>
+            <div class="navbar-end github-button-wrapper">
+                <a class="github-button" href="https://github.com/dbgate/dbgate"
+                    data-color-scheme="no-preference: light; light: light; dark: dark;" data-size="large"
+                    data-show-count="true" aria-label="Star dbgate/dbgate on GitHub">Star</a>
             </div>
 
         </div>
