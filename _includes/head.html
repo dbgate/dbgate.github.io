@@ -16,14 +16,24 @@
   <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css">
   {% endunless %}
 
-
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-187623490-1"></script>
+  <!-- Google Analytics -->
   <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'UA-187623490-1');
+    if (window.localStorage) {
+      let clientId = localStorage.getItem('gaClientId');
+      if (!clientId) {
+        clientId = Math.random().toString();
+        localStorage.setItem('gaClientId', clientId);
+      }
+      window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) }; ga.l = +new Date;
+      ga('create', 'UA-187623490-1', {
+        storage: 'none',
+        clientId,
+      });
+      ga('send', 'pageview');
+    }
   </script>
+  <script async src='https://www.google-analytics.com/analytics.js'></script>
+  <!-- End Google Analytics -->
 
   <script src="/assets/js/swiper-bundle.min.js"></script>
 
