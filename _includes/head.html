@@ -18,19 +18,20 @@
 
   <!-- Google Analytics -->
   <script>
+    const GA_LOCAL_STORAGE_KEY = 'ga:clientId';
     if (window.localStorage) {
-      let clientId = localStorage.getItem('gaClientId');
-      if (!clientId) {
-        clientId = Math.random().toString();
-        localStorage.setItem('gaClientId', clientId);
-      }
-      window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) }; ga.l = +new Date;
       ga('create', 'UA-187623490-1', {
-        storage: 'none',
-        clientId,
+        'storage': 'none',
+        'clientId': localStorage.getItem(GA_LOCAL_STORAGE_KEY)
       });
-      ga('send', 'pageview');
+      ga(function (tracker) {
+        localStorage.setItem(GA_LOCAL_STORAGE_KEY, tracker.get('clientId'));
+      });
     }
+    else {
+      ga('create', 'UA-187623490-1', 'auto');
+    }
+    ga('send', 'pageview');
   </script>
   <script async src='https://www.google-analytics.com/analytics.js'></script>
   <!-- End Google Analytics -->
