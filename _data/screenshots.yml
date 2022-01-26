@@ -32,6 +32,8 @@
     description: JavaScript scripting
 - feature: other
   items:
+  - src: diagram.png
+    description: ER diagram
   - src: charts.png
     description: Charts
   - src: darkmode.png

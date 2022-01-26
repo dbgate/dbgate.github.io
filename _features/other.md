@@ -1,16 +1,22 @@
 ---
 title: Other
-subtitle: Dark theme, charts, table structure viewer. Configurable keyboard shortcuts
+subtitle: ER diagrams, dark theme, charts, table structure viewer. Configurable keyboard shortcuts
 layout: feature
 icon: chart.svg
 order: 10
 features_left: true
 ---
 
-* **Archive folders** - save your data locally. For this storage, JSON lines format is used (the same, as Mongo uses for collections backups)
-* Mark favorite objects (tables, possibly with filters and master/detail views, queries, charts). Favorites are accesible from widgets or from toolbar.
-* Recently closed tabs - if you close unsaved query, you find it in recently closed tabs for one week.
-* Configurable keyboard shortcut
+## ER diagrams
+You can create ER diagram in database context menu (than all tables will be in diagram) or in table context menu (that tables related with selected table will be on diagram).
+
+Diagrams supports some styling:
+- Table colors
+- Filter columns of tables (primary key, all keys, not null columns)
+- Show column properties (data type, nullability)
+
+You can export diagram to standalone HTML file.  
+Example of diagram export is [here](/assets/diagram.html)
 
 ## Saved files
 * Save files to internal DbGate storage (or to disk, when you are not using web version)
@@ -30,3 +36,9 @@ features_left: true
   * Pie
   * Polar area
 * Customize chart colors
+
+## Other
+* **Archive folders** - save your data locally. For this storage, JSON lines format is used (the same, as Mongo uses for collections backups)
+* Mark favorite objects (tables, possibly with filters and master/detail views, queries, charts). Favorites are accesible from widgets or from toolbar.
+* Recently closed tabs - if you close unsaved query, you find it in recently closed tabs for one week.
+* Configurable keyboard shortcut
