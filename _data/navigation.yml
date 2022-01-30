@@ -8,3 +8,6 @@
   link: /about/
 - name: Blog
   link: /blog/
+- name: Docs
+  link: https://github.com/dbgate/dbgate/wiki
+  target: _blank
