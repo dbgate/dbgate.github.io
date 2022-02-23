@@ -11,7 +11,7 @@ features_left: true
 * Connect to:
   * [MySQL](/database/mysql-client.html)
   * [PostgreSQL](/database/postgresql-client.html)
-  * [Microsoft SQL Server](/database/mssql-client.html) (supports Windows authentification)
+  * [Microsoft SQL Server](/database/mssql-client.html) (supports Windows authentication)
   * [MongoDB](/database/mongodb-client.html)
   * [SQLite](/database/sqlite-client.html) (quick open files with drag & drop)
   * [Amazon Redshift](/database/redshift-client.html)
