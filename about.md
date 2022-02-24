@@ -29,7 +29,7 @@ The second generation was [DbMouse](http://www.jenasoft.com/dbmouse), which was 
 
 As I was unable to increase sales enough to make development of these tools profitable, I decided to cempletely abandon this effort.
 
-Primary reason, why I started to develop DbGate, is to survive my know-how about database tools, and substantialize into modern, usable and open-source database tool. Of course, I am trying to assure some financial backing, I realize, that it will be very hard, maybe not possible, to cover full development expenses with this backing.
+Primary reason, why I started to develop DbGate, is to survive my know-how about database tools, and substantialize into modern, usable and open-source database tool. Of course, I am trying to assure some financial backing, I realize, that it will be very hard, maybe not possible, to cover full development expenses with [Open collective sponsoring](https://opencollective.com/dbgate).
 
 My plans doesn't include anything like creating Professional or Ultimate paid editition, I want to try keep full DbGate as free and open source software. I can't promise, that I will maintain this software forever, but currently I am commited to make DbGate yet a bit better, even without proper financial backing.
 
@@ -49,3 +49,5 @@ You can see, what wrote about DbGate [Softpedia](https://www.softpedia.com/get/I
 # Feedback
 
 Any feedback is welcome, please create issue on [GitHub](https://github.com/dbgate/dbgate/issues/new/choose)
+
+{% include sponsor.html %}

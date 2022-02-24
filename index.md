@@ -22,3 +22,5 @@ download_button: true
 # Download
 
 {% include download.html %}
+
+{% include sponsor.html %}
