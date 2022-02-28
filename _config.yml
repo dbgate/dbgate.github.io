@@ -40,3 +40,5 @@ collections:
     output: true
   database: 
     output: true
+  docs: 
+    output: true

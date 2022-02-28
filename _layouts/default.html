@@ -1,4 +1,4 @@
-{% if page.features_left  %} 
+{% if page.features_left or page.docs_left %} 
     {% assign content_width = 'is-9-desktop is-12-tablet' %} 
 {% else %} 
     {% assign content_width = 'is-12' %} 
@@ -19,6 +19,11 @@
                 {% if page.features_left %}
                 <div class="column is-3-desktop is-hidden-tablet-only is-hidden-mobile mr-6">
                     {% include features-menu.html %}
+                </div>
+                {% endif %}
+                {% if page.docs_left %}
+                <div class="column is-3-desktop is-hidden-tablet-only is-hidden-mobile mr-6">
+                    {% include docs-menu.html %}
                 </div>
                 {% endif %}
                 <div class="column {{ content_width }}">

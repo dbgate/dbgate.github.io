@@ -1,0 +1,16 @@
+<aside class="menu">
+    <p class="menu-label">Features</p>
+
+    {% assign docs = site.docs | sort: "order", "last" %}
+    <ul class="menu-list">
+        {% for doc in docs %}
+        {% if feature.hide_menu != true %}
+        <li>
+            <a href="{{ doc.url }}" class="{% if doc.url == page.url %}is-active{% endif %}">
+                {{ doc.title }}
+            </a>
+        </li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+</aside>

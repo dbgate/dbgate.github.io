@@ -9,5 +9,4 @@
 - name: Blog
   link: /blog/
 - name: Docs
-  link: https://github.com/dbgate/dbgate/wiki
-  target: _blank
+  link: /docs/home.html
