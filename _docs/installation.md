@@ -21,4 +21,4 @@ For Mac, DMG installer is available. You must manually confirm validity, as Mac 
 Follow instucions on [docker hub](https://hub.docker.com/r/dbgate/dbgate)
 
 ## NPM
-You could also install web version of DbGate from NPM, please follow instructions on [npmjs](https://www.npmjs.com/package/dbgate)
+You could also install web version of DbGate from NPM, please follow instructions on [npmjs](https://www.npmjs.com/package/dbgate-serve)

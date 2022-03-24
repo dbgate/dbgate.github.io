@@ -51,7 +51,7 @@
       link: https://hub.docker.com/r/dbgate/dbgate
     - text: NPM
       icon: fas fa-external-link-alt
-      link: https://www.npmjs.com/package/dbgate
+      link: https://www.npmjs.com/package/dbgate-serve
 - text: Source code
   icon: fas fa-code
   items:
