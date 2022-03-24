@@ -34,7 +34,7 @@ yo dbgate
 ```
 
 You have to answer 3 questions:
-- Plugin name, should start with dbgate-plugin-, eg. dbgate-plugin-mytheme
+- Plugin name, must start with dbgate-plugin-, eg. dbgate-plugin-mytheme
 - Plugin type, choose eg. "Light theme"
 - Package manager, choose npm or yarn, what you prefer. DbGate uses yarn.
 
