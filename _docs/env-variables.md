@@ -1,27 +1,25 @@
 ---
 layout: docs
-title: Configuration
+title: Environment variables
 order: 6
 docs_left: true
 hide_hero: true
 ---
 
-# Configuration
-When using DbGate as web server, it is useful to provide some configuration. You could run DbGate web without configuration, then default configuration will be used.
+# Environment variables
+Configuration via environment variables could be used in docker containers, also when using [npm package dbgate-serve](https://www.npmjs.com/package/dbgate-serve). NPM package supports .env files.
 
-
-
-## Environment variables
-Configuration via environment variables could be used in docker containers, also when using [npm package dbgate](https://www.npmjs.com/package/dbgate). NPM package supports .env files.
-
-
+## Web & permission configuration
 * WEB_ROOT - if you need to run DbGate in virtual subdirectory (eg. for value /dbadmin , dbgate will be accessible on localhost:3000/dbadmin )
-* LOGIN , PASSWORD - credentials for accessing web app
+* LOGIN , PASSWORD - credentials for accessing web app (obsolete, use LOGINS AND LOGIN_PASSWORD instead)
 * PERMISSIONS - list of comma separated permissions. See also permission list below
 * SHELL_CONNECTION - if true or 1, connections can be defined in shell scripts. Otherwise, only preconfigured connections are allowed. By default, this is not allowed for security reasons.
 * SHELL_SCRIPTING - if true or 1, custom JavaScript shell scripts are allowed. By default, this is not allowed for security reasons.
+* LOGINS - comma delimited list of aditional logins
+* LOGIN_PASSWORD_[login] - password for specified login
+* LOGIN_PERMISSIONS_[login] - list of comma separated permissions for given login. See also permission list below
 
-### Connections configuration
+## Connections configuration
 You could configure connection list with env variables, than "Add connection: end "Edit connection" commands will be not available.
 
 * CONNECTIONS - list of preconfigured connection names, comma delimited. In following options, [connection id] is ID from this list
@@ -61,14 +59,14 @@ You could configure connection list with env variables, than "Add connection: en
 * SSL_KEY_FILE_[connection id] - path to key file
 * SSL_REJECT_UNAUTHORIZED_[connection id] - set value 1 or true if reject unauthorized connections
 
-### Permissions
+## Permissions
 By deault, all permissions are available. If you use \~ prefix, permission is revoked.
 
-#### Examples
+### Examples
 * ~*, widgets/database - all permissions are revoked, only database widget is visible
 * ~widgets/*, widgets/database - all widget permissions are revoked, only database widget is visible
 
-#### Permission list
+### Permission list
 * settings/change - allows change settings
 * plugins/install - allows install plugins
 * widgets/[widget_name] - if not granted, widget is hidden. Widget is strip on left side. Available widgets:
