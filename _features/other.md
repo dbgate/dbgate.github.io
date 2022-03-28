@@ -3,7 +3,7 @@ title: Other
 subtitle: ER diagrams, dark theme, charts, table structure viewer. Configurable keyboard shortcuts
 layout: feature
 icon: chart.svg
-order: 10
+order: 11
 features_left: true
 ---
 
