@@ -11,4 +11,4 @@ isClient: 1
 download_button: true
 ---
 
-{% include client.html name='PostgreSQL' %}
+{% include client.html name='PostgreSQL' sql='1' %}

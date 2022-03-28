@@ -11,4 +11,4 @@ isClient: 1
 download_button: true
 ---
 
-{% include client.html name='CockroachDB' %}
+{% include client.html name='CockroachDB' sql='1' %}

@@ -11,4 +11,4 @@ isClient: 1
 download_button: true
 ---
 
-{% include client.html name='MariaDB' %}
+{% include client.html name='MariaDB' sql='1' %}

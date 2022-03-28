@@ -11,4 +11,4 @@ isClient: 1
 download_button: true
 ---
 
-{% include client.html name='Amazon Redshift' %}
+{% include client.html name='Amazon Redshift' sql='1' %}

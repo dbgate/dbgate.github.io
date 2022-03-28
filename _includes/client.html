@@ -16,23 +16,32 @@ when started from Docker container.
     {% if include.skipSsh != '1' %}
     <li>Connect to multiple databases, directly or through SSH tunnel</li>
     {% endif %}
+    {% if include.sql == '1' or include.mongo == '1' %}
     <li>Browse or edit data in your tables or views, filter by column value</li>
     <li>Master/detail views, quick view lookup tables</li>
-    {% if include.nosql != '1' %}
+    {% endif %}
+    {% if include.sql == '1' %}
     <li>{{include.name}} editor - edit SQL queries with auto-complete suggestions or use query designer</li>
     <li>Form view for comfortable work with tables with many columns</li>
     <li>Schema editor - edit tables, indexes, and other databas eobjects (views, procedures, functions)</li>
     <li>Compare, synchronize and deploy DB models</li>
     {% endif %}
-    {% if include.nosql == '1' %}
+    {% if include.mongo == '1' %}
     <li>MongoDB JavaScript editor, execute MongoDB script (with NodeJs syntax)</li>
     <li>JSON view on collections</li>
     {% endif %}
+    {% if include.sql == '1' or include.mongo == '1' %}
     <li>Export and import from/to CSV, JSON or Excel. Use JavaScript scripting support</li>
     <li>Archives - backup your data in JSON files on local filesystem (or on DbGate server, when using web application)
     </li>
     <li>Light and dark theme</li>
     <li>Charts, export chart to HTML page</li>
+    {% endif %}
+    {% if include.redis == '1' %}
+    <li>View keys in tree</li>
+    <li>Execute Redis script</li>
+    <li>Generate script from key or from namespace</li>
+    {% endif %}
     <li>Configurable keyboard shortcuts</li>
 </ul>
 
@@ -46,5 +55,5 @@ when started from Docker container.
     <li>Stable and robust. Critical error in one database driver must not influence stability of the app</li>
     <li>Prepared for big databases - never load full table or {{include.name}} query result into memory, use streams everywhere
     </li>
-    <li>Scriptable, using dbgate <a href='https://www.npmjs.com/package/dbgate-api'>nodejs packages</a></li>
+    <li>Scriptable, using dbgate <a href='https://www.npmjs.com/search?q=keywords:dbgate'>nodejs packages</a></li>
 </ul>

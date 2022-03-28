@@ -11,4 +11,4 @@ isClient: 1
 download_button: true
 ---
 
-{% include client.html name='SQL Server' isMssql='1' %}
+{% include client.html name='SQL Server' isMssql='1' sql='1' %}

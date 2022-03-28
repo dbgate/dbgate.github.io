@@ -11,4 +11,4 @@ isClient: 1
 download_button: true
 ---
 
-{% include client.html name='SQLite' skipSsh='1' isSqlite='1' %}
+{% include client.html name='SQLite' skipSsh='1' isSqlite='1' sql='1' %}
