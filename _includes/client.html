@@ -45,6 +45,7 @@ when started from Docker container.
     <li>View keys in tree</li>
     <li>Execute Redis script</li>
     <li>Generate script from key or from namespace</li>
+    <li>Support all basic redis types, stream type included</li>
     {% endif %}
     <li>Configurable keyboard shortcuts</li>
 </ul>
@@ -57,7 +58,18 @@ when started from Docker container.
     </li>
     <li>Should runs everywhere - Windows, Linux, Mac, web browser, maybe also mobile web in future</li>
     <li>Stable and robust. Critical error in one database driver must not influence stability of the app</li>
+    {% if include.redis == '1' %}
+    <li>Prepared for big databases - don't use "evil" KEYS commands, use cursors for loading keys and key (eg. list, hash) items</li>
+    {% else %}
     <li>Prepared for big databases - never load full table or {{include.name}} query result into memory, use streams everywhere
     </li>
-    <li>Scriptable, using dbgate <a href='https://www.npmjs.com/search?q=keywords:dbgate'>nodejs packages</a></li>
+    {% endif %}
+    <li>Scriptable, using dbgate <a href='https://www.npmjs.com/search?q=keywords:dbgate' target="_blank">nodejs packages</a></li>
 </ul>
+
+{% if include.online_demo %}
+<h2>Try it online</h2>
+<p>
+You could try DbGate also without installing, use our <a href="https://demo.dbgate.org" target="_blank">demo application</a>
+</p>
+{% endif %}

@@ -11,4 +11,4 @@ isClient: 1
 download_button: true
 ---
 
-{% include client.html name='MySQL' sql='1' %}
+{% include client.html name='MySQL' sql='1' online_demo='1' %}
