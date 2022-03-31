@@ -11,4 +11,4 @@ isClient: 1
 download_button: true
 ---
 
-{% include client.html name='Redis' redis='1' %}
+{% include client.html name='Redis' redis='1' screenshot='redis.png' %}

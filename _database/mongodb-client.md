@@ -11,4 +11,4 @@ isClient: 1
 download_button: true
 ---
 
-{% include client.html name='MongoDB' mongo='1' %}
+{% include client.html name='MongoDB' mongo='1' screenshot='mongosave.png' %}

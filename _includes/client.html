@@ -1,7 +1,11 @@
 DbGate for {{include.name}} is free and open source database manager for Linux, Windows and MacOS. Also runs in Web browser,
 when started from Docker container.
 
+{% if include.screenshot %}
+<img src="/assets/screenshots/{{include.screenshot}}" />
+{% else %}
 {% include carousel.html %}
+{% endif %}
 
 <h2>{{include.name}} Database Manager Features</h2>
 
