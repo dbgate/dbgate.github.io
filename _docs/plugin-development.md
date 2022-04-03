@@ -61,3 +61,12 @@ yarn plugout
 
 ## Publish plugin
 Plugin is normal NPM package, you could publish it to NPM repository. After publishing, it will be available for all DbGate users in "Plugins" widget.
+
+## Plugin icon
+Each plugin is represented with icon in extension list. NPM doesn't support icons for NPM packages, so icon could be in description field in package.json file with following syntax:
+
+```
+    "description": "Any description ![icon](https://link_to_icon.svg)",
+```
+
+If you use yeoman generator, it will help you with this a little.
