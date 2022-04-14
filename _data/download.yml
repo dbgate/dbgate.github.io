@@ -36,12 +36,13 @@
   items:
     - text: Installer
       icon: fa fa-download
+      platform: Apple+Intel
       link: https://github.com/dbgate/dbgate/releases/latest/download/dbgate-latest.dmg
       onClick: showMacDownloadInfo()
     - text: Installer
       icon: fa fa-download
-      platform: arm64
-      link: https://github.com/dbgate/dbgate/releases/latest/download/dbgate-latest-arm64.dmg
+      platform: Intel
+      link: https://github.com/dbgate/dbgate/releases/latest/download/dbgate-latest-64.dmg
       onClick: showMacDownloadInfo()
 - text: Web
   icon: fas fa-globe

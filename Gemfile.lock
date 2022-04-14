@@ -57,6 +57,11 @@ GEM
     rouge (3.26.0)
     safe_yaml (1.0.5)
     sass (3.7.4)
+      sass-listen (~> 4.0.0)
+    sass-listen (4.0.0)
+      rb-fsevent (~> 0.9, >= 0.9.4)
+      rb-inotify (~> 0.9, >= 0.9.7)
+    webrick (1.7.0)
 
 PLATFORMS
   ruby
@@ -68,6 +73,7 @@ DEPENDENCIES
   jekyll-seo-tag
   jekyll-sitemap
   kramdown-parser-gfm
+  webrick (~> 1.7)
 
 BUNDLED WITH
    2.1.2
