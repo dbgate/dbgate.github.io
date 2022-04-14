@@ -38,12 +38,12 @@
       icon: fa fa-download
       platform: Apple+Intel
       link: https://github.com/dbgate/dbgate/releases/latest/download/dbgate-latest.dmg
-      onClick: showMacDownloadInfo()
+      # onClick: showMacDownloadInfo()
     - text: Installer
       icon: fa fa-download
       platform: Intel
       link: https://github.com/dbgate/dbgate/releases/latest/download/dbgate-latest-64.dmg
-      onClick: showMacDownloadInfo()
+      # onClick: showMacDownloadInfo()
 - text: Web
   icon: fas fa-globe
   items:
