@@ -1,5 +1,5 @@
 ---
-title: Query Editor, Designer and SQL Generator
+title: SQL Editor, Query Designer and SQL Generator
 subtitle: Edit SQL queries with auto-complete suggestions or use query designer
 icon: sql.svg
 layout: feature
@@ -11,7 +11,7 @@ order: 3
 - Syntax highlighting
 - Code completion
 - Join wizard - add SQL joins, when you are master of SQL language, but you don't remember all of those tables, which must be joined together
-![Join wizard](/assets/fragments/joinwizard.png)
+![Join wizard](/assets/fragments/joinwizaßrd.png)
 
 - SQL formatter
 - Save to "Saved queries" tab, or save to disk
