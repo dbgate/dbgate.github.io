@@ -14,10 +14,10 @@ DbGate offers NDJSON/JSON lines viewer, with interesting tool set .
 ![NDJSON](/assets/screenshots/ndjson.png)
 
 ## Filtering data
-You can directly type filtering expression (eg. substring, which is searched in column). Or you can use menu, which helps you to create filtering expreesion, if you want to use something less obvious.
+You can directly type filtering expression (eg. substring, which is searched in column). Or you can use menu, which helps you to create filtering expreesion, if you want to use something less obvious. Also you can filter by choosing values from underlying data set, as you now from MS Excel.
 
 ## Expanding nested objects
-If your NDJSON contains nested objects, you could expand it into datagrid with more columns.
+If your NDJSON contains nested objects (or even arrays), you could expand it into datagrid with more columns.
 
 ## Browsing nested arrays
 If your NDJSON contains nested arrays, it is possible to open second data grid, which allows comfortable work with nested data.
