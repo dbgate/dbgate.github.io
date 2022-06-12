@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Plugin development
-order: 7
+order: 8
 docs_left: true
 hide_hero: true
 ---
