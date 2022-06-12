@@ -1,6 +1,6 @@
 ---
 title: Other
-subtitle: ER diagrams, dark theme, charts, table structure viewer. Configurable keyboard shortcuts
+subtitle: ER diagrams, dark theme, charts, maps. Configurable keyboard shortcuts
 layout: feature
 icon: chart.svg
 order: 11
@@ -36,6 +36,15 @@ Example of diagram export is [here](/assets/diagram.html)
   * Pie
   * Polar area
 * Customize chart colors
+
+## Maps
+* Visualise geographic data on map
+* Supported map sources:
+  - MySQL: All spatial columns
+  - MSSQL: GEOGRAPHY columns
+  - PostGIS: GEOGRAPHY columns
+  - All data sources: coordinates stored in latitude/longitude columns
+
 
 ## Other
 * **Archive folders** - save your data locally. For this storage, JSON lines format is used (the same, as Mongo uses for collections backups)

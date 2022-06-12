@@ -38,12 +38,12 @@
     description: Charts
   - src: darkmode.png
     description: Dark mode
-  - src: structure.png
-    description: View table structure
   - src: commandpalette.png
     description: Command palette
   - src: keyboard.png
     description: Configure keyboard shortcuts
+  - src: map.png
+    description: Show points on map
 - feature: database
   items:
   - src: connection.png
@@ -64,3 +64,5 @@
     description: Foreign key editor
   - src: dbcompare.png
     description: Database compare tool
+  - src: structure.png
+    description: View table structure
