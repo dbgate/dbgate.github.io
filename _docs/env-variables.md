@@ -65,6 +65,7 @@ By deault, all permissions are available. If you use \~ prefix, permission is re
 ### Examples
 * ~*, widgets/database - all permissions are revoked, only database widget is visible
 * ~widgets/*, widgets/database - all widget permissions are revoked, only database widget is visible
+* ~/connections/*, connections/con1 - all connections except from con1 are hidden and disabled
 
 ### Permission list
 * settings/change - allows change settings
@@ -81,3 +82,4 @@ By deault, all permissions are available. If you use \~ prefix, permission is re
 * files/[folder]/write - write files to given folder
 * apps/write - save to apps content
 * archive/write - save to archive content
+* connections/[connection_id] - allow to see and use defined connection
