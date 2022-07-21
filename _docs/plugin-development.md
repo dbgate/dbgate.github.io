@@ -70,3 +70,17 @@ Each plugin is represented with icon in extension list. NPM doesn't support icon
 ```
 
 If you use yeoman generator, it will help you with this a little.
+
+## Create database driver plugin
+Creating driver plugin is very similar to create, only you select "Database driver plugin". After `yarn plugin` you should be able to define connection using your new driver and see dummy database list and table list.
+
+You could create simple driver with basic functionality very quickly, more complex features could be implemented later.
+
+Creating driver could consist of following steps:
+* find appropriate nodejs package (driver). Choose pure JavaScript package if possible. Native packages are big complication, this native package must be added to DbGate distribution, also you could expect probles with build on different platforms. On the other side, pure JavaScript packages works normally without problems on all platforms, without need of change DbGate.
+* define fields for connection in frontend/driver.js, function showConnectionField
+* implement connect function in backend/driver.js 
+* implement getVersion function in backend/driver.js (optional, but when done, now you can test connection with "Test" button on connection tab)
+* implement _rynAnalysis method in backend/Analyser.js class. This method should return database structure.
+* implement query method in backend/driver.js. After this, you should be able to view table list and browse table data
+* implement other methods. Please use other driver plugins for inspiration, the most typical plugin is probably PostgreSQL plugin, https://github.com/dbgate/dbgate/tree/master/plugins/dbgate-plugin-postgres
