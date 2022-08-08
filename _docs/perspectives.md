@@ -36,6 +36,6 @@ As you could see, there are lot of Genre rows without aby track matching search 
 <img src='/assets/docs/parentrows2.png' />
 
 # Define custom joins
-Perspectives works very well with foreign keys. But also when you have DB without foreign keys, you could use this feature. It is possible to define custom join with any condition. You could even define custom join to other database (which could be on different DB server, event with different underlying database engine). 
+Perspectives works very well with foreign keys. But also when you have DB without foreign keys, you could use this feature. It is possible to define custom join with any condition. You could even define custom join to other database (which could be on different DB server, even with different underlying database engine). 
 
 <img src='/assets/docs/customjoin.png' />
