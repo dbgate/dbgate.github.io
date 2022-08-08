@@ -17,6 +17,9 @@ Perspectives can easily join data together, and show groups.
 Perspectives could be created from SQL tables and views (MongoDB collections are not yet supported, but this support is planned).
 Use context menu of table/view, "Open perspective".
 
+<img src='/assets/docs/perspective-create.png' />
+
+DbGate opens simple perspective, with only one column displayed. This column is choosed by heuristic algorithm, to be the best representation of the whole row.
 # Customize perspective
 You could define, which columns are available in view. Also you could add referenced data to view. Use expand button for browsing references tree.
 
