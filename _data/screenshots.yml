@@ -10,6 +10,8 @@
     description: Free table editor with macro preview
   - src: macros.png
     description: Macros in table data editor
+  - src: perspective1.png
+    description: Perspective with nested data
 - feature: sqledit
   items:
   - src: query.png

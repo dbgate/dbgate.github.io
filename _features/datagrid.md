@@ -1,6 +1,6 @@
 ---
 title: Data Editor
-subtitle: Browse or edit data in your tables or views, filter by column value
+subtitle: Browse or edit data in your tables or views, filter by column value.
 layout: feature
 icon: table.svg
 order: 2
@@ -29,6 +29,11 @@ Often you could come across very wide tables, with plenty of columns. When you n
 DbGate supports also table data editing. None of changes are saved to database immediately, at first you edit table data in similar way as  in Excel, when you are finished, you will press Ctrl+S (or use command in context menu), and after confirming, changes are saved to database.
 
 ![Tabs](/assets/fragments/savechange.png)
+
+## Perspectives
+Perspectives allow to explore complex relational data in very convenient and intuitive way. Perspective works very well with foreign keys, but when you have database without foreign keys, you could define custom joins and define relations, which you need for the perspective.
+
+It could even combine data from different databases or database servers into one report.
 
 ## Other features
 That's not all, DbGate has next amazing data view/edit features:
