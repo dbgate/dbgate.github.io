@@ -23,6 +23,7 @@ Data filters can used in many places in DbGate, but the most common place is fil
 Expression syntax depends on column data type
 
 ### Examples
+
 | Column type | Filter expression |  Description |
 |----------|-------------|------|
 | string | canada | column value contains text "canada" |
