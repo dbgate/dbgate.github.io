@@ -7,7 +7,7 @@ hide_hero: true
 ---
 
 # Perspectives
-Perspective is readonly view of complex nested data. It resembles reports, but perspectives are created simply by adding data to view, there is nothing like complex report designer.
+Perspective is readonly view of complex nested data. It resembles reports, but perspectives are created simply by adding data to view. You could use perspective desigher, which allows you to join data following other relations than foreign keys.
 
 Perspectives can easily join data together, and show groups.
 
@@ -36,6 +36,10 @@ As you could see, there are lot of Genre rows without aby track matching search 
 <img src='/assets/docs/parentrows2.png' />
 
 # Define custom joins
-Perspectives works very well with foreign keys. But also when you have DB without foreign keys, you could use this feature. It is possible to define custom join with any condition. You could even define custom join to other database (which could be on different DB server, even with different underlying database engine). 
+Perspectives works very well with foreign keys. But also when you have DB without foreign keys, you could use this feature. It is possible to define custom join with any condition. You could even define custom join to other database (which could be on different DB server, even with different underlying database engine).
 
 <img src='/assets/docs/customjoin.png' />
+
+You could also drag &amp; drop columns to create join relation.
+
+<img src='/assets/docs/customjoin2.png' />
