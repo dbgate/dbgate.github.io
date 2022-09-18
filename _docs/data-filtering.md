@@ -36,6 +36,7 @@ Expression syntax depends on column data type
 ### Common filters (for all data types)
 - NULL - column value is null
 - NOT NULL - column value is not null
+- {$$ is null} - SQL condition, written is {} braces. $$ is placeholder for filtered column
 
 ### Text filters
 Text compare is case insensitive.
