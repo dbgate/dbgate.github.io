@@ -18,3 +18,5 @@ There are a few ways in which you can make a donation:
 
 - Become a sponsor on [GitHub](https://github.com/sponsors/dbgate)
 - Become a sponsor / backer on [OpenCollective](https://opencollective.com/dbgate)
+
+If you want to help and you prefer another way than financial support, please check [contribution info](https://github.com/dbgate/dbgate#how-to-contribute) on GitHub
