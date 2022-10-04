@@ -58,7 +58,16 @@ You could configure connection list with env variables, than "Add connection: en
 * SSL_CERT_FILE_PASSWORD_[connection id] - certificate key file password
 * SSL_KEY_FILE_[connection id] - path to key file
 * SSL_REJECT_UNAUTHORIZED_[connection id] - set value 1 or true if reject unauthorized connections
-* SETTINGS_[settings key] - preconfigure settings value. Setting key could be listed from source codes, https://github.com/dbgate/dbgate/blob/master/packages/web/src/settings/SettingsModal.svelte , find string "name="/ If you need to define "true", use value "1". If you need "false", use empty string ("0" will not work)
+* SETTINGS_[settings key] - preconfigure settings value. Setting key could be listed from source codes, https://github.com/dbgate/dbgate/blob/master/packages/web/src/settings/
+* SOCKET_PATH_[connection id] - path to socket file, if connecting via socket
+* AUTH_TYPE_[connection id] - authentization type
+  * hostPort (default)
+  * socket - value is set implicitly, when settings SOCKET_PATH
+  * tedious - default portable authentization for MS SQL, using tedious driver
+  * sspi - Windows integrated authentization (Windows only, MS SQL), using native MSSQL driver
+  * sql - SQL authentization (Windows only, MS SQL), using native MSSQL driver
+
+SettingsModal.svelte , find string "name="/ If you need to define "true", use value "1". If you need "false", use empty string ("0" will not work)
 
 ## Permissions
 By deault, all permissions are available. If you use \~ prefix, permission is revoked.
