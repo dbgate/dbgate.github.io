@@ -5,7 +5,7 @@ layout: feature
 icon: table.svg
 order: 2
 features_left: true
-demo_url: https://demo.dbgate.org/#favorite=master-detail
+# demo_url: https://demo.dbgate.org/#favorite=master-detail
 ---
 
 DbGate has very powerful data browser and editor. It allows you to quickly find or modify, what you need, even when using complicated relations. In most cases, using data browser is far more efficient than typing query by hand or use query designer (but you can of course use all these variants in DbGate too).
