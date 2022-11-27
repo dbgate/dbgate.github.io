@@ -18,6 +18,26 @@ Configuration via environment variables could be used in docker containers, also
 * LOGINS - comma delimited list of aditional logins
 * LOGIN_PASSWORD_[login] - password for specified login
 * LOGIN_PERMISSIONS_[login] - list of comma separated permissions for given login. See also permission list below
+* TOKEN_LIFETIME - lifetime of access token. After this time, logged user will be redirected to login page. Default is 1d (means 1 day). Possible are values like 3h (3 hours), 10m (10 minutes), 2d (2 days)
+* SINGLE_CONNECTION - connection id. If defined, only this connection will be available (must be used with SINGLE_DATABASE)
+* SINGLE_DATABASE - database name, only this database will be available. (must be used with SINGLE_CONNECTION)
+
+## OAuth configuration
+* OAUTH_AUTH - authentication endpoint of OAuth protocol
+* OAUTH_TOKEN - token endpoint of OAuth protocol
+* OAUTH_LOGOUT - logout URL of OAuth provider. User will be redirected to this URL when he requests logging out
+* OAUTH_CLIENT_ID - client ID
+* OAUTH_CLIENT_SECRET - client secret
+* OAUTH_LOGIN_FIELD - field name from payload, which holds login name. For availabe fields, you could inspect dbgate log, payload sent from OAuth provider are logged to console. This login name is used eg. for configuring permissions. It is not neccessary login entered in OAuth.
+* OAUTH_ALLOWED_LOGINS - comma separator login names, which will be allowed to login. If not specified, all logins will be allowed to use DbGate app.
+
+## Active directory/LDAP configuration
+* AD_URL - URL of LDAP provider (eg ldap://domain.com)
+* AD_BASEDN - eg. dc=domain,dc=com
+* AD_USERNAME - username to active directory
+* AD_PASSWORD - password to acvtive directory
+* AD_ALLOWED_LOGINS - comma separator login names, which will be allowed to login. If not specified, all logins will be allowed to use DbGate app.
+
 
 ## Connections configuration
 You could configure connection list with env variables, than "Add connection: end "Edit connection" commands will be not available.
