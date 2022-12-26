@@ -11,9 +11,9 @@ features_left: true
 If you operate DbGate as web service for accessing your databases, you have several posibilities, how to configure authorization:
 - With public access without authorization (the same way as demo opp https://demo.dbgate.org/ is configured)
 - Authorization with user names and password defined in environment variables
-- Authorization agains Active Directory service
-- Authorization against OAuth2 provider (eg. Google, Facebook, Keycloak, event active directory offers OAuth2 authorization endpoints)
-- Authorization with database credentials agains database server
+- Authorization against Active Directory service
+- Authorization against OAuth2 provider (eg. Google, Facebook, Keycloak, ADFS)
+- Authorization with database credentials against database server
 
 Also you have some options, how to configure web access:
 - With predefined database connections in environment variables
