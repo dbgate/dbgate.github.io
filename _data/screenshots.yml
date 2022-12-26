@@ -78,7 +78,7 @@
     description: Database login
   - src: multi-db.png
     description: Multiple database, multiple connection layout
-  - src: multi-conn.png
+  - src: single-conn.png
     description: Multiple database, single connection layout
   - src: single-db.png
     description: Single DB layout
