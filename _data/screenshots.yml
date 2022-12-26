@@ -72,3 +72,13 @@
     description: Database compare tool
   - src: structure.png
     description: View table structure
+- feature: integration
+  items:
+  - src: db-login.png
+    description: Database login
+  - src: multi-db.png
+    description: Multiple database, multiple connection layout
+  - src: multi-conn.png
+    description: Multiple database, single connection layout
+  - src: single-db.png
+    description: Single DB layout

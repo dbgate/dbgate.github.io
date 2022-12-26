@@ -11,6 +11,9 @@ when started from Docker container.
 
 <ul>
     
+    {% if include.mongo == '1' %}
+    <li>Explore your MongoDB online in web browser or in downloaded app</li>
+    {% endif %}
     {% if include.isSqlite == '1' %}
     <li>Open SQLite files with drag & drop, with open-file dialog or as commandline parameter</li>
     {% endif %}
