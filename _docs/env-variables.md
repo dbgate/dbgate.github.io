@@ -48,6 +48,9 @@ You could configure connection list with env variables, than "Add connection: en
 * SERVER_[connection id] - server (host name) of connection.
 * USER_[connection id] - user name for DB connection.
 * PASSWORD_[connection id] - password for DB connection.
+* PASSWORD_MODE_[connection id] - determines whether password and user name is stored or must be filled in by used. One of following values:
+  * askPassword - DbGate asks for password when connecting
+  * askUser - DbGate asks for username and password
 * PORT_[connection id] - port for DB connection.
 * FILE_[connection id] - database file path (for SQLite).
 * URL_[connection id] - database URL (works for MongoDB, PostgreSQL, CockroachDb, Redshift).
