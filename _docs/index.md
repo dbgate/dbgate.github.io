@@ -6,7 +6,7 @@ docs_left: true
 hide_hero: true
 ---
 
-DbGate is cross-platform (no)SQL database client.
+DbGate is cross-platform SQL+noSQL database client.
 
 
 ## Main window

@@ -1,7 +1,7 @@
 ---
 title: DbGate
-headTitle: DbGate | Open Source (no)SQL Database Client
-subtitle: The Smartest (no)SQL Database Client
+headTitle: DbGate | Open Source SQL+noSQL Database Client
+subtitle: The Smartest SQL+noSQL Database Client
 layout: page
 callouts: home_callouts
 download_button: true
