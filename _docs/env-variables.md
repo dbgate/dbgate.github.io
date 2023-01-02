@@ -23,7 +23,7 @@ Configuration via environment variables could be used in docker containers, also
 * SINGLE_DATABASE - database name, only this database will be available. (must be used with SINGLE_CONNECTION)
 * BASIC_AUTH - if true or 1 and LOGIN or LOGINS are defined, baseic authentization of both web and API is used. Otherwise, login form and JWT token base API authentization is used. Basic authentization cannot be used for active directory/LDAP authentization.
 
-## OAuth configuration (BETA version only)
+## OAuth configuration (version only)
 * OAUTH_AUTH - authentication endpoint of OAuth protocol
 * OAUTH_TOKEN - token endpoint of OAuth protocol
 * OAUTH_LOGOUT - logout URL of OAuth provider. User will be redirected to this URL when he requests logging out
@@ -32,7 +32,7 @@ Configuration via environment variables could be used in docker containers, also
 * OAUTH_LOGIN_FIELD - field name from payload, which holds login name. For availabe fields, you could inspect dbgate log, payload sent from OAuth provider are logged to console. This login name is used eg. for configuring permissions. It is not neccessary login entered in OAuth.
 * OAUTH_ALLOWED_LOGINS - comma separator login names, which will be allowed to login. If not specified, all logins will be allowed to use DbGate app.
 
-## Active directory/LDAP configuration (BETA version only)
+## Active directory/LDAP configuration (version only)
 * AD_URL - URL of LDAP provider (eg ldap://domain.com)
 * AD_BASEDN - eg. dc=domain,dc=com
 * AD_USERNAME - username to active directory
