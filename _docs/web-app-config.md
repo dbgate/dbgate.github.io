@@ -87,7 +87,10 @@ OAUTH_LOGOUT=https://keycloak.company.com/realms/dbgate/protocol/openid-connect/
 OAUTH_CLIENT_ID=dbgate
 OAUTH_CLIENT_SECRET=xxxx
 OAUTH_LOGIN_FIELD=given_name
+OAUTH_SCOPE=email
 
 ```
+
+You have also to configure valid redirect URI parameters on Oauth provider (eg. Keycloak). It should be base address, on which DbGate is running, with trailing slash (eg. "https://dbgate.test.com/")
 
 <img src='/assets/screenshots/multi-db.png' />

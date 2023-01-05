@@ -29,8 +29,9 @@ Configuration via environment variables could be used in docker containers, also
 * OAUTH_LOGOUT - logout URL of OAuth provider. User will be redirected to this URL when he requests logging out
 * OAUTH_CLIENT_ID - client ID
 * OAUTH_CLIENT_SECRET - client secret
-* OAUTH_LOGIN_FIELD - field name from payload, which holds login name. For availabe fields, you could inspect dbgate log, payload sent from OAuth provider are logged to console. This login name is used eg. for configuring permissions. It is not neccessary login entered in OAuth.
+* OAUTH_LOGIN_FIELD - field name from payload, which holds login name. For availabe fields, you could inspect dbgate log, payload sent from OAuth provider are logged to console. This login name is used eg. for configuring permissions. It is not neccessary login entered in OAuth. If not specified, all users from OAuth provider will have the same login name.
 * OAUTH_ALLOWED_LOGINS - comma separator login names, which will be allowed to login. If not specified, all logins will be allowed to use DbGate app.
+* OAUTH_SCOPE - scope, which is sent to OAuth authorize and token endpoint
 
 ## Active directory/LDAP configuration (version only)
 * AD_URL - URL of LDAP provider (eg ldap://domain.com)
