@@ -23,6 +23,11 @@ Configuration via environment variables could be used in docker containers, also
 * SINGLE_DATABASE - database name, only this database will be available. (must be used with SINGLE_CONNECTION)
 * BASIC_AUTH - if true or 1 and LOGIN or LOGINS are defined, baseic authentization of both web and API is used. Otherwise, login form and JWT token base API authentization is used. Basic authentization cannot be used for active directory/LDAP authentization.
 
+## Logging configuration
+* LOG_LEVEL - all messages with this log level or bigger will be logged. One of values trace, debug, info, warn, error, fatal. Default is info
+* FILE_LOG_LEVEL - log level for logging into log file. For file logging, this has bigger priority than LOG_LEVEL
+* CONSOLE_LOG_LEVEL - log level for logging into log file. For console logging, this has bigger priority than LOG_LEVEL
+
 ## OAuth configuration (version only)
 * OAUTH_AUTH - authentication endpoint of OAuth protocol
 * OAUTH_TOKEN - token endpoint of OAuth protocol
