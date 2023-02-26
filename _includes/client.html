@@ -1,3 +1,7 @@
+{% if include.experimental %}
+<i>Support for {{include.name}} is still in experimental status, some features could not work. It is not recomended to use it for production environments.</i>
+{% endif %}
+
 DbGate for {{include.name}} is free and open source database manager for Linux, Windows and MacOS. Also runs in Web browser,
 when started from Docker container.
 
