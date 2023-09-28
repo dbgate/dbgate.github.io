@@ -8,7 +8,7 @@ Thank you for considering to support DbGate.
 
 DbGate is an MIT-licensed open source project, it has no commercial version.
 
-Currectly I am developing DbGate 1 working-day per week + some weekends and evenings. My current goal is to support develop of 1 MD/week.
+Currectly I am developing DbGate only in my free time. My current goal is to support develop of 1 MD/week.
 
 There are lot of improvements to be implemented and lot of [bugs](https://github.com/dbgate/dbgate/issues) to be fixed, by supporting DbGate you will help to achieve this goal.
 
