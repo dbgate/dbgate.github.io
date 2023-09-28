@@ -41,4 +41,14 @@
   <script src="/assets/js/swiper-bundle.min.js"></script>
 
   <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function(event) { 
+      const encEmail = "amVuYXNvZnQuZGF0YWJhc2VAZ21haWwuY29t";
+      const form = document.getElementById("supportContact");
+      const mail = atob(encEmail);
+      form.setAttribute("href", "mailto:".concat(mail));
+      form.innerText = mail;
+    });
+  </script>
 </head>
