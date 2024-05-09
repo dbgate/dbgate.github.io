@@ -88,6 +88,7 @@ You could configure connection list with env variables, than "Add connection: en
 * SSL_CERT_FILE_PASSWORD_[connection id] - certificate key file password
 * SSL_KEY_FILE_[connection id] - path to key file
 * SSL_REJECT_UNAUTHORIZED_[connection id] - set value 1 or true if reject unauthorized connections
+* SSL_TRUST_CERTIFICATE_[connection id] - set value 1 or true for setting trustServerCertificate MSSQL option
 * SETTINGS_[settings key] - preconfigure settings value. Setting key could be listed from source codes, https://github.com/dbgate/dbgate/blob/master/packages/web/src/settings/
 * SOCKET_PATH_[connection id] - path to socket file, if connecting via socket
 * AUTH_TYPE_[connection id] - authentization type
