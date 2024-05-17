@@ -24,6 +24,8 @@ exclude:
 
 # include: 
 #   - node_modules/node_modules/bulma-carousel/dist
+include:
+  - ".well-known"
 
 livereload: true
 
