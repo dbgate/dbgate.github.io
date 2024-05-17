@@ -31,6 +31,9 @@
       icon: fa fa-download
       link: https://github.com/dbgate/dbgate/releases/latest/download/dbgate-latest-armv7l.AppImage
       platform: armv7l
+    - text: Flathub
+      icon: fas fa-external-link-alt
+      link: https://flathub.org/apps/org.dbgate.DbGate
 - text: MacOS
   icon: fab fa-apple
   items:
