@@ -38,6 +38,8 @@ Configuration via environment variables could be used in docker containers, also
 * OAUTH_ALLOWED_LOGINS - comma separator login names, which will be allowed to login. If not specified, all logins will be allowed to use DbGate app.
 * OAUTH_SCOPE - scope, which is sent to OAuth authorize and token endpoint
 * OAUTH_PERMISSIONS - set 1 or true, when set, LOGIN_PERMISSIONS_[login] could be used also for users authentificated by OAuth
+* OAUTH_GROUP_FIELD - field in payload from OAuth which denotes group
+* OAUTH_ALLOWED_GROUPS - comma separated alowed group names
 
 ## Active directory/LDAP configuration (version only)
 * AD_URL - URL of LDAP provider (eg ldap://domain.com)
