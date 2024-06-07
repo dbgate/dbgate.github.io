@@ -12,12 +12,12 @@ features_left: true
   * [MySQL](/database/mysql-client.html)
   * [PostgreSQL](/database/postgresql-client.html)
   * [Microsoft SQL Server](/database/mssql-client.html) (supports Windows authentication)
+  * [Oracle](/database/oracle-client.html)
   * [MongoDB](/database/mongodb-client.html)
   * [SQLite](/database/sqlite-client.html) (quick open files with drag & drop)
   * [Amazon Redshift](/database/redshift-client.html)
   * [CockroachDB](/database/cockroachdb-client.html)
   * [MariaDB](/database/mariadb-client.html)
-  * [Oracle](/database/oracle-client.html) (experimental)
 * Support connection over SSH tunnel, for accessing production databases behind firewall
 * Support SSL
 * Allows work with multiple database connections simultaneously

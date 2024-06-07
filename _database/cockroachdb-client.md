@@ -6,7 +6,7 @@ name: CockroachDB
 layout: feature
 features_left: true
 icon: cockroachdb.svg
-order: 8
+order: 9
 isClient: 1
 download_button: true
 ---

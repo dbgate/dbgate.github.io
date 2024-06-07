@@ -6,7 +6,7 @@ name: Redis
 layout: feature
 features_left: true
 icon: redis.svg
-order: 9
+order: 10
 isClient: 1
 download_button: true
 ---

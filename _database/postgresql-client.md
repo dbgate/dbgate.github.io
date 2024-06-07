@@ -6,7 +6,7 @@ name: PostgreSQL
 layout: feature
 features_left: true
 icon: postgres.svg
-order: 3
+order: 4
 isClient: 1
 download_button: true
 ---

@@ -6,7 +6,7 @@ name: Redshift
 layout: feature
 features_left: true
 icon: redshift.svg
-order: 7
+order: 8
 isClient: 1
 download_button: true
 ---

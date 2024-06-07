@@ -23,7 +23,7 @@ My name is [Jan Prochazka](https://github.com/janproch/), I live in Czech Republ
 # Motivation
 I started to create database manager tools in 2010. All my tools develope3d in past were under commercial license.
 
-My first DB admin tool was [DatAdmin](http://www.jenasoft.com/datadmin), which has larger supported database set (eg. Oracle or Effiproz).
+My first DB admin tool was [DatAdmin](http://www.jenasoft.com/datadmin).
 
 The second generation was [DbMouse](http://www.jenasoft.com/dbmouse), which was designed only to work only with MS SQL Server. It comes with idea of open-source db engine (called DbShell) implementing low-level operations on DB, on the DbShell gear was built GUI under classical commercial license. It was also rebranded as [SQL database studio](https://sqldatabasestudio.com/), it had slighly better sales performance than DbMouse, but it was not enough.
 

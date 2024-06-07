@@ -6,7 +6,7 @@ name: MariaDB
 layout: feature
 features_left: true
 icon: mariadb.svg
-order: 6
+order: 7
 isClient: 1
 download_button: true
 ---
