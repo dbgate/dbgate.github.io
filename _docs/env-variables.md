@@ -62,7 +62,8 @@ You could configure connection list with env variables, than "Add connection: en
   * askUser - DbGate asks for username and password
 * PORT_[connection id] - port for DB connection.
 * FILE_[connection id] - database file path (for SQLite).
-* URL_[connection id] - database URL (works for MongoDB, PostgreSQL, CockroachDb, Redshift).
+* URL_[connection id] - database URL (works for MongoDB, PostgreSQL, CockroachDb, Redshift, Oracle).
+* SERVICE_NAME_[connection id] - Oracle service name.
 * DATABASE_[connection id] - default database name.
 * READONLY_[connection id] - connect in readonly mode
 * ENGINE_[connection id] - engine of connection (**mandatory**, name of engine with plugin), one of:
