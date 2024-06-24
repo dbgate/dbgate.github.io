@@ -28,7 +28,7 @@ Configuration via environment variables could be used in docker containers, also
 * FILE_LOG_LEVEL - log level for logging into log file. For file logging, this has bigger priority than LOG_LEVEL
 * CONSOLE_LOG_LEVEL - log level for logging into log file. For console logging, this has bigger priority than LOG_LEVEL
 
-## OAuth configuration (version only)
+## OAuth configuration (web version only) - deprecated
 * OAUTH_AUTH - authentication endpoint of OAuth protocol
 * OAUTH_TOKEN - token endpoint of OAuth protocol
 * OAUTH_LOGOUT - logout URL of OAuth provider. User will be redirected to this URL when he requests logging out
@@ -41,7 +41,7 @@ Configuration via environment variables could be used in docker containers, also
 * OAUTH_GROUP_FIELD - field in payload from OAuth which denotes group
 * OAUTH_ALLOWED_GROUPS - comma separated alowed group names
 
-## Active directory/LDAP configuration (version only)
+## Active directory/LDAP configuration (web version only) - deprecated
 * AD_URL - URL of LDAP provider (eg ldap://domain.com)
 * AD_BASEDN - eg. dc=domain,dc=com
 * AD_USERNAME - username to active directory
@@ -104,15 +104,15 @@ You could configure connection list with env variables, than "Add connection: en
 
 SettingsModal.svelte , find string "name="/ If you need to define "true", use value "1". If you need "false", use empty string ("0" will not work)
 
-## Permissions
+## Permissions - deprecated
 By deault, all permissions are available. If you use \~ prefix, permission is revoked.
 
-### Examples
+### Examples - deprecated
 * ~*, widgets/database - all permissions are revoked, only database widget is visible
 * ~widgets/*, widgets/database - all widget permissions are revoked, only database widget is visible
 * ~/connections/*, connections/con1 - all connections except from con1 are hidden and disabled
 
-### Permission list
+### Permission list - deprecated
 * settings/change - allows change settings
 * plugins/install - allows install plugins
 * widgets/[widget_name] - if not granted, widget is hidden. Widget is strip on left side. Available widgets:
