@@ -6,9 +6,7 @@ permalink: /support/
 
 Thank you for considering to support DbGate.
 
-DbGate is an MIT-licensed open source project, it has no commercial version.
-
-Currectly I am developing DbGate only in my free time. My current goal is to support develop of 1 MD/week.
+DbGate is an GPL-3.0 licensed open source project.
 
 There are lot of improvements to be implemented and lot of [bugs](https://github.com/dbgate/dbgate/issues) to be fixed, by supporting DbGate you will help to achieve this goal.
 

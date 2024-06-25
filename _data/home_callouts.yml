@@ -1,7 +1,7 @@
 style: is-light
 items:
   - title: Free and open source
-    subtitle: Free to use for any purpose, source code available under MIT license
+    subtitle: Free to use for any purpose, source code available under GPL-3.0 license
     icon: fas fa-copy
   - title: Cross database
     subtitle: MySQL, PostgreSQL, MS SQL, Oracle, MongoDB, SQLite and others
