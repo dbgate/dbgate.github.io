@@ -3,7 +3,7 @@ layout: post
 title: Announcement about commercial version
 categories: development
 date: 2024-06-26 20:00:00
-punblished: false
+published: false
 ---
 
 I am glad to announce new release a partnership between me (Jan Prochazka, DbGate developer) and [Sprinx Systems](https://sprinx.com/en/) company. Sprinx is czech software company, focused on custom development, e-commerce and bussiness systems with 28 years of experiences with IT systems. 
