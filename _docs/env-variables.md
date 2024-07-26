@@ -11,24 +11,24 @@ Configuration via environment variables could be used in docker containers, also
 
 ## Web & permission configuration
 * WEB_ROOT - if you need to run DbGate in virtual subdirectory (eg. for value /dbadmin , dbgate will be accessible on localhost:3000/dbadmin )
-* LOGIN , PASSWORD - credentials for accessing web app (obsolete, use LOGINS AND LOGIN_PASSWORD instead)
+* LOGIN , PASSWORD - credentials for accessing web app
 * PERMISSIONS - list of comma separated permissions. See also permission list below
 * SHELL_CONNECTION - if true or 1, connections can be defined in shell scripts. Otherwise, only preconfigured connections are allowed. By default, this is not allowed for security reasons.
 * SHELL_SCRIPTING - if true or 1, custom JavaScript shell scripts are allowed. By default, this is not allowed for security reasons.
-* LOGINS - comma delimited list of aditional logins
+* *LOGINS - comma delimited list of aditional logins - deprecated*
 * LOGIN_PASSWORD_[login] - password for specified login
 * LOGIN_PERMISSIONS_[login] - list of comma separated permissions for given login. See also permission list below
 * TOKEN_LIFETIME - lifetime of access token. After this time, logged user will be redirected to login page. Default is 1d (means 1 day). Possible are values like 3h (3 hours), 10m (10 minutes), 2d (2 days)
 * SINGLE_CONNECTION - connection id. If defined, only this connection will be available (must be used with SINGLE_DATABASE)
 * SINGLE_DATABASE - database name, only this database will be available. (must be used with SINGLE_CONNECTION)
-* BASIC_AUTH - if true or 1 and LOGIN or LOGINS are defined, baseic authentization of both web and API is used. Otherwise, login form and JWT token base API authentization is used. Basic authentization cannot be used for active directory/LDAP authentization.
+* BASIC_AUTH - if true or 1 , basic authentization of both web and API is used. Otherwise, login form and JWT token base API authentization is used. Basic authentization cannot be used for OAuth authentization.
 
 ## Logging configuration
 * LOG_LEVEL - all messages with this log level or bigger will be logged. One of values trace, debug, info, warn, error, fatal. Default is info
 * FILE_LOG_LEVEL - log level for logging into log file. For file logging, this has bigger priority than LOG_LEVEL
 * CONSOLE_LOG_LEVEL - log level for logging into log file. For console logging, this has bigger priority than LOG_LEVEL
 
-## OAuth configuration (web version only) - deprecated
+## OAuth configuration (web version only)
 * OAUTH_AUTH - authentication endpoint of OAuth protocol
 * OAUTH_TOKEN - token endpoint of OAuth protocol
 * OAUTH_LOGOUT - logout URL of OAuth provider. User will be redirected to this URL when he requests logging out
@@ -37,17 +37,16 @@ Configuration via environment variables could be used in docker containers, also
 * OAUTH_LOGIN_FIELD - field name from payload, which holds login name. For availabe fields, you could inspect dbgate log, payload sent from OAuth provider are logged to console. This login name is used eg. for configuring permissions. It is not neccessary login entered in OAuth. If not specified, all users from OAuth provider will have the same login name.
 * OAUTH_ALLOWED_LOGINS - comma separator login names, which will be allowed to login. If not specified, all logins will be allowed to use DbGate app.
 * OAUTH_SCOPE - scope, which is sent to OAuth authorize and token endpoint
-* OAUTH_PERMISSIONS - set 1 or true, when set, LOGIN_PERMISSIONS_[login] could be used also for users authentificated by OAuth
+* *OAUTH_PERMISSIONS - set 1 or true, when set, LOGIN_PERMISSIONS_[login] could be used also for users authentificated by OAuth - deprecated*
 * OAUTH_GROUP_FIELD - field in payload from OAuth which denotes group
 * OAUTH_ALLOWED_GROUPS - comma separated alowed group names
 
-## Active directory/LDAP configuration (web version only) - deprecated
+## Active directory/LDAP configuration (web version only)
 * AD_URL - URL of LDAP provider (eg ldap://domain.com)
 * AD_BASEDN - eg. dc=domain,dc=com
 * AD_USERNAME - username to active directory
 * AD_PASSWORD - password to acvtive directory
 * AD_ALLOWED_LOGINS - comma separator login names, which will be allowed to login. If not specified, all logins will be allowed to use DbGate app.
-
 
 ## Connections configuration
 You could configure connection list with env variables, than "Add connection: end "Edit connection" commands will be not available.
@@ -104,15 +103,15 @@ You could configure connection list with env variables, than "Add connection: en
 
 SettingsModal.svelte , find string "name="/ If you need to define "true", use value "1". If you need "false", use empty string ("0" will not work)
 
-## Permissions - deprecated
+## Permissions
 By deault, all permissions are available. If you use \~ prefix, permission is revoked.
 
-### Examples - deprecated
+### Examples
 * ~*, widgets/database - all permissions are revoked, only database widget is visible
 * ~widgets/*, widgets/database - all widget permissions are revoked, only database widget is visible
 * ~/connections/*, connections/con1 - all connections except from con1 are hidden and disabled
 
-### Permission list - deprecated
+### Permission list
 * settings/change - allows change settings
 * plugins/install - allows install plugins
 * widgets/[widget_name] - if not granted, widget is hidden. Widget is strip on left side. Available widgets:
