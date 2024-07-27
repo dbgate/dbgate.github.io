@@ -104,12 +104,12 @@ You could configure connection list with env variables, than "Add connection: en
 SettingsModal.svelte , find string "name="/ If you need to define "true", use value "1". If you need "false", use empty string ("0" will not work)
 
 ## Permissions
-By deault, all permissions are available. If you use \~ prefix, permission is revoked.
+By default, all permissions are available. If you use \~ prefix, permission is revoked.
 
 ### Examples
 * ~*, widgets/database - all permissions are revoked, only database widget is visible
 * ~widgets/*, widgets/database - all widget permissions are revoked, only database widget is visible
-* ~/connections/*, connections/con1 - all connections except from con1 are hidden and disabled
+* ~connections/*, connections/con1 - all connections except from con1 are hidden and disabled
 
 ### Permission list
 * settings/change - allows change settings
