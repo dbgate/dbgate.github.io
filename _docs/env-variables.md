@@ -74,6 +74,7 @@ You could configure connection list with env variables, than "Add connection: en
   * redshift@dbgate-plugin-postgres - Amazon Redshift
   * sqlite@dbgate-plugin-sqlite - SQLite
   * mongo@dbgate-plugin-mongo - MongoDB
+  * redis@dbgate-plugin-redis - Redis
 * USE_SSH_[connection id] - set value 1 or true, when SSH tunnel should be used
 * SSH_HOST_[connection id] - SSH host name
 * SSH_PORT_[connection id] - SSH port number
