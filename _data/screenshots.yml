@@ -82,3 +82,11 @@
     description: Multiple database, single connection layout
   - src: single-db.png
     description: Single DB layout
+- feature: administration
+  items:
+  - src: connadmin.png
+    description: Connection administration (Premium)
+  - src: roleadmin.png
+    description: Role administration (Premium)
+  - src: authadmin.png
+    description: Athentization administration (Premium)
