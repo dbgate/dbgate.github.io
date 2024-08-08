@@ -25,3 +25,4 @@ You could also configure several authentication methods:
   - Active Directory - web app is authorized against AD / LDAP, optionally logged user must be defined in user administration
   - OAuth 2.0 - web app is authorized with OAuth 2.0 protocol (eg. Google, Facebook, Keycloak), optionally logged user and (or) group must be defined in user (role) administration  
   - Database login - user selects DB server at first and then authentication against DB server is performed (with user/password or Microsoft Entra Azure auth)
+  - Microsoft Entra (former Azure Active Directory) - usable for Azure SQL databases

@@ -9,6 +9,22 @@ hide_hero: true
 # Environment variables
 Configuration via environment variables could be used in docker containers, also when using [npm package dbgate-serve](https://www.npmjs.com/package/dbgate-serve). NPM package supports .env files.
 
+## Premium vs Community edition
+Community (FOSS) edition uses only configuration from environment variables listed below. Premium edition uses database storage for settings with [administration UI](/features/administration.html), only few basic settings are configured with env variables.
+
+## Premium edition configuration
+These variables are available only in Premium edition.
+  * STORAGE_SERVER - database server (host name) for storage database
+  * STORAGE_USER - database user
+  * STORAGE_PASSWORD - database password
+  * STORAGE_PORT - database port
+  * STORAGE_DATABASE - storage database name
+  * STORAGE_ENGINE - engine used for storage database, eg  mysql@dbgate-plugin-mysql
+  * ADMIN_PASSWORD - password for administrator. Administration is available on URL https://dbgate_url/?page=admin
+  * DBGATE_LICENSE - license key for DbGate. Please contact sales@dbgate.eu for trial license.
+
+The following variables are available in both Community and Premium edition. However, in Premium edition, prefered way is to use storage database and use administration UI for configuration.
+
 ## Web & permission configuration
 * WEB_ROOT - if you need to run DbGate in virtual subdirectory (eg. for value /dbadmin , dbgate will be accessible on localhost:3000/dbadmin )
 * LOGIN , PASSWORD - credentials for accessing web app
