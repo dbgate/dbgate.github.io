@@ -117,6 +117,9 @@ You could configure connection list with env variables, than "Add connection: en
   * tedious - default portable authentization for MS SQL, using tedious driver
   * sspi - Windows integrated authentization (Windows only, MS SQL), using native MSSQL driver
   * sql - SQL authentization (Windows only, MS SQL), using native MSSQL driver
+* ALLOWED_DATABASES_[connection id] - allowed database names for specified connnection, pipe ("|") delimited
+* ALLOWED_DATABASES_REGEX_[connection id] - regular expression for allowed database names for specified connnection
+
 
 SettingsModal.svelte , find string "name="/ If you need to define "true", use value "1". If you need "false", use empty string ("0" will not work)
 
