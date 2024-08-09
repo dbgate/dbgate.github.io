@@ -17,12 +17,12 @@ Premium edition is build on top of DbGate Community edition and brings guarantee
 {% include pricing.html %}
 
 ## Adminstration
-Administrator could configure more authentication methods, administer users, roles and connections.
+Administrator could configure more authentication methods, administer users, roles and connections. You can learn more about administration in [documentation](/docs/admin.html)
 
 <img src='/assets/screenshots/authadmin.png' />
 
 ## Try DbGate Premium
-You could use [Docker image](https://hub.docker.com/r/dbgate/dbgate-premium). Please contact us at sales@dbgate.eu for trial license key.
+You could use this [Docker image](https://hub.docker.com/r/dbgate/dbgate-premium). Please contact us at sales@dbgate.eu for trial license key.
 
 
 <p>
