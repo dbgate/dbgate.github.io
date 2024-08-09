@@ -9,6 +9,8 @@ hide_hero: true
 # Administration
 Administration tool is available only on Premium edition. In Community edition, please use configuration using [environment variables](/docs/env-variables.html)
 
+Administration tool is still in development, so there could be some backward incompatible changes till September release.
+
 Administration page is available on URL https://your_dbgate_instance/?page=admin . You have to set environment variable ADMIN_PASSWORD to enable this administration.
 All configuration from administration is saved into database, use [STORAGE_xxx environment  variables](/docs/env-variables.html) for configure this.
 
