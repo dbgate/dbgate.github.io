@@ -1,0 +1,13 @@
+<div class="columns is-multiline is-centered">
+    {% for pricing in site.data.pricing %}
+    <div class="column is-4 has-text-centered">
+        <div class="has-text-white has-background-info m-4 p-2">{{ pricing.name }}</div>
+
+        {% for feature in pricing.features %}
+        <div>{{ feature }}</div>
+        {% endfor %}
+
+        <div class="has-text-info">{{ pricing.price }}</div>
+    </div>
+    {% endfor %}
+</div>

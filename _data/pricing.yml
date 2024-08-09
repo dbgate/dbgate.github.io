@@ -1,0 +1,27 @@
+- name: Community
+  features:
+    - 1 user
+    - unlimited connections
+    - community support
+  price: 0,- EUR / month
+
+- name: Premium
+  features:
+    - 1 user
+    - unlimited connections
+    - community support
+    - cloud DB´s support
+    - premium support
+  price: 20,- EUR / month
+
+
+- name: Team Premium
+  features:
+    - 2+ users
+    - unlimited connections
+    - community support
+    - cloud DB´s support
+    - premium support
+    - administration interface
+    - external identity providers
+  price: 15,- EUR / user / month
