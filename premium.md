@@ -10,7 +10,7 @@ permalink: /premium/
 </p>
 
 # DbGate Premium
-Premium edition is build on top of DbGate Community edition and brings guaranteed support and some advanced enterprise functionality.
+Premium edition is build on top of DbGate Community edition and brings guaranteed support and some advanced enterprise functionality. DbGate Premium will be released on September 2024, however, early BETA release is available now.
 
 ## Pricing
 
