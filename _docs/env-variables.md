@@ -19,7 +19,7 @@ These variables are available only in Premium edition.
   * STORAGE_PASSWORD - database password
   * STORAGE_PORT - database port
   * STORAGE_DATABASE - storage database name
-  * STORAGE_ENGINE - engine used for storage database, eg  mysql@dbgate-plugin-mysql
+  * STORAGE_ENGINE - engine used for storage database. Currectly, only  MySQL and MariaDB (STORAGE_ENGINE=mysql@dbgate-plugin-mysql) is supported
   * ADMIN_PASSWORD - password for administrator. Administration is available on URL https://dbgate_url/?page=admin
   * DBGATE_LICENSE - license key for DbGate. Please contact sales@dbgate.eu for trial license.
 
