@@ -147,3 +147,28 @@ By default, all permissions are available. If you use \~ prefix, permission is r
 * apps/write - save to apps content
 * archive/write - save to archive content
 * connections/[connection_id] - allow to see and use defined connection
+* internal-storage = access to internal storage (Premium)
+* admin/auth - Administration - Authentication tab (Premium)
+* admin/connections - Administration - Connections tab (Premium)
+* admin/users - Administration - Users tab (Premium)
+* admin/roles - Administration - Roles tab (Premium)
+* dbops/sql-template/* - SQL templates (eg. SQL: CREATE TABLE, SQL: SELECT)
+* dbops/sql-generator - SQL generator
+* dbops/sql-dump/import - Import SQL dump
+* dbops/sql-dump/export - Export SQL dump
+* dbops/query - Run SQL query
+* dbops/import - Import data
+* dbops/export - Export data
+* dbops/charts - View charts
+* dbops/profiler - Database profiler
+* dbops/createdb - Create database
+* dbops/dropdb - Drop database
+* dbops/model/view - View database model (diagrams, JSON)
+* dbops/model/edit - Edit database model (create/change tables, views, etc.)
+* dbops/model/compare - Compare database models
+* dbops/table/rename - Rename table
+* dbops/table/truncate - Truncate table
+* dbops/table/backup - Create table backup
+
+
+
