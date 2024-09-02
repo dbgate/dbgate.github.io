@@ -54,8 +54,9 @@
     - text: NPM
       icon: fas fa-external-link-alt
       link: https://www.npmjs.com/package/dbgate-serve
-- text: Web - Premium edition
+- text: Web - Premium
   icon: fas fa-globe
+  buttonclass: premium-button
   items:
     - text: Docker
       icon: fab fa-docker

@@ -1,7 +1,7 @@
 {% for system in site.data.download %}
 <div class="columns mb-6 ">
     <div class="column is-3">
-        <button class="button is-medium is-static mr-5 is-fullwidth">
+        <button class="button is-medium is-static mr-5 is-fullwidth {{system.buttonclass}}">
             <i class="{{system.icon}} mr-2"></i>
             {{system.text}}
         </button>
