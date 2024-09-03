@@ -11,4 +11,4 @@ isClient: 1
 download_button: true
 ---
 
-{% include client.html name='CosmosDB' %}
+{% include client.html skipSsh='1' name='CosmosDB' %}
