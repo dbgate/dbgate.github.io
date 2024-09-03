@@ -8,6 +8,7 @@ features_left: true
 icon: cosmosdb.svg
 order: 11
 isClient: 1
+isPremium: 1
 download_button: true
 ---
 
