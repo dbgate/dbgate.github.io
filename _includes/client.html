@@ -65,7 +65,9 @@ when started from Docker container.
 <h2>DbGate for {{include.name}} goals</h2>
 
 <ul>
+    {% if include.isPremium != '1' %}
     <li>Complete free and open source, no paid enterprise editions</li>
+    {% endif %}
     <li>Simple, but powerful. One toolbar, no milions of icons without description. Heavy use of context menu
     </li>
     <li>Runs everywhere - Windows, Linux, Mac, web browser, maybe also mobile web in future</li>
