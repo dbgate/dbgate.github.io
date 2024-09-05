@@ -31,7 +31,6 @@ The following variables are available in both Community and Premium edition. How
 * PERMISSIONS - list of comma separated permissions. See also permission list below
 * SHELL_CONNECTION - if true or 1, connections can be defined in shell scripts. Otherwise, only preconfigured connections are allowed. By default, this is not allowed for security reasons.
 * SHELL_SCRIPTING - if true or 1, custom JavaScript shell scripts are allowed. By default, this is not allowed for security reasons.
-* *LOGINS - comma delimited list of aditional logins - deprecated*
 * LOGIN_PASSWORD_[login] - password for specified login
 * LOGIN_PERMISSIONS_[login] - list of comma separated permissions for given login. See also permission list below
 * TOKEN_LIFETIME - lifetime of access token. After this time, logged user will be redirected to login page. Default is 1d (means 1 day). Possible are values like 3h (3 hours), 10m (10 minutes), 2d (2 days)
@@ -53,7 +52,6 @@ The following variables are available in both Community and Premium edition. How
 * OAUTH_LOGIN_FIELD - field name from payload, which holds login name. For availabe fields, you could inspect dbgate log, payload sent from OAuth provider are logged to console. This login name is used eg. for configuring permissions. It is not neccessary login entered in OAuth. If not specified, all users from OAuth provider will have the same login name.
 * OAUTH_ALLOWED_LOGINS - comma separator login names, which will be allowed to login. If not specified, all logins will be allowed to use DbGate app.
 * OAUTH_SCOPE - scope, which is sent to OAuth authorize and token endpoint
-* *OAUTH_PERMISSIONS - set 1 or true, when set, LOGIN_PERMISSIONS_[login] could be used also for users authentificated by OAuth - deprecated*
 * OAUTH_GROUP_FIELD - field in payload from OAuth which denotes group
 * OAUTH_ALLOWED_GROUPS - comma separated alowed group names
 
@@ -169,6 +167,4 @@ By default, all permissions are available. If you use \~ prefix, permission is r
 * dbops/table/rename - Rename table
 * dbops/table/truncate - Truncate table
 * dbops/table/backup - Create table backup
-
-
 
