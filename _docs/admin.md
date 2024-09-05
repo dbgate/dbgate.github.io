@@ -11,7 +11,7 @@ Administration tool is available only on Premium edition. In Community edition, 
 
 Administration tool is still in development, so there could be some backward incompatible changes till September release.
 
-Administration page is available on URL https://your_dbgate_instance/?page=admin . You have to set environment variable ADMIN_PASSWORD to enable this administration. You could then add administration permission to different user with different authentication method, but at first, you have to open this admin page.
+Administration page is available on URL https://your_dbgate_instance/admin.html . You have to set environment variable ADMIN_PASSWORD to enable this administration. You could then add administration permission to different user with different authentication method, but at first, you have to open this admin page.
 
 All configuration from administration is saved into database, use [STORAGE_xxx environment  variables](/docs/env-variables.html) for configure this.
 
@@ -43,7 +43,7 @@ Passwords are used only for "Local" authentication methods. But all methods with
 Configure roles, role permissions and role-connection mapping. You could create custom roles and assign users to them, so that permissions and linked connections are shared between all users assigned to this role.
 
 There are some predefined roles:
-- superadmin - role used for admin page, https://your_dbgate_instance/?page=admin
+- superadmin - role used for admin page, https://your_dbgate_instance/admin.html
 - logged-user - role used for all logged users. You could ovveride permission for specific users
 - anonymous-user - role used for users logged with "Anonymous" authentication method
 
