@@ -1,5 +1,6 @@
 - name: Download
   link: /download/
+  link2: /download-community/
 - name: Features
   features: true
 - name: Screenshots
