@@ -22,7 +22,7 @@ Administrator could configure more authentication methods, administer users, rol
 <img src='/assets/screenshots/authadmin.png' />
 
 ## Try DbGate Premium
-You could use this [Docker image](https://hub.docker.com/r/dbgate/dbgate-premium). Please contact us at sales@dbgate.eu for trial license key.
+You could use this [Docker image](https://hub.docker.com/r/dbgate/dbgate-premium). 30 day trial is available.
 
 
 <p>
