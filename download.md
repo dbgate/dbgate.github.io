@@ -10,6 +10,6 @@ permalink: /download/
 **Premium edition** \| [Community edition](/download-community) 
 
 
-30-day trial is available. 
+30-day trial period is available. 
 
 {% include download.html items=site.data.download_premium  %}
