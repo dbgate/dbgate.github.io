@@ -11,16 +11,15 @@ download_button: true
 
 {% include features.html %}
 
-# Latest News
-{% assign post = site.posts.first %}
-{% include post-card.html %}
-
-
 # Works with Databases
 {% include databases.html %}
 
-# Download
+# Latest News
+{% for post in site.posts limit:3 %}
+<div class="column is-12">
+  {% include post-card.html %}
+</div>
+{% endfor %}
 
-{% include download.html %}
 
 {% include sponsor.html %}
