@@ -1,20 +1,17 @@
 - text: Windows
   icon: fab fa-windows
-  buttonclass: premium-button
   items:
     - text: Installer
       icon: fa fa-download
       link: https://github.com/dbgate/dbgate/releases/latest/download/dbgate-premium-latest.exe
 - text: Linux
   icon: fab fa-linux
-  buttonclass: premium-button
   items:
     - text: AppImage
       icon: fa fa-download
       link: https://github.com/dbgate/dbgate/releases/latest/download/dbgate-premium-latest.AppImage
 - text: MacOS
   icon: fab fa-apple
-  buttonclass: premium-button
   items:
     - text: Installer
       icon: fa fa-download
@@ -26,7 +23,6 @@
       link: https://github.com/dbgate/dbgate/releases/latest/download/dbgate-premium-latest-x64.dmg
 - text: Web
   icon: fas fa-globe
-  buttonclass: premium-button
   items:
     - text: Docker
       icon: fab fa-docker
