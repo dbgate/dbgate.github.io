@@ -1,13 +1,15 @@
 ---
-title: "Download"
-subtitle: Download binaries for Windows, Linux and Mac
+title: Download DbGate Premium edition
+subtitle: All what you need to work with databases - for Windows, Linux and Mac and Web
 layout: page
 permalink: /download/
 ---
 
 # Download
 
-Download most recent stable version of DbGate.  
-Older releases or BETA version could be found on [github releases](https://github.com/dbgate/dbgate/releases) page
+**Premium edition** \| [Community edition](/download-community) 
 
-{% include download.html %}
+
+30-day trial period is available. 
+
+{% include download.html items=site.data.download_premium  %}

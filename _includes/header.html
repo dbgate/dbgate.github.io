@@ -47,7 +47,7 @@
                 {% else %}
                 <a href="{{ item.link | relative_url }}"
                     target="{{ item.target }}"
-                    class="navbar-item {% if item.link == page.url %}is-active{% endif %}">{{ item.name }}</a>
+                    class="navbar-item {% if item.link == page.url or item.link2 == page.url %}is-active{% endif %}">{{ item.name }}</a>
                 {% endif %}
                 {% endfor %}
                 {% endif %}

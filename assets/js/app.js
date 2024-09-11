@@ -55,7 +55,14 @@ function getOS() {
 const currentOs = getOS();
 function getOsClass(className, os) {
   if (currentOs == os) {
-    return "." + className + "{ display: block; } ";
+    return "." + className + "{ display: inline-flex; } ";
+  }
+  return "." + className + "{ display: none; } ";
+}
+
+function getOtherOsClass(className) {
+  if (currentOs != "mac" && currentOs != "windows" && currentOs != "linux") {
+    return "." + className + "{ display: inline-flex; } ";
   }
   return "." + className + "{ display: none; } ";
 }
@@ -64,5 +71,6 @@ const style = document.createElement("style");
 style.innerHTML =
   getOsClass("is-mac", "mac") +
   getOsClass("is-windows", "windows") +
-  getOsClass("is-linux", "linux");
+  getOsClass("is-linux", "linux") +
+  getOtherOsClass("is-other-os");
 document.getElementsByTagName("head")[0].appendChild(style);

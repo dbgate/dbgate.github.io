@@ -1,0 +1,29 @@
+- text: Windows
+  icon: fab fa-windows
+  items:
+    - text: Installer
+      icon: fa fa-download
+      link: https://github.com/dbgate/dbgate/releases/latest/download/dbgate-premium-latest.exe
+- text: Linux
+  icon: fab fa-linux
+  items:
+    - text: AppImage
+      icon: fa fa-download
+      link: https://github.com/dbgate/dbgate/releases/latest/download/dbgate-premium-latest.AppImage
+- text: MacOS
+  icon: fab fa-apple
+  items:
+    - text: Installer
+      icon: fa fa-download
+      platform: Apple+Intel
+      link: https://github.com/dbgate/dbgate/releases/latest/download/dbgate-premium-latest.dmg
+    - text: Installer
+      icon: fa fa-download
+      platform: Intel
+      link: https://github.com/dbgate/dbgate/releases/latest/download/dbgate-premium-latest-x64.dmg
+- text: Web
+  icon: fas fa-globe
+  items:
+    - text: Docker
+      icon: fab fa-docker
+      link: https://hub.docker.com/r/dbgate/dbgate-premium
