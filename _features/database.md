@@ -18,7 +18,7 @@ features_left: true
   * [Amazon Redshift](/database/redshift-client.html)
   * [CockroachDB](/database/cockroachdb-client.html)
   * [MariaDB](/database/mariadb-client.html)
-  * [CosmosDB](/database/cosmosdb-client.html)
+  * [CosmosDB](/database/cosmosdb-client.html) (Premium)
 * Support connection over SSH tunnel, for accessing production databases behind firewall
 * Support SSL
 * Allows work with multiple database connections simultaneously
