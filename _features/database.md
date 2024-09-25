@@ -19,6 +19,7 @@ features_left: true
   * [CockroachDB](/database/cockroachdb-client.html)
   * [MariaDB](/database/mariadb-client.html)
   * [Azure CosmosDB](/database/cosmosdb-client.html) (Premium)
+  * [ClickHouse](/database/clickhouse-client.html)
 * Support connection over SSH tunnel, for accessing production databases behind firewall
 * Support SSL
 * Allows work with multiple database connections simultaneously
