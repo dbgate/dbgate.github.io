@@ -8,6 +8,10 @@
         {% endfor %}
 
         <div class="has-text-info">{{ pricing.price }}</div>
+
+        {% if pricing.purchaseLink %}
+        <a href="{{ pricing.purchaseLink }}" class="button is-info is-rounded mt-3">Purchase</a>
+        {% endif %}
     </div>
     {% endfor %}
 </div>

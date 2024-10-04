@@ -13,6 +13,7 @@
     - cloud DB´s support
     - premium support
   price: 20,- EUR / month
+  purchaseLink: https://auth.dbgate.eu/create-checkout-session-simple
 
 
 - name: Team Premium
