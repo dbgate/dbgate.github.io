@@ -21,7 +21,6 @@ Administrator could configure more authentication methods, administer users, rol
 
 <img src='/assets/screenshots/authadmin.png' />
 
-
 <p>
     <a href="https://dbgate.eu" target="_blank" class="button is-info is-medium">DbGate Premium web</a>
 </p>
