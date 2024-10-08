@@ -10,7 +10,7 @@ permalink: /premium/
 </p>
 
 # DbGate Premium
-Premium edition is build on top of DbGate Community edition and brings guaranteed support and some advanced enterprise functionality. The first release of DbGate Premium was released in September 2024, now is this product available both as downloadable application and [docker container](https://hub.docker.com/r/dbgate/dbgate-premium) for Team Premium web app.
+Premium edition is build on top of DbGate Community edition and brings guaranteed support and some advanced enterprise functionality. DbGate Premium is available both as downloadable application and [docker container](https://hub.docker.com/r/dbgate/dbgate-premium) for Team Premium web app. 30-day free-trial period is available.
 
 ## Pricing
 
@@ -20,9 +20,6 @@ Premium edition is build on top of DbGate Community edition and brings guarantee
 Administrator could configure more authentication methods, administer users, roles and connections. You can learn more about administration in [documentation](/docs/admin.html)
 
 <img src='/assets/screenshots/authadmin.png' />
-
-## Try DbGate Premium
-You could use this [Docker image](https://hub.docker.com/r/dbgate/dbgate-premium). 30-day trial period is available.
 
 
 <p>
