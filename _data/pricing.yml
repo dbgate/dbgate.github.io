@@ -4,6 +4,8 @@
     - unlimited connections
     - community support
   price: for free
+  purchaseLink: /download-community/
+  purchaseLinkText: Download
 
 - name: Premium
   features:
