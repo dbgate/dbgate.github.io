@@ -3,7 +3,7 @@
     - 1 user
     - unlimited connections
     - community support
-  price: 0,- EUR / month
+  price: for free
 
 - name: Premium
   features:
@@ -12,7 +12,7 @@
     - community support
     - cloud DB´s support
     - premium support
-  price: 20,- EUR / month
+  price: 238,- USD / year
   purchaseLink: https://auth.dbgate.eu/create-checkout-session-simple?source=web
 
 
@@ -25,4 +25,4 @@
     - premium support
     - administration interface
     - external identity providers
-  price: 15,- EUR / user / month
+  price: 152,- USD / user / year
