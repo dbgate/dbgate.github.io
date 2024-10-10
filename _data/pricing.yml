@@ -14,6 +14,7 @@
     - premium support
   price: 238,- USD / year
   purchaseLink: https://auth.dbgate.eu/create-checkout-session-simple?source=web
+  purchaseLinkText: Purchase
 
 
 - name: Team Premium
@@ -26,3 +27,5 @@
     - administration interface
     - external identity providers
   price: 152,- USD / user / year
+  purchaseLink: mailto:sales@dbgate.eu
+  purchaseLinkText: Contact us
