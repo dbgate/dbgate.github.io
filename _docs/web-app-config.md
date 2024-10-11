@@ -9,8 +9,19 @@ hide_hero: true
 There are lot of configuration layouts, which could be achieved with environment variables configuration.
 In this topic, sample configurations web app will be shown.
 
-## More database connections, public access
-This configuration is used in [DbGate demo app](https://demo.dbgate.org)
+## Use storage database and administration for settings (Premium)
+This configuration layout uses administration for configure database connections and users.
+```
+STORAGE_SERVER: mariadb
+STORAGE_USER: root
+STORAGE_PASSWORD: <Your password into database>
+STORAGE_PORT: 3306
+STORAGE_DATABASE: dbgate
+STORAGE_ENGINE: mysql@dbgate-plugin-mysql
+ADMIN_PASSWORD: <Admin password>
+```
+
+## More database connections, public access (Community/Premium)
 
 ```
 CONNECTIONS=mysql,postgres
@@ -32,7 +43,7 @@ ENGINE_postgres=postgres@dbgate-plugin-postgres
 
 <img src='/assets/screenshots/multi-db.png' />
 
-## Single server connection (multiple databases), authorize against DB server
+## Single server connection (multiple databases), authorize against DB server (Community/Premium)
 
 ```
 CONNECTIONS=mysql
@@ -46,7 +57,7 @@ PASSWORD_MODE_mysql=askUser
 
 <img src='/assets/screenshots/db-login.png' />
 
-## Connection to single MS SQL database in readonly mode, authorize against Active Directory
+## Connection to single MS SQL database in readonly mode, authorize against Active Directory (Community/Premium)
 
 ```
 AD_URL=ldap://company.com
@@ -69,7 +80,7 @@ READONLY_mssql=1
 
 <img src='/assets/screenshots/single-db.png' />
 
-## Connection to MySQL server, authorize against OAuth Keycloak server
+## Connection to MySQL server, authorize against OAuth Keycloak server (Community/Premium)
 
 ```
 CONNECTIONS=mysql
