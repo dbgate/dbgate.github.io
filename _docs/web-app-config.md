@@ -10,6 +10,7 @@ There are lot of configuration layouts, which could be achieved with environment
 In this topic, sample configurations web app will be shown.
 
 ## Use storage database and administration for settings (Premium)
+
 This configuration layout uses administration for configure database connections and users. All settings are stored into database configured with env variables. Please use [Premium](https://hub.docker.com/r/dbgate/dbgate-premium) docker container for this to work.
 ```
 STORAGE_SERVER: mariadb
@@ -21,8 +22,10 @@ STORAGE_ENGINE: mysql@dbgate-plugin-mysql
 ADMIN_PASSWORD: <Admin password>
 ```
 
-## More database connections, public access (Community/Premium)
+<img src='/assets/screenshots/authadmin.png' />
 
+## More database connections, public access (Community/Premium)
+This configuration is used in [DbGate demo app](https://demo.dbgate.org)
 ```
 CONNECTIONS=mysql,postgres
 
