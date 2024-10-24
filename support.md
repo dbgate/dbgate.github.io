@@ -19,6 +19,8 @@ There are a few ways in which you can make a donation:
 
 If you want to help and you prefer another way than financial support, please check [contribution info](https://github.com/dbgate/dbgate#how-to-contribute) on GitHub
 
+Or you can [share your experiences with DbGate](https://testimonial.to/dbgate) and help other users to decide to try DbGate.
+
 ## Premium edition
 
 You could also support DbGate project by ordering [Premium](/premium/) edition of DbGate. Besides suporting DbGate, you have will also e-mail support and enterprise features included.
