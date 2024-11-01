@@ -15,7 +15,7 @@ features_left: true
   * [Oracle](/database/oracle-client.html)
   * [MongoDB](/database/mongodb-client.html)
   * [SQLite](/database/sqlite-client.html) (quick open files with drag & drop)
-  * [Amazon Redshift](/database/redshift-client.html)
+  * [Amazon Redshift](/database/redshift-client.html) (Premium)
   * [CockroachDB](/database/cockroachdb-client.html)
   * [MariaDB](/database/mariadb-client.html)
   * [Azure CosmosDB](/database/cosmosdb-client.html) (Premium)
