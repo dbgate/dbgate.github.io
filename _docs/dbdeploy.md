@@ -6,6 +6,8 @@ docs_left: true
 hide_hero: true
 ---
 
+*Deploy functionality will be significantly changed in incoming release, this documentation is related to lastest BETA version*
+
 # Database deploy
 DbGate offers mechanism for automatic database deploy. While traditional way to achieve this uses migration SQL scripts, DbGate uses different way by default (migration scripts are also support). 
 You define DB model with YAML files describing table structure and list data, and SQL files describing views, stored procedures and functions. This model is deployed to database, comparing current structure with structure in model, create missing columns and tables abnd update view and procedure definitions. **No destructive actions** (which could lead to data loss) are performed, so when you remove column or table from model, it remains in database. If you rename column in model, new column with new name is created and old column remains in in database.
