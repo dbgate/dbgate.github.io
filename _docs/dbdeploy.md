@@ -8,7 +8,7 @@ hide_hero: true
 
 # Database deploy
 DbGate offers mechanism for automatic database deploy. While traditional way to achieve this uses migration SQL scripts, DbGate uses different way. 
-You define DB model with YAML files describing table structure and list data, and SQL files describing views, stored procedures and functions. This model is deployed to database, comparing current structure with structure in model, create missing columns and tables abnd update view and procedure definitions. **No destructive actions** (which could lead to data loss) are performed, so when you remove column or table from model, it remains in database. If you rename column, new column with new name is created and old column remains in in database.
+You define DB model with YAML files describing table structure and list data, and SQL files describing views, stored procedures and functions. This model is deployed to database, comparing current structure with structure in model, create missing columns and tables abnd update view and procedure definitions. **No destructive actions** (which could lead to data loss) are performed, so when you remove column or table from model, it remains in database. If you rename column in model, new column with new name is created and old column remains in in database.
 
 Deploy could be invoked from command line (using node scripts), or from DbGate GUI. You could also use compare DB function for visual compare differences between model and real database.
 
@@ -47,18 +47,20 @@ data: # static data (only for list tables)
     Title: Predefined static album
 ```
 
-- Names are defined without schema name, one model descibes one schema
+- Names are defined without schema name, one model describes one schema
 - Default values are defined as SQL expressions, so if you want to define string, you must use 'single quotes'
 - You could define static data for table
 
 ### Usage in DbGate GUI
 
-- In connections, database context menu, choose "Export DB model - experimental". DB model is saved into archives
+- In connections, database context menu, choose "Export DB model" (Premium only). DB model is saved into directory, or into file. If you plan to use Deploy functionality, choose Data archive or Folder (YAML + SQL) destinations.
 - Open archives widget, you should see downloaded model
 - In model context menu, you could do some operations with model:
     - Generate deploy DB SQL - compares current database (you could see it in statusbar) and generates SQL script, which deploys changes from model into creent database
     - Shell: Deploy DB - generates JavaScript shell, which could be used for deploying DB
-    - Compare with {current database} - graphically compares current database with model
+    - Compare with {current database} - graphically compares current database with model (Premium only)
+
+<img src='/assets/screenshots/exportdbmodel.png' />
 
 <img src='/assets/docs/archive-model.png' />
 
