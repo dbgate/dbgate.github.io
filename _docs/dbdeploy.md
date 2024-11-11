@@ -7,7 +7,7 @@ hide_hero: true
 ---
 
 # Database deploy
-DbGate offers mechanism for automatic database deploy. While traditional way to achieve this uses migration SQL scripts, DbGate uses different way. 
+DbGate offers mechanism for automatic database deploy. While traditional way to achieve this uses migration SQL scripts, DbGate uses different way by default (migration scripts are also support). 
 You define DB model with YAML files describing table structure and list data, and SQL files describing views, stored procedures and functions. This model is deployed to database, comparing current structure with structure in model, create missing columns and tables abnd update view and procedure definitions. **No destructive actions** (which could lead to data loss) are performed, so when you remove column or table from model, it remains in database. If you rename column in model, new column with new name is created and old column remains in in database.
 
 Deploy could be invoked from command line (using node scripts), or from DbGate GUI. You could also use compare DB function for visual compare differences between model and real database.
@@ -50,6 +50,20 @@ data: # static data (only for list tables)
 - Names are defined without schema name, one model describes one schema
 - Default values are defined as SQL expressions, so if you want to define string, you must use 'single quotes'
 - You could define static data for table
+
+### Use of migration scripts
+You could combine more traditional migration scripts with DbGate specific deploy management, some more specific objects could be created with migration scripts.
+Scripts types are determined by file extension, directory layout is the user's choice, DbGate is not affected by this.
+
+The following script extensions are supported:
+- `*.predeploy.sql` - scripts are run before every deploy process
+- `*.install.sql` - scripts are executed only if they are different from previous deploy
+- `*.uninstall.sql` - this script is paired to `.install.sql` file, is executed before new version of `*.install.sql` file is executed
+- `*.once.sql` - scripts are executed only once
+- `*.postdeploy.sql` - scripts are run before every deploy process
+
+DbGate uses table `dbgate_deploy_journal` for tracking of deploy scripts deployed to database. This table is create automatically, when you deploy any project with at least one migration script.
+
 
 ### Usage in DbGate GUI
 
