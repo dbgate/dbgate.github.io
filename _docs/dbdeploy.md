@@ -60,7 +60,7 @@ data: # static data (only for list tables)
     - Shell: Deploy DB - generates JavaScript shell, which could be used for deploying DB
     - Compare with {current database} - graphically compares current database with model (Premium only)
 
-<img src='/assets/screenshots/exportdbmodel.png' />
+<img src='/assets/docs/exportdbmodel.png' />
 
 <img src='/assets/docs/archive-model.png' />
 
