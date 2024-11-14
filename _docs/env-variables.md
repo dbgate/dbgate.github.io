@@ -19,7 +19,11 @@ These variables are available only in Premium edition.
   * STORAGE_PASSWORD - database password
   * STORAGE_PORT - database port
   * STORAGE_DATABASE - storage database name
-  * STORAGE_ENGINE - engine used for storage database. Currectly, MySQL, PostgreSQL, SQL Server and Oracle (STORAGE_ENGINE=mysql@dbgate-plugin-mysql | postgres@dbgate-plugin-postgres | mssql@dbgate-plugin-mssql | oracle@dbgate-plugin-oracle) are supported
+  * STORAGE_ENGINE - engine used for storage database. Currectly, MySQL, PostgreSQL, SQL Server and Oracle. Use one of following values:
+    * mysql@dbgate-plugin-mysql
+    * postgres@dbgate-plugin-postgres
+    * mssql@dbgate-plugin-mssql
+    * oracle@dbgate-plugin-oracle
   * ADMIN_PASSWORD - password for administrator. Administration is available on URL https://dbgate_url/admin.html
   * DBGATE_LICENSE - license key for DbGate. Please contact sales@dbgate.eu for trial license.
 
