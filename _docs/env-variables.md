@@ -66,6 +66,9 @@ The following variables are available in both Community and Premium edition. How
 * AD_PASSWORD - password to acvtive directory
 * AD_ALLOWED_LOGINS - comma separator login names, which will be allowed to login. If not specified, all logins will be allowed to use DbGate app.
 
+## Oracle client configuration  
+* ORACLE_INSTANT_CLIENT - path to [Oracle instant client](https://www.oracle.com/cz/database/technologies/instant-client/downloads.html)
+
 ## Connections configuration
 You could configure connection list with env variables, than "Add connection: end "Edit connection" commands will be not available.
 
