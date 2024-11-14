@@ -27,3 +27,6 @@
     - text: Docker
       icon: fab fa-docker
       link: https://hub.docker.com/r/dbgate/dbgate-premium
+    - text: NPM
+      icon: fas fa-external-link-alt
+      link: https://www.npmjs.com/package/dbgate-serve-premium
