@@ -24,8 +24,8 @@ These variables are available only in Premium edition.
     * postgres@dbgate-plugin-postgres
     * mssql@dbgate-plugin-mssql
     * oracle@dbgate-plugin-oracle
-  * ADMIN_PASSWORD - password for administrator. Administration is available on URL https://dbgate_url/admin.html
-  * DBGATE_LICENSE - license key for DbGate. Please contact sales@dbgate.eu for trial license.
+  * ADMIN_PASSWORD - password for administrator. Administration is available on URL https://dbgate_url/admin.html. If password is not defined and STORAGE_DATABASE is defined, DbGate asks for admin password at first.
+  * DBGATE_LICENSE - license key for DbGate. Please contact sales@dbgate.eu for trial license. If not defined, DbGate Premium asks for license at first. DbGate Community doesn't require any license.
 
 The following variables are available in both Community and Premium edition. However, in Premium edition, prefered way is to use storage database and use administration UI for configuration.
 
