@@ -17,7 +17,7 @@ These variables are available only in Premium edition.
   * STORAGE_SERVER - database server (host name) for storage database
   * STORAGE_USER - database user
   * STORAGE_PASSWORD - database password
-  * STORAGE_PORT - database port
+  * STORAGE_PORT - database port (optional. of omitted, default port for selected database engine is used)
   * STORAGE_DATABASE - storage database name
   * STORAGE_ENGINE - engine used for storage database. Currectly, MySQL, PostgreSQL, SQL Server and Oracle. Use one of following values:
     * mysql@dbgate-plugin-mysql
