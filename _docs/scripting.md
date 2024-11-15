@@ -16,6 +16,16 @@ Typically you will need these packages:
 
 [Documentation of API](https://dbgate.org/docs/apidoc.html)
 
+## Generating script from DbGate
+Lot of DbGate features are internally implemented with scripting interface. So when you are using some export-like operation, there is somewhere "Generate Shell script" button, which generates nodejs script for you.
+
+If you want to use nodejs script for exporting, you could use following steps:
+* Right click on table, choose "Export/Export advanced"
+* Configure your export
+* Choose "Generate script" at the bottom toolbar. Now you could edit the JS script and run it inside DbGate
+* If you choose "Copy nodejs script" at the button toolbar, you could save this to js file and run it with [nodejs](https://nodejs.org/) installed on your computer
+
+
 ## Example 1 - export table to CSV
 This is simple example, we are using `tableReader` from `dbgateApi` package and writer from `dbgate-plugin-csv`. Also `dbgate-plugin-mysql` is required, because we are using engine parameter `mysql@dbgate-plugin-mysql`
 ```js
