@@ -26,6 +26,15 @@ hide_hero: true
 <dt><a href="#jsonLinesWriter">jsonLinesWriter(options)</a> ⇒ <code><a href="#writerType">Promise.&lt;writerType&gt;</a></code></dt>
 <dd><p>Returns writer object for <a href="#copyStream">copyStream</a> function. This writer object writes data to JSONL file. JSONL format - text file, every line is JSON encoded row, used eg. by MongoDB.</p>
 </dd>
+<dt><a href="#jsonReader">jsonReader(options)</a> ⇒ <code><a href="#readerType">Promise.&lt;readerType&gt;</a></code></dt>
+<dd><p>Creates reader object for JSON file for <a href="#copyStream">copyStream</a> function.</p>
+</dd>
+<dt><a href="#jsonWriter">jsonWriter(options)</a> ⇒ <code><a href="#writerType">Promise.&lt;writerType&gt;</a></code></dt>
+<dd><p>Returns writer object for <a href="#copyStream">copyStream</a> function. This writer object writes data to JSON file.</p>
+</dd>
+<dt><a href="#queryReader">queryReader(options)</a> ⇒ <code><a href="#readerType">Promise.&lt;readerType&gt;</a></code></dt>
+<dd><p>Returns reader object for <a href="#copyStream">copyStream</a> function. This reader object reads data from query.</p>
+</dd>
 <dt><a href="#tableReader">tableReader(options)</a> ⇒ <code><a href="#readerType">Promise.&lt;readerType&gt;</a></code></dt>
 <dd><p>Creates reader object for <a href="#copyStream">copyStream</a> function. This reader object reads data from table or view.</p>
 </dd>
@@ -124,6 +133,57 @@ Returns writer object for [copyStream](#copyStream) function. This writer object
 | options.fileName | <code>string</code> | file name |
 | [options.encoding] | <code>string</code> | encoding of the file |
 | [options.header] | <code>boolean</code> | whether to write header. Header is JSON describing source table structure. Header is specific to DbGate, if you want eg. to import data to MongoDB, you should not write header. |
+
+<a name="jsonReader"></a>
+
+## jsonReader(options) ⇒ [<code>Promise.&lt;readerType&gt;</code>](#readerType)
+Creates reader object for JSON file for [copyStream](#copyStream) function.
+
+**Kind**: global function  
+**Returns**: [<code>Promise.&lt;readerType&gt;</code>](#readerType) - - reader object  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| options | <code>object</code> |  |
+| options.fileName | <code>string</code> | file name or URL |
+| options.jsonStyle | <code>string</code> | 'object' or 'array' |
+| [options.keyField] | <code>string</code> | key field for object style |
+| [options.rootField] | <code>string</code> | root field for object style |
+| [options.encoding] | <code>string</code> | encoding of the file |
+| [options.limitRows] | <code>number</code> | maximum number of rows to read |
+
+<a name="jsonWriter"></a>
+
+## jsonWriter(options) ⇒ [<code>Promise.&lt;writerType&gt;</code>](#writerType)
+Returns writer object for [copyStream](#copyStream) function. This writer object writes data to JSON file.
+
+**Kind**: global function  
+**Returns**: [<code>Promise.&lt;writerType&gt;</code>](#writerType) - - writer object  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| options | <code>object</code> |  |
+| options.fileName | <code>string</code> | file name |
+| [options.jsonStyle] | <code>string</code> | 'object' or 'array' |
+| [options.keyField] | <code>string</code> | key field for object style |
+| [options.rootField] | <code>string</code> | root field for object style |
+| [options.encoding] | <code>string</code> | encoding of the file |
+
+<a name="queryReader"></a>
+
+## queryReader(options) ⇒ [<code>Promise.&lt;readerType&gt;</code>](#readerType)
+Returns reader object for [copyStream](#copyStream) function. This reader object reads data from query.
+
+**Kind**: global function  
+**Returns**: [<code>Promise.&lt;readerType&gt;</code>](#readerType) - - reader object  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| options | <code>object</code> |  |
+| options.connection | [<code>connectionType</code>](#connectionType) | connection object |
+| options.query | <code>string</code> | SQL query |
+| [options.queryType] | <code>string</code> | query type |
+| [options.sql] | <code>string</code> | SQL query. obsolete; use query instead |
 
 <a name="tableReader"></a>
 
