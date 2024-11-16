@@ -27,7 +27,7 @@ If you want to use nodejs script for exporting, you could use following steps:
 
 
 ## Example 1 - export table to CSV
-This is simple example, we are using `tableReader` from `dbgateApi` package and writer from `dbgate-plugin-csv`. Also `dbgate-plugin-mysql` is required, because we are using engine parameter `mysql@dbgate-plugin-mysql`
+This is simple example, we are using [tableReader](https://dbgate.org/docs/apidoc.html#tableReader) from `dbgateApi` package and writer from `dbgate-plugin-csv`. Also `dbgate-plugin-mysql` is required, because we are using engine parameter `mysql@dbgate-plugin-mysql`
 ```js
 const dbgateApi = require('dbgate-api');
 const dbgatePluginMysql = require("dbgate-plugin-mysql");
