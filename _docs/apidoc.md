@@ -14,11 +14,17 @@ hide_hero: true
 <dt><a href="#copyStream">copyStream(input, output, options)</a> ⇒ <code>Promise</code></dt>
 <dd><p>Copies reader to writer. Used for import, export tables and transfer data between tables</p>
 </dd>
+<dt><a href="#deployDb">deployDb(options)</a></dt>
+<dd><p>Deploys database model stored in modelFolder (table as yamls) to database</p>
+</dd>
 <dt><a href="#dropAllDbObjects">dropAllDbObjects(options)</a> ⇒ <code>Promise</code></dt>
 <dd><p>Drops all database objects</p>
 </dd>
 <dt><a href="#executeQuery">executeQuery(options)</a></dt>
 <dd><p>Executes SQL query</p>
+</dd>
+<dt><a href="#generateDeploySql">generateDeploySql(options)</a></dt>
+<dd><p>Generates query for deploying model into database</p>
 </dd>
 <dt><a href="#jsonLinesReader">jsonLinesReader(options)</a> ⇒ <code><a href="#readerType">Promise.&lt;readerType&gt;</a></code></dt>
 <dd><p>Reader function, which reads JSNOL file or URL. JSONL format - text file, every line is JSON encoded row.</p>
@@ -72,6 +78,28 @@ Copies reader to writer. Used for import, export tables and transfer data betwee
 | output | [<code>writerType</code>](#writerType) | writer object |
 | options | <code>object</code> | options |
 
+<a name="deployDb"></a>
+
+## deployDb(options)
+Deploys database model stored in modelFolder (table as yamls) to database
+
+**Kind**: global function  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| options | <code>object</code> |  |
+| options.connection | [<code>connectionType</code>](#connectionType) | connection object |
+| options.systemConnection | <code>object</code> | system connection (result of driver.connect). If not provided, new connection will be created |
+| options.driver | <code>object</code> | driver object. If not provided, it will be loaded from connection |
+| options.analysedStructure | <code>object</code> | analysed structure of the database. If not provided, it will be loaded |
+| options.modelFolder | <code>string</code> | folder with model files (YAML files for tables, SQL files for views, procedures, ...) |
+| options.loadedDbModel | <code>Array.&lt;object&gt;</code> | loaded database model - collection of yaml and SQL files loaded into array |
+| options.modelTransforms | <code>Array.&lt;function()&gt;</code> | array of functions for transforming model |
+| options.dbdiffOptionsExtra | <code>object</code> | extra options for dbdiff |
+| options.ignoreNameRegex | <code>string</code> | regex for ignoring objects by name |
+| options.targetSchema | <code>string</code> | target schema for deployment |
+| options.maxMissingTablesRatio | <code>number</code> | maximum ratio of missing tables in database. Safety check, if missing ratio is highe, deploy is stopped (preventing accidental drop of all tables) |
+
 <a name="dropAllDbObjects"></a>
 
 ## dropAllDbObjects(options) ⇒ <code>Promise</code>
@@ -103,6 +131,28 @@ Executes SQL query
 | [options.sql] | <code>string</code> | SQL query |
 | [options.sqlFile] | <code>string</code> | SQL file |
 | [options.logScriptItems] | <code>boolean</code> | whether to log script items instead of whole script |
+
+<a name="generateDeploySql"></a>
+
+## generateDeploySql(options)
+Generates query for deploying model into database
+
+**Kind**: global function  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| options | <code>object</code> |  |
+| options.connection | [<code>connectionType</code>](#connectionType) | connection object |
+| options.systemConnection | <code>object</code> | system connection (result of driver.connect). If not provided, new connection will be created |
+| options.driver | <code>object</code> | driver object. If not provided, it will be loaded from connection |
+| options.analysedStructure | <code>object</code> | analysed structure of the database. If not provided, it will be loaded |
+| options.modelFolder | <code>string</code> | folder with model files (YAML files for tables, SQL files for views, procedures, ...) |
+| options.loadedDbModel | <code>Array.&lt;object&gt;</code> | loaded database model - collection of yaml and SQL files loaded into array |
+| options.modelTransforms | <code>Array.&lt;function()&gt;</code> | array of functions for transforming model |
+| options.dbdiffOptionsExtra | <code>object</code> | extra options for dbdiff |
+| options.ignoreNameRegex | <code>string</code> | regex for ignoring objects by name |
+| options.targetSchema | <code>string</code> | target schema for deployment |
+| options.maxMissingTablesRatio | <code>number</code> | maximum ratio of missing tables in database. Safety check, if missing ratio is highe, deploy is stopped (preventing accidental drop of all tables) |
 
 <a name="jsonLinesReader"></a>
 
