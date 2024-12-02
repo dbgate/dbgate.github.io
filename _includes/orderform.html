@@ -11,7 +11,12 @@
 <div class="field">
   <label class="label">Name for License</label>
   <div class="control">
-    <input class="input" type="text" id="name" placeholder="eg. your full name or your company name" />
+    <input
+      class="input"
+      type="text"
+      id="name"
+      placeholder="eg. your full name or your company name"
+    />
   </div>
 </div>
 
@@ -26,17 +31,41 @@
   <label class="label">Subscription</label>
   <div class="control">
     <select class="input" id="subscription">
-      <option value="yearly">Yearly - $238/year</option>
-      <option value="monthly">Monthly - $22/month</option>
+      <option value="yearly" data-product="team-premium">
+        Yearly - $238/year
+      </option>
+      <option value="monthly" data-product="team-premium">
+        Monthly - $22/month
+      </option>
+      <option value="monthly" data-product="premium">
+        Monthly - $10/month
+      </option>
     </select>
   </div>
 </div>
 
 <p>
-  <a target="_blank" class="button is-info is-medium" onclick="sendForm()">Continue</a>
+  <a target="_blank" class="button is-info is-medium" onclick="sendForm()"
+    >Continue</a
+  >
 </p>
 
 <script>
+  function initialize() {
+    const product = document.location.pathname
+      .split("/")
+      .filter((x) => x)
+      .slice(-1)?.[0];
+
+    const subscriptionElement = document.getElementById("subscription");
+    const options = subscriptionElement.options;
+    for (let i = options.length - 1; i >= 0; i--) {
+      if (options[i].getAttribute("data-product") !== product) {
+        subscriptionElement.remove(i);
+      }
+    }
+  }
+
   async function sendForm() {
     var emailInput = document.getElementById("email");
     var emailError = document.getElementById("email-error");
@@ -70,22 +99,28 @@
     };
 
     // Odeslání POST požadavku
-    const response = await fetch("https://auth-proxy.dbgate.udolni.net/new-subscription", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(data),
-    });
+    const response = await fetch(
+      "https://auth-proxy.dbgate.udolni.net/new-subscription",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      }
+    );
     const json = await response.json();
     if (json.url) {
       window.location.href = json.url;
       return;
     }
+
     alert("An error occurred while creating the subscription.");
     //   .catch(function (error) {
     //     console.error("Error:", error);
     //     alert("An error occurred while sending data.");
     //   });
   }
+
+  document.addEventListener("DOMContentLoaded", initialize);
 </script>
