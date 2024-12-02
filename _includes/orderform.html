@@ -11,12 +11,7 @@
 <div class="field">
   <label class="label">Name for License</label>
   <div class="control">
-    <input
-      class="input"
-      type="text"
-      id="name"
-      placeholder="eg. your full name or your company name"
-    />
+    <input class="input" type="text" id="name" placeholder="eg. your full name or your company name" />
   </div>
 </div>
 
@@ -38,9 +33,7 @@
 </div>
 
 <p>
-  <a target="_blank" class="button is-info is-medium" onclick="sendForm()"
-    >Continue</a
-  >
+  <a target="_blank" class="button is-info is-medium" onclick="sendForm()">Continue</a>
 </p>
 
 <script>
@@ -84,11 +77,12 @@
       },
       body: JSON.stringify(data),
     });
-    if (response.ok) {
-      alert("Subscription was successfully created.");
-    } else {
-      alert("An error occurred while creating the subscription.");
+    const json = await response.json();
+    if (json.url) {
+      window.location.href = json.url;
+      return;
     }
+    alert("An error occurred while creating the subscription.");
     //   .catch(function (error) {
     //     console.error("Error:", error);
     //     alert("An error occurred while sending data.");
