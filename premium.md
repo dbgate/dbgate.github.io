@@ -1,6 +1,6 @@
 ---
 title: "Premium"
-subtitle: Use DbGate web app for more users in cloud
+subtitle: Use DbGate web app for your team in cloud
 layout: page
 permalink: /premium/
 ---
