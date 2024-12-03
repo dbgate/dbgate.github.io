@@ -1,54 +1,80 @@
-<div class="field">
-  <label class="label">Billing email</label>
-  <div class="control">
-    <input class="input" type="email" id="email" />
-  </div>
-  <p class="help is-danger" id="email-error" style="display: none">
-    Please enter valid e-mail
-  </p>
-</div>
+<div class="columns">
+  <div class="column is-6-desktop is-12-mobile is-12-tablet">
+    <div class="field">
+      <label class="label">Billing email</label>
+      <div class="control">
+        <input class="input" type="email" id="email" />
+      </div>
+      <p class="help is-danger" id="email-error" style="display: none">
+        Please enter valid e-mail
+      </p>
+    </div>
 
-<div class="field">
-  <label class="label">Name for License</label>
-  <div class="control">
-    <input
-      class="input"
-      type="text"
-      id="name"
-      placeholder="eg. your full name or your company name"
-    />
-  </div>
-</div>
+    <div class="field">
+      <label class="label">Name for License</label>
+      <div class="control">
+        <input
+          class="input"
+          type="text"
+          id="name"
+          placeholder="eg. your full name or your company name"
+        />
+      </div>
+    </div>
 
-<div class="field">
-  <label class="label">Number of users</label>
-  <div class="control">
-    <input class="input" type="number" placeholder="1" id="users" />
-  </div>
-</div>
+    <div class="field">
+      <label class="label">Number of users</label>
+      <div class="control">
+        <input class="input" type="number" placeholder="1" id="users" />
+      </div>
+    </div>
 
-<div class="field">
-  <label class="label">Subscription</label>
-  <div class="control">
-    <select class="input" id="subscription">
-      <option value="yearly" data-product="team-premium">
-        Yearly - $238/year
-      </option>
-      <option value="monthly" data-product="team-premium">
-        Monthly - $22/month
-      </option>
-      <option value="monthly" data-product="premium">
-        Monthly - $10/month
-      </option>
-    </select>
-  </div>
-</div>
+    <div class="field">
+      <label class="label">Subscription</label>
+      <div class="control">
+        <select class="input" id="subscription">
+          <option value="yearly" data-product="team-premium">
+            Yearly - $238/year
+          </option>
+          <option value="monthly" data-product="team-premium">
+            Monthly - $22/month
+          </option>
+          <option value="monthly" data-product="premium">
+            Monthly - $10/month
+          </option>
+        </select>
+      </div>
+    </div>
 
-<p>
-  <a target="_blank" class="button is-info is-medium" onclick="sendForm()"
-    >Continue</a
-  >
-</p>
+    <p>
+      <a target="_blank" class="button is-info is-medium" onclick="sendForm()"
+        >Continue</a
+      >
+    </p>
+  </div>
+  <div class="column is-6-desktop is-hidden-tablet-only is-hidden-mobile ml-6">
+    <h4>Features in this package</h4>
+    <ul id="features">
+      <li data-product="premium">All features from Community edition</li>
+      <li data-product="premium">DbGate desktop application</li>
+      <li data-product="premium">Query designer</li>
+      <li data-product="premium">Compare database models</li>
+      <li data-product="premium">Table perspectives</li>
+      <li data-product="premium">Access to cloud databases - Amazon RDS, Redshift, Azore CosmosDB</li>
+      <li data-product="premium">E-mail support</li>
+
+      <li data-product="team-premium">All features from Community edition</li>
+      <li data-product="team-premium">DbGate web and desktop applications</li>
+      <li data-product="team-premium">Query designer</li>
+      <li data-product="team-premium">Compare database models</li>
+      <li data-product="team-premium">Table perspectives</li>
+      <li data-product="team-premium">Administration - users, connections, roles</li>
+      <li data-product="team-premium">Access to cloud databases - Amazon RDS, Redshift, Azure CosmosDB</li>
+      <li data-product="team-premium">E-mail support</li>
+    </ul>
+  </div>
+
+</div>
 
 <script>
   function initialize() {
@@ -62,6 +88,12 @@
     for (let i = options.length - 1; i >= 0; i--) {
       if (options[i].getAttribute("data-product") !== product) {
         subscriptionElement.remove(i);
+      }
+    }
+    const featuresElement = document.getElementById("features");
+    for(let i = 0; i < featuresElement.children.length; i++) {
+      if (featuresElement.children[i].getAttribute("data-product") !== product) {
+        featuresElement.children[i].style.display = "none";
       }
     }
   }
