@@ -22,6 +22,8 @@
     description: SQL Generator
   - src: mongoquery.png
     description: Run query on MongoDB database
+  - src: sqlpreview.png
+    description: SQL preview
 - feature: designer
   items:
   - src: mongoquerydesign.png
@@ -54,6 +56,8 @@
   items:
   - src: connection.png
     description: Connection to database
+  - src: connsearch.png
+    description: Search in connections and databases
 - feature: plugin
   items:
   - src: plugin.png
@@ -72,6 +76,8 @@
     description: Database compare tool
   - src: structure.png
     description: View table structure
+  - src: comparesettings.png
+    description: DB compare settings
 - feature: integration
   items:
   - src: db-login.png
