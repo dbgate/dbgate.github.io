@@ -18,7 +18,7 @@
     - compare database models
     - desktop application (Windows, Linux, MacOS)
     - premium support
-  price: 120,- USD / year or 10,- USD / month
+  price: $120 / year or $10 / month
   purchaseLink: /purchase/premium/
   purchaseLinkText: Purchase
 
@@ -36,6 +36,6 @@
     - web application (docker, NPM)
     - administration interface
     - external identity providers
-  price: 150,- USD / user / year
+  price: $150 / user / year
   purchaseLink: /purchase/team-premium/
   purchaseLinkText: Purchase
