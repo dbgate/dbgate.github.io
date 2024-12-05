@@ -19,7 +19,7 @@
     - desktop application (Windows, Linux, MacOS)
     - premium support
   price: 120,- USD / year or 10,- USD / month
-  purchaseLink: https://auth.dbgate.eu/create-checkout-session-simple?source=web
+  purchaseLink: /purchase/premium/
   purchaseLinkText: Purchase
 
 
@@ -37,5 +37,5 @@
     - administration interface
     - external identity providers
   price: 150,- USD / user / year
-  purchaseLink: mailto:sales@dbgate.eu
-  purchaseLinkText: Contact us
+  purchaseLink: /purchase/team-premium/
+  purchaseLinkText: Purchase
