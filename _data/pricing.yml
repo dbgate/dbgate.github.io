@@ -4,7 +4,13 @@
     - unlimited connections
     - community support
     - desktop and web applications
+  featuresNot:
+    - cloud DB´s support
+    - query designer
+    - compare database models
+    - administration interface
   price: for free
+  priceAlt: Opensource, free for any use  
   purchaseLink: /download-community/
   purchaseLinkText: Download
 
@@ -16,26 +22,32 @@
     - cloud DB´s support
     - query designer
     - compare database models
-    - desktop application (Windows, Linux, MacOS)
+    - desktop application
     - premium support
-  price: $120 / year or $10 / month
+  featuresNot:
+    - web application
+    - administration interface
+  price: $12
+  priceSuffix:  / month
+  priceAlt: or $120 / year
   purchaseLink: /purchase/premium/
   purchaseLinkText: Purchase
 
 
 - name: Team Premium
   features:
-    - 2+ users
     - unlimited connections
     - community support
     - cloud DB´s support
     - query designer
     - compare database models
     - premium support
-    - desktop application (Windows, Linux, MacOS)
-    - web application (docker, NPM)
+    - desktop application
+    - web application
     - administration interface
     - external identity providers
-  price: $150 / user / year
+  price: $150
+  priceAlt: 2+ users
+  priceSuffix:  / user / year
   purchaseLink: /purchase/team-premium/
   purchaseLinkText: Purchase
