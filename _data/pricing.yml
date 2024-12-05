@@ -3,6 +3,7 @@
     - 1 user
     - unlimited connections
     - community support
+    - desktop and web applications
   price: for free
   purchaseLink: /download-community/
   purchaseLinkText: Download
@@ -13,8 +14,11 @@
     - unlimited connections
     - community support
     - cloud DB´s support
+    - query designer
+    - compare database models
+    - desktop application (Windows, Linux, MacOS)
     - premium support
-  price: 238,- USD / year
+  price: 120,- USD / year or 10,- USD / month
   purchaseLink: https://auth.dbgate.eu/create-checkout-session-simple?source=web
   purchaseLinkText: Purchase
 
@@ -25,9 +29,13 @@
     - unlimited connections
     - community support
     - cloud DB´s support
+    - query designer
+    - compare database models
     - premium support
+    - desktop application (Windows, Linux, MacOS)
+    - web application (docker, NPM)
     - administration interface
     - external identity providers
-  price: 152,- USD / user / year
+  price: 150,- USD / user / year
   purchaseLink: mailto:sales@dbgate.eu
   purchaseLinkText: Contact us
