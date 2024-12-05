@@ -10,6 +10,7 @@
     - query designer
     - compare database models
     - administration interface
+    - e-mail support
   price: for free
   priceAlt: Opensource, free for any use  
   purchaseLink: /download-community/
@@ -24,7 +25,7 @@
     - query designer
     - compare database models
     - desktop application
-    - premium support
+    - e-mail support
   featuresNot:
     - web application
     - administration interface
@@ -42,7 +43,7 @@
     - cloud DB´s support
     - query designer
     - compare database models
-    - premium support
+    - e-mail support
     - desktop application
     - web application
     - administration interface
