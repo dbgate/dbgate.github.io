@@ -50,7 +50,7 @@
     <h4>Features in this package</h4>
     <ul id="features">
       <li data-product="premium">All features from Community edition</li>
-      <li data-product="premium">DbGate desktop application</li>
+      <li data-product="premium">DbGate desktop application (Windows, Linux, Mac)</li>
       <li data-product="premium">Query designer</li>
       <li data-product="premium">Compare database models</li>
       <li data-product="premium">Table perspectives</li>
@@ -58,7 +58,9 @@
       <li data-product="premium">E-mail support</li>
 
       <li data-product="team-premium">All features from Community edition</li>
-      <li data-product="team-premium">DbGate web and desktop applications</li>
+      <li data-product="team-premium">DbGate desktop application (Windows, Linux, Mac)</li>
+      <li data-product="team-premium">DbGate web application (Docker or NPM distribution)</li>
+      <li data-product="team-premium">From 2 users</li>
       <li data-product="team-premium">Query designer</li>
       <li data-product="team-premium">Compare database models</li>
       <li data-product="team-premium">Table perspectives</li>
@@ -71,11 +73,15 @@
 </div>
 
 <script>
-  function initialize() {
-    const product = document.location.pathname
+  function getProduct() {
+    return document.location.pathname
       .split("/")
       .filter((x) => x)
       .slice(-1)?.[0];
+  }
+
+  function initialize() {
+    const product = getProduct();
 
     const subscriptionElement = document.getElementById("subscription");
     const options = subscriptionElement.options;
@@ -89,6 +95,10 @@
       if (featuresElement.children[i].getAttribute("data-product") !== product) {
         featuresElement.children[i].style.display = "none";
       }
+    }
+
+    if (product === "team-premium") {
+      document.getElementById("users").value = 2;
     }
   }
 
@@ -111,10 +121,7 @@
     var users = document.getElementById("users").value;
     var subscription = document.getElementById("subscription").value;
 
-    const product = document.location.pathname
-      .split("/")
-      .filter((x) => x)
-      .slice(-1)?.[0];
+    const product = getProduct();
 
     var data = {
       email: email,
