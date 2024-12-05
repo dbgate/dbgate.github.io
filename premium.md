@@ -1,16 +1,15 @@
 ---
-title: "Premium"
+title: Pricing
 subtitle: Use DbGate web app for your team in cloud
 layout: page
-permalink: /premium/
+permalink: /pricing/
 ---
 
-<p>
-    <a href="https://dbgate.eu" target="_blank" class="button is-info is-medium">DbGate Premium web</a>
-</p>
-
 # DbGate Premium
-Premium edition is build on top of DbGate Community edition and brings guaranteed support and some advanced enterprise functionality. DbGate Premium is available both as downloadable application and [docker container](https://hub.docker.com/r/dbgate/dbgate-premium) for Team Premium web app. 30-day free-trial period is available.
+Premium edition is build on top of DbGate Community edition and brings guaranteed support and some advanced enterprise functionality. DbGate Premium is available  as desktop application. 30-day free-trial period is available.
+
+# DbGate Team Premium
+Premium edition is build on top of DbGate Community edition and brings guaranteed support and some advanced enterprise functionality. DbGate Team Premium is available both as desktop application and web app([docker container](https://hub.docker.com/r/dbgate/dbgate-premium), [npm package](https://www.npmjs.com/package/dbgate-serve-premium)). 30-day free-trial period is available.
 
 ## Pricing
 
