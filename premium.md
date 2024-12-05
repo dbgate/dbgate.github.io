@@ -1,6 +1,6 @@
 ---
 title: Pricing
-subtitle: Use DbGate web app for your team in cloud
+subtitle: Use DbGate Premium and Team Premium editions
 layout: page
 permalink: /pricing/
 ---
