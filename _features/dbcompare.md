@@ -1,5 +1,5 @@
 ---
-title: Database compare
+title: Database compare (Premium)
 subtitle: Compare database models
 layout: feature
 icon: compare.svg

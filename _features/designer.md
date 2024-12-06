@@ -1,5 +1,5 @@
 ---
-title: SQL/MongoDB query builder
+title: SQL+noSQL query builder (Premium)
 subtitle: Visually design query or combine data from SQL or MongoDB databases
 icon: designer.svg
 layout: feature
