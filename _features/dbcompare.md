@@ -1,6 +1,6 @@
 ---
 title: Database compare (Premium)
-subtitle: Compare database models
+subtitle: Compare SQL database structure - tables, columns, views. Deploy changes
 layout: feature
 icon: compare.svg
 order: 9
