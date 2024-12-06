@@ -5,6 +5,7 @@ layout: feature
 icon: plugin.svg
 order: 9
 features_left: true
+published: false
 ---
 
 * Extension plugin architecture

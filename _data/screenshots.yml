@@ -72,10 +72,12 @@
   items:
   - src: fkeditor.png
     description: Foreign key editor
-  - src: dbcompare.png
-    description: Database compare tool
   - src: structure.png
     description: View table structure
+- feature: dbcompare
+  items:
+  - src: dbcompare.png
+    description: Database compare tool
   - src: comparesettings.png
     description: DB compare settings
 - feature: integration
