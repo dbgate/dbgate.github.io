@@ -43,7 +43,11 @@
       link: https://github.com/dbgate/dbgate/releases/latest/download/dbgate-latest.dmg
     - text: Installer
       icon: fa fa-download
-      platform: Intel
+      platform: Apple (arm64)
+      link: https://github.com/dbgate/dbgate/releases/latest/download/dbgate-latest-arm64.dmg
+    - text: Installer
+      icon: fa fa-download
+      platform: Intel (x86)
       link: https://github.com/dbgate/dbgate/releases/latest/download/dbgate-latest-x64.dmg
 - text: Web
   icon: fas fa-globe
