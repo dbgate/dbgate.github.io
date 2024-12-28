@@ -1,0 +1,18 @@
+<aside class="menu">
+  <p class="menu-label">{{ .title }}</p>
+
+  <ul class="menu-list">
+    {{ range  (where .context.Site.RegularPages "Section" .section) }}
+    {{ if not .Params.hide_menu }}
+    <li>
+      <a
+        href="{{ .RelPermalink }}"
+        class="{{ if eq .RelPermalink $.context.RelPermalink }}is-active{{ end }}"
+      >
+        {{ .Title }}
+      </a>
+    </li>
+    {{ end }}
+    {{ end }}
+  </ul>
+</aside>

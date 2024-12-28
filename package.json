@@ -1,0 +1,13 @@
+{
+  "name": "dbgate.github.io",
+  "description": "DbGate web",
+  "dependencies": {
+    "bulma": "^0.9.1",
+    "bulma-block-list": "^0.4.1",
+    "swiper": "^11.1.15",
+    "copyfiles": "^2.4.1"
+  },
+  "scripts": {
+    "postinstall": "copyfiles -u 2 'node_modules/swiper/swiper-bundle.min.*' 'static/swiper'"
+  }  
+}

@@ -1,0 +1,124 @@
+{{ define "main" }}
+<p class="title is-3">DbGate for {{ .Params.name }} Client</p>
+
+{{ if .Params.experimental }}
+<i
+  >Support for {{ .Params.name }} is still in experimental status, some features
+  could not work. It is not recommended to use it for production
+  environments.</i
+>
+{{ end }}
+
+<p>
+  DbGate for {{ .Params.name }} is {{ if .Params.isPremium }} professional {{
+  else }} free and open source {{ end }} database manager for Linux, Windows and
+  MacOS. Also runs in Web browser, when started from Docker container.
+</p>
+
+{{ if .Params.isPremium }} {{ .Params.name }} support is available exclusively
+in the <a href="/pricing/">Premium edition</a>
+{{ end }} {{ if .Params.screenshot }}
+<img src="/screenshots/{{ .Params.screenshot }}" />
+{{ else }} {{ partial "carousel.html" . }} {{ end }}
+
+<h2>{{ .Params.name }} Database Manager Features</h2>
+
+<ul>
+  {{ if .Params.mongo }}
+  <li>Explore your MongoDB online in web browser or in downloaded app</li>
+  {{ end }} {{ if .Params.isSqlite }}
+  <li>
+    Open SQLite files with drag & drop, with open-file dialog or as commandline
+    parameter
+  </li>
+  {{ end }} {{ if .Params.isMssql }}
+  <li>
+    Supports both SQL server and Windows authentication on Windows (on Linux and
+    MacOS, only SQL server authentication is supported)
+  </li>
+  {{ end }} {{ if not .Params.skipSsh }}
+  <li>Connect to multiple databases, directly or through SSH tunnel</li>
+  {{ end }} {{ if or .Params.sql .Params.mongo }}
+  <li>Browse or edit data in your tables or views, filter by column value</li>
+  <li>Master/detail views, quick view lookup tables</li>
+  {{ end }} {{ if .Params.sql }}
+  <li>
+    {{ .Params.name }} editor - edit SQL queries with auto-complete suggestions
+    or use query designer
+  </li>
+  <li>Form view for comfortable work with tables with many columns</li>
+  <li>
+    Schema editor - edit tables, indexes, and other database objects (views,
+    procedures, functions)
+  </li>
+  <li>Compare, synchronize and deploy DB models</li>
+  {{ end }} {{ if .Params.mongo }}
+  <li>
+    MongoDB JavaScript editor, execute MongoDB script (with NodeJs syntax)
+  </li>
+  <li>MongoDB Profiler</li>
+  <li>JSON view on collections</li>
+  {{ end }} {{ if or .Params.sql .Params.mongo }}
+  <li>
+    Export and import from/to CSV, JSON or Excel. Use JavaScript scripting
+    support
+  </li>
+  <li>
+    Archives - backup your data in JSON files on local filesystem (or on DbGate
+    server, when using web application)
+  </li>
+  <li>Light and dark theme</li>
+  <li>Charts, export chart to HTML page</li>
+  {{ end }} {{ if .Params.redis }}
+  <li>View keys in tree</li>
+  <li>Execute Redis script</li>
+  <li>Generate script from key or from namespace</li>
+  <li>Support all basic redis types, stream type included</li>
+  {{ end }}
+  <li>Configurable keyboard shortcuts</li>
+</ul>
+
+<h2>DbGate for {{ .Params.name }} goals</h2>
+
+<ul>
+  {{ if not .Params.isPremium }}
+  <li>Complete free and open source, no paid enterprise editions</li>
+  {{ end }}
+  <li>
+    Simple, but powerful. One toolbar, no millions of icons without description.
+    Heavy use of context menu
+  </li>
+  <li>
+    Runs everywhere - Windows, Linux, Mac, web browser, maybe also mobile web in
+    future
+  </li>
+  <li>
+    Stable and robust. Critical error in one database driver must not influence
+    stability of the app
+  </li>
+  {{ if .Params.redis }}
+  <li>
+    Prepared for big databases - don't use "evil" KEYS commands, use cursors for
+    loading keys and key (eg. list, hash) items
+  </li>
+  {{ else }}
+  <li>
+    Prepared for big databases - never load full table or {{ .Params.name }}
+    query result into memory, use streams everywhere
+  </li>
+  {{ end }}
+  <li>
+    Scriptable, using dbgate
+    <a href="https://www.npmjs.com/search?q=keywords:dbgate" target="_blank"
+      >nodejs packages</a
+    >
+  </li>
+</ul>
+
+{{ if .Params.online_demo }}
+<h2>Try it online</h2>
+<p>
+  You could try DbGate also without installing, use our
+  <a href="https://demo.dbgate.org" target="_blank">demo application</a>
+</p>
+{{ end }} {{ end }}

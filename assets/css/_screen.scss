@@ -1,0 +1,35 @@
+
+img#carousel-image {
+  max-width: 90vw;
+}
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-dot {
+  background: #ccc;
+  width: 10px;
+  height: 10px;
+  border-radius: 25091983px;
+  display: inline-block;
+  margin: 0 3px;
+  box-shadow: 0 2px 5px #aaa;
+  cursor: pointer;  
+}
+
+.carousel-dot.is-active {
+  background: #66c;
+  box-shadow: 0 2px 5px #66a;
+}
+
+.feature-avatar {
+  width: 5rem;
+  height: 5rem;
+}
+
+.github-button-wrapper {
+  display: flex;
+  align-items: center;
+}

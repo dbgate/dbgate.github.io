@@ -1,0 +1,10 @@
+{{ define "main" }}
+<p class="title is-3">{{ .Title }}</p>
+{{ .Content }}
+
+<div class="columns is-multiline">
+  {{ $shot := index (where $.Site.Data.screenshots "feature"
+  .File.TranslationBaseName) 0 }} {{ partial "screenshots.html" (dict
+  "columns_class" "column is-6-desktop is-6-tablet" "collection" $shot.items) }}
+</div>
+{{ end }}

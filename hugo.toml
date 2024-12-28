@@ -1,0 +1,18 @@
+baseURL = 'https://dbgate.org/'
+languageCode = 'en-us'
+title = 'DbGate'
+
+[module]
+  [module.hugoVersion]
+    extended = false
+    min = "0.116.0"
+
+[pagination]
+  disableAliases = false
+  pagerSize = 5
+  path = 'page'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

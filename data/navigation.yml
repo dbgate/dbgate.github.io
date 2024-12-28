@@ -1,0 +1,15 @@
+- name: Download
+  link: /download/
+  link2: /download-community/
+- name: Features
+  features: true
+- name: Screenshots
+  link: /screenshots/
+- name: About
+  link: /about/
+- name: Blog
+  link: /blog/
+- name: Docs
+  link: /docs/
+- name: Pricing
+  link: /pricing/

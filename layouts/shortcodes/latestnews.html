@@ -1,0 +1,3 @@
+{{ range (first 3 (where $.Site.RegularPages "Section" "blog")) }}
+<div class="column is-12">{{ partial "post-card.html" .}}</div>
+{{ end }}

@@ -1,0 +1,12 @@
+<div class="dblist">
+  {{ range where $.Site.RegularPages "Section" "database" }}
+  <a href="{{ .RelPermalink }}" class="dblistitem">
+    <img src="/db/{{.Params.icon}}" width="60" height="60" />
+    <div class="dbname">
+      {{ .Params.name }} {{ if .Params.experimental }}
+      <br />
+      (BETA) {{ end }}
+    </div>
+  </a>
+  {{ end}}
+</div>

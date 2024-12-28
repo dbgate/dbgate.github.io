@@ -1,0 +1,21 @@
+{{- $page := .Page -}}
+{{- $site := $page.Site -}}
+{{- $baseURL := $site.BaseURL -}}
+{{- $dest := .Destination -}}
+
+{{- if or (hasPrefix $dest "http://") (hasPrefix $dest "https://") -}}
+  {{- if or (strings.HasPrefix $dest $baseURL) (strings.HasPrefix $dest "/") -}}
+    <a href="{{ .Destination }}" title="{{ .Title }}">
+      {{ .Text | safeHTML }}
+    </a>
+  {{- else -}}
+    <a href="{{ .Destination }}" title="{{ .Title }}" target="_blank" rel="noopener">
+      {{ .Text | safeHTML }}
+    </a>
+  {{- end -}}
+
+{{- else -}}
+  <a href="{{ .Destination }}" title="{{ .Title }}">
+    {{ .Text | safeHTML }}
+  </a>
+{{- end -}}

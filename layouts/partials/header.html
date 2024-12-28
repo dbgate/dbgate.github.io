@@ -1,0 +1,87 @@
+<nav class="navbar is-primary {{ if .Site.Params.fixed_navbar }} is-fixed-{{ .Site.Params.fixed_navbar }} {{ end }}">
+    <div class="container">
+      <div class="navbar-brand">
+        <a href="{{ "/" | relURL }}" class="navbar-item">
+          {{ .Site.Title }}
+        </a>
+        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+  
+      <div class="navbar-menu" id="navMenu">
+        <div class="navbar-start">
+          <a href='{{ "/" | relURL }}'
+             class="navbar-item {{ if eq .Permalink ("/" | relURL) }}is-active{{ end }}">
+            Home
+          </a>
+  
+          {{ if .Site.Data.navigation }}
+            {{ range .Site.Data.navigation }}
+              {{ if .dropdown }}
+                <div class="navbar-item has-dropdown is-hoverable {{ if eq $.Site.Params.fixed_navbar "bottom" }}has-dropdown-up{{ end }}">
+                  <a href="{{ .link | relURL }}"
+                     class="navbar-link {{ if eq (printf "%s" (.link | relURL)) $.Permalink }}is-active{{ end }}">
+                    {{ .name }}
+                  </a>
+                  <div class="navbar-dropdown">
+                    {{ range .dropdown }}
+                      <a href="{{ .link | relURL }}"
+                         class="navbar-item {{ if eq (printf "%s" (.link | relURL)) $.Permalink }}is-active{{ end }}">
+                        {{ .name }}
+                      </a>
+                    {{ end }}
+                  </div>
+                </div>
+  
+              {{ else if .features }}
+                <div class="navbar-item has-dropdown is-hoverable {{ if eq $.Site.Params.fixed_navbar "bottom" }}has-dropdown-up{{ end }}">
+                  <a href="{{ .link | relURL }}"
+                     class="navbar-link {{ if eq (printf "%s" (.link | relURL)) $.Permalink }}is-active{{ end }}">
+                    {{ .name }}
+                  </a>
+                  <div class="navbar-dropdown">
+
+                    {{ range where $.Site.RegularPages "Section" "features" }}
+                      {{ if not .Params.hide_menu }}
+                        <a href="{{ .RelPermalink }}"
+                           class="navbar-item {{ if eq (printf "%s" ( .Params.url | relURL)) $.Permalink }}is-active{{ end }}">
+                          {{  .Params.title }}
+                        </a>
+                      {{ end }}
+                    {{ end }}
+                  </div>
+                </div>
+  
+              {{ else }}
+                <a href="{{ .link | relURL }}"
+                   target="{{ .target }}"
+                   class="navbar-item {{/* Aktivní stav si případně ošetřete podle .Permalink/.Params.url */}}">
+                  {{ .name }}
+                </a>
+              {{ end }}
+            {{ end }}
+          {{ end }}
+        </div>
+  
+        <div class="navbar-end github-button-wrapper">
+          <a class="button is-small is-twitter mr-4" href="https://twitter.com/db_gate" target="_blank" style="position: relative; top: -3px">
+            <span class="icon">
+              <i class="fab fa-twitter fa-lg"></i>
+            </span>
+          </a>
+  
+          <a class="github-button"
+             href="https://github.com/dbgate/dbgate"
+             data-color-scheme="no-preference: light; light: light; dark: dark;"
+             data-size="large"
+             data-show-count="true"
+             aria-label="Star dbgate/dbgate on GitHub">
+            Star
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>

@@ -1,0 +1,16 @@
+<div class="card">
+    <header class="card-header">
+        <a class="card-header-title" href="{{ .RelPermalink }}">{{ .Title}}</a>
+    </header>
+    <div class="card-content">
+        <div class="content">
+            {{ .Summary  }}
+        </div>
+        <div class="has-text-centered">
+            <a href="{{ .RelPermalink }}" class="button is-primary">Read more</a>
+        </div>
+    </div>
+    <footer class="card-footer">
+        <p class="card-footer-item">Published: {{ .Date.Format "Jan 2, 2006" }}</p>
+    </footer>
+</div>

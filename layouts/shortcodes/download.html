@@ -1,0 +1,35 @@
+<p>
+Download the most recent stable version of DbGate.  <br />
+Older releases or BETA versions could be found on <a href='https://github.com/dbgate/dbgate/releases' target="_blank">github releases</a> page
+</p>
+
+{{ $items := index .Site.Data (.Get "type") }}
+
+{{ range $items }}
+<div class="columns mb-6 ">
+    <div class="column is-3">
+        <button class="button is-medium is-static mr-5 is-fullwidth">
+            <i class="{{.icon}} mr-2"></i>
+            {{.text}}
+        </button>
+    </div>
+    <div class="column">
+        <div class="columns is-multiline">
+            {{ range .items }}
+            <div class="column is-4">
+                <a class="button is-medium is-primary is-fullwidth" href="{{ .link }}" onClick="{{ .onClick }}">
+                    <i class="{{ .icon }} mr-2"></i>
+                    {{ .text }}
+                    {{ if .platform }}
+                    <span class='has-text-grey-light ml-2'>
+                        {{ .platform }}
+                    </span>
+                    {{ end }}
+                </a>
+            </div>
+            {{ end }}
+
+        </div>
+    </div>
+</div>
+{{ end }}

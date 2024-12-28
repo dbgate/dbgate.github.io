@@ -1,0 +1,17 @@
+{{ $styles := resources.Get "css/_main.scss" | toCSS (dict "enableSourceMap" true "targetPath" "css/styles.css") }}
+<link rel="stylesheet" href="{{ $styles.RelPermalink }}">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@1/bin/bulma-social.min.css">
+<link rel="stylesheet" href="/swiper/swiper-bundle.min.css">
+
+
+<!-- {{- with resources.Get "css/main.css" }}
+  {{- if eq hugo.Environment "development" }}
+    <link rel="stylesheet" href="{{ .RelPermalink }}">
+  {{- else }}
+    {{- with . | minify | fingerprint }}
+      <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+    {{- end }}
+  {{- end }}
+{{- end }} -->

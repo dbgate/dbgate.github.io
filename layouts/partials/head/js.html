@@ -1,0 +1,16 @@
+<script src="/swiper/swiper-bundle.min.js"></script>
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+<script data-goatcounter="https://dbgate.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+
+
+{{- with resources.Get "js/main.js" }}
+  {{- if eq hugo.Environment "development" }}
+    {{- with . | js.Build (dict "target" "es2020") }}
+      <script src="{{ .RelPermalink }}"></script>
+    {{- end }}
+  {{- else }}
+    {{- with . | js.Build (dict "target" "es2020" "minify" true) | fingerprint }}
+      <script src="{{ .RelPermalink }}" integrity="{{- .Data.Integrity }}" crossorigin="anonymous"></script>
+    {{- end }}
+  {{- end }}
+{{- end }}

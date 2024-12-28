@@ -1,0 +1,20 @@
+<section
+  class="hero {{ if .Params.hero_height }} {{ .Params.hero_height }} {{ else }} is-medium {{ end }} is-bold is-primary"
+  {{ if .Params.hero_image }}
+  style="background: url('{{ .Params.hero_image }}') no-repeat center center; background-size: cover;"
+  {{ end }}>
+  <div class="hero-body {{ if .Params.hero_darken }} hero-darken {{ end }}">
+    <!-- <div class="is-pulled-right">
+      <a href="https://snapcraft.io/dbgate" target="_blank">
+        <img alt="dbgate" src="https://snapcraft.io/dbgate/badge.svg" />
+      </a>
+    </div> -->
+    <div class="container">
+      <h1 class="title is-2">{{ .Params.title }}</h1>
+      <p class="subtitle is-3">{{ .Params.subtitle }}</p>
+      {{ if or .Params.download_button (eq .Section "database") }}
+        {{ partial "download-button.html" . }}
+      {{ end }}
+    </div>
+  </div>
+</section>

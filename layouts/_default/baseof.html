@@ -1,0 +1,55 @@
+{{ $contentWidth := "is-12" }} {{ if or (eq .Section "features") (eq .Section "database") (eq .Section "docs")
+}} {{ $contentWidth = "is-9-desktop is-12-tablet" }} {{ end }}
+
+<!DOCTYPE html>
+<html
+  {{
+  if
+  .Site.Params.fixed_navbar
+  }}class="has-navbar-fixed-{{ .Site.Params.fixed_navbar }}"
+  {{
+  end
+  }}
+>
+  <head>
+    {{ partial "head.html" . }}
+  </head>
+  <body>
+    {{ partial "header.html" . }} {{ if (ne .Section "docs") }} {{ partial
+    "hero.html" . }} {{ end }} {{ partial "callouts.html" . }}
+
+    <section class="section">
+      <div class="container">
+        <div class="columns">
+          {{ if or (eq .Section "features") (eq .Section "database") }}
+          <div
+            class="column is-3-desktop is-hidden-tablet-only is-hidden-mobile mr-6"
+          >
+            {{ partial "left-menu.html" (dict "title" "Features" "section"
+            "features" "context" . ) }}
+          </div>
+          {{ end }} {{ if eq .Section "docs" }}
+          <div
+            class="column is-3-desktop is-hidden-tablet-only is-hidden-mobile mr-6"
+          >
+            {{ partial "left-menu.html" (dict "title" "Documentation" "section"
+            "docs" "context" . ) }}
+          </div>
+          {{ end }}
+
+          <div class="column {{ $contentWidth }}">
+            <div class="content">{{ block "main" . }}{{ end }}</div>
+          </div>
+
+          {{ if and .Site.Params.posts .Params.show_sidebar }}
+          <div class="column is-4-desktop is-12-tablet">
+            {{ partial "latest-posts.html" . }}
+          </div>
+          {{ end }}
+        </div>
+      </div>
+    </section>
+
+    {{ if not .Params.hide_footer }} {{ partial "footer.html" . }} {{ end }}
+  </body>
+</html>

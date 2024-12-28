@@ -1,0 +1,16 @@
+{{ define "main" }} {{ partial "pagination.html" . }}
+
+<section>
+  {{ range .Paginator.Pages }} {{ partial "post-card.html" . }} {{ end }}
+</section>
+
+{{ partial "pagination.html" . }}
+
+<div class="has-text-centered">
+  <a href="/blog/index.xml" class="button is-primary">
+    <span class="icon"><i class="fas fa-rss"></i></span>
+    <span>Subscribe</span>
+  </a>
+</div>
+
+{{ end }}

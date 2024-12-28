@@ -1,0 +1,42 @@
+{{ if .Params.callouts }}
+{{ $callouts := index .Site.Data .Params.callouts }}
+<section
+    class="hero {{ if $callouts.height }} {{ $callouts.height }} {{ else }} is-medium {{ end }} {{ $callouts.style }}">
+    <div class="hero-body">
+        <div class="container">
+            <div class="columns is-multiline is-centered">
+                {{ range $callouts.items }}
+                <div class="column is-4 has-text-centered">
+                    {{ if .icon }}
+                    <div class="icon callout-icon">
+                        <i class="{{ .icon }} fa-4x"></i>
+                    </div>
+                    {{ end }}
+                    {{ if .icons }}
+                    {{ range .icons }}
+                    <div class="icon callout-icon">
+                        <i class="{{ . }} fa-4x"></i>
+                    </div>
+                    {{ end }}
+                    {{ end }}
+                    <p class="title is-5">{{ .title }}</p>
+                    <p class="subtitle is-5">{{ .subtitle }}</p>
+
+                    {{ if .description }}
+                    <div class="content">
+                        <p>{{ .description | replaceRE "\n" "<br>" }}</p>
+                    </div>
+                    {{ end }}
+
+                    {{ if .call_to_action_name }}
+                    <a href="{{ .call_to_action_link | relURL }}" class="button is-primary">
+                        {{ .call_to_action_name }}
+                    </a>
+                    {{ end }}
+                </div>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}

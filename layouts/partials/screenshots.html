@@ -1,0 +1,15 @@
+{{ $cls := .columns_class }}
+{{ range .collection }}
+<div class='{{ $cls | default "column is-4-desktop is-6-tablet"}}'>
+    <div class="card">
+        <div class="card-image">
+            {{ partial "image-modal.html" (dict "src" .src "alt" .description) }}
+        </div>
+        <div class="card-content">
+            <div class="content">
+                {{ .description | markdownify }}
+            </div>
+        </div>
+    </div>
+</div>
+{{ end}}

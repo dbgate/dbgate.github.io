@@ -1,0 +1,35 @@
+<div class="columns is-multiline">
+    {{ range where $.Site.RegularPages "Section" "features" }}
+    <div class="column is-4-desktop is-6-tablet {{ .Params.additional_class }}">
+        <div class="card">
+            <div class="card-header">
+                <p class="card-header-title">
+                    {{ .Title }}
+                </p>
+            </div>
+
+            <div class="card-content is-flex">
+                <img src="/img/{{ .Params.icon }}" class="feature-avatar mr-4" />
+                {{ with .Params.description }}
+                    {{ . }}
+                {{ else }}
+                    {{ .Params.subtitle }}
+                {{ end }}
+            </div>
+        </div>
+
+        <footer class="card-footer">
+            {{ if not .Params.hide_menu }}
+                <a href="{{ .RelPermalink }}" class="card-footer-item">
+                    View details
+                </a>
+            {{ end }}
+            {{ if .Params.demo_url }}
+                <a href="{{ .Params.demo_url }}" class="card-footer-item is-hidden-mobile" target="_blank">
+                    Try demo
+                </a>
+            {{ end }}
+        </footer>
+    </div>
+    {{ end }}
+</div>
