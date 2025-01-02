@@ -5,8 +5,6 @@ layout: page
 permalink: /pricing/
 ---
 
-Christmas discount **40%** on DbGate PREMIUM and TEAM PREMIUM products with code **ADVENT2024** until December 31, 2024 
-
 {{< pricing >}}
 
 # DbGate Premium & Team Premium
