@@ -16,7 +16,7 @@ Although the most used scenario is to compare two databases with the same engine
 You could also deploy changes from source ta target database.
 
 ### Database compare options
-- Ignore case or schemae name
+- Ignore case or schema name
 - Disable drop tables/columns/views. When the object is missing, you could ignore this (the safest variant) or mark object as deleted (eg. rename deleted column "Fax" to "_deleted_Fax")
 - Ignore foreign key actions
 - Ignore data types
