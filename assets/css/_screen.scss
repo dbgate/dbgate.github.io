@@ -33,3 +33,7 @@ img#carousel-image {
   display: flex;
   align-items: center;
 }
+
+.read-more::after {
+  content: 'Read more';
+}
