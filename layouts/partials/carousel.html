@@ -4,8 +4,8 @@
     <div class="swiper-wrapper">
         <!-- Slides -->
 
-        {{ range $item := .Site.Data.slider_images }}
-        <div class="swiper-slide"><img src="/screenshots/{{$item.src}}" /></div>
+        {{ range .Site.Data.slider_images }}
+        <div class="swiper-slide"><img src="/screenshots/{{ .src }}" alt="{{ .alt }}" /></div>
         {{ end }}
         ...
     </div>
