@@ -9,7 +9,7 @@
             </div>
 
             <div class="card-content is-flex">
-                <img src="/img/{{ .Params.icon }}" class="feature-avatar mr-4" />
+                <img src="/img/{{ .Params.icon }}" class="feature-avatar mr-4" width="5rem" height="5rem" alt="{{ .Title }}" />
                 {{ with .Params.description }}
                     {{ . }}
                 {{ else }}
