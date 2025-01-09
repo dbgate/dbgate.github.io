@@ -18,5 +18,5 @@ Administrator could configure more authentication methods, administer users, rol
 ![Auth admin](/screenshots/authadmin.png)
 
 <p>
-    <a href="https://dbgate.eu" target="_blank" class="button is-info is-medium">DbGate Premium web</a>
+    <a href="https://dbgate.io" target="_blank" class="button is-info is-medium">DbGate Premium web</a>
 </p>

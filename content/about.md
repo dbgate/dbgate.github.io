@@ -29,7 +29,7 @@ The second generation was DbMouse, which was designed only to work only with MS 
 
 # DbGate Premium
 Primary reason, why I started to develop DbGate, is to survive my know-how about database tools, and substantialize into modern, usable and open-source database tool.
-As DbGate growed into mature product, there were some users requesting commercial support and enterprise features. I joined with [Sprinx systems](https://sprinx.com/) company, so that we could offer professional [DbGate Premium](https://dbgate.eu) product on top on opensource DbGate.
+As DbGate growed into mature product, there were some users requesting commercial support and enterprise features. I joined with [Sprinx systems](https://sprinx.com/) company, so that we could offer professional [DbGate Premium](https://dbgate.io) product on top on opensource DbGate.
 
 # Wrote about us
 
