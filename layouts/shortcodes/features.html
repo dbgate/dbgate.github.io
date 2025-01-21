@@ -26,7 +26,7 @@
             {{ end }}
             {{ if .Params.demo_url }}
                 <a href="{{ .Params.demo_url }}" class="card-footer-item is-hidden-mobile" target="_blank">
-                    Try demo
+                    {{ .Params.demo_title | default "Try demo"}}
                 </a>
             {{ end }}
         </footer>
