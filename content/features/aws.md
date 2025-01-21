@@ -27,7 +27,7 @@ Installation on AWS is very straighforward, it is almost single-click process.
 
 We recommend t2.medium instance type for best user experience, but t2.micro available in free tier will be enough for small number of users.
 
-After installation, you have to set admin password, Then you could administer connections and users.
+After installation, you have to set admin password, then you could administer connections, users, roles and grant permissions.
 
 ## Subscription and licensing
 DbGate AWS can be subscribed to through the AWS Marketplace, with pricing based on the size of the chosen instance. Larger instances support more concurrent users.
