@@ -31,6 +31,10 @@
     - text: Docker
       icon: fab fa-docker
       link: https://hub.docker.com/r/dbgate/dbgate-premium
+    - text: Amazon
+      platform: EC2 on AWS
+      icon: fab fa-aws
+      link: https://aws.amazon.com/marketplace/pp/prodview-glw7okfnhf4cy
     - text: NPM
       icon: fas fa-external-link-alt
       link: https://www.npmjs.com/package/dbgate-serve-premium
