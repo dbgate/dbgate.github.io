@@ -12,7 +12,7 @@ When it comes to managing databases through a web browser, having the right tool
 - **Type**: Web-based
 - **Installation**: Server-side installation required
 - **Supported Databases**: MySQL, MariaDB
-- **AWS Deployment**: Yes, can be deployed on EC2 or ECS
+- **AWS Deployment**: Yes (unofficial)
 - **Pros**:
   - Well-established and widely used
   - Extensive feature set
@@ -27,8 +27,8 @@ When it comes to managing databases through a web browser, having the right tool
 ## DbGate
 - **Type**: Web-based + Desktop
 - **Installation**: Docker container or npm package for web version
-- **Supported Databases**: MySQL, PostgreSQL, SQLite, MongoDB, SQL Server
-- **AWS Deployment**: Yes, easily deployable via Docker on ECS/EKS
+- **Supported Databases**: MySQL, MariaDB, PostgreSQL, SQLite, MongoDB, SQL Server, Oracle, ClickHouse, Redis
+- **AWS Deployment**: Yes, official AWS Marketplace listing available
 - **Pros**:
   - Modern, clean interface
   - Web version accessible from any browser
@@ -39,6 +39,7 @@ When it comes to managing databases through a web browser, having the right tool
 - **Cons**:
   - Relatively newer tool
   - Community size smaller compared to phpMyAdmin
+  - User administration restricted to premium edition
 
 ## CloudBeaver
 - **Type**: Web-based
@@ -46,7 +47,6 @@ When it comes to managing databases through a web browser, having the right tool
 - **Supported Databases**: Multiple databases including MySQL, PostgreSQL, MongoDB, Oracle
 - **AWS Deployment**: Yes, official AWS Marketplace listing available
 - **Pros**:
-  - Modern web interface
   - Enterprise features available
   - Native cloud architecture
   - Built-in security features
@@ -60,7 +60,7 @@ When it comes to managing databases through a web browser, having the right tool
 - **Type**: Web-based
 - **Installation**: Single PHP file
 - **Supported Databases**: MySQL, PostgreSQL, SQLite, MongoDB, Oracle
-- **AWS Deployment**: Yes, can be deployed on any AWS service that supports PHP
+- **AWS Deployment**: Yes (unofficial)
 - **Pros**:
   - Lightweight (single file)
   - Simple to deploy
@@ -76,7 +76,7 @@ When it comes to managing databases through a web browser, having the right tool
 - **Type**: Web-based
 - **Installation**: Python package with built-in web server
 - **Supported Databases**: SQLite only
-- **AWS Deployment**: Yes, can run on Lambda, EC2, or ECS
+- **AWS Deployment**: No
 - **Pros**:
   - Extremely lightweight
   - Perfect for SQLite databases
@@ -90,8 +90,8 @@ When it comes to managing databases through a web browser, having the right tool
 ## Comparison Summary
 
 ### Browser Accessibility
-1. CloudBeaver (full-featured web client)
-2. DbGate (responsive web interface)
+1. DbGate (responsive web interface)
+2. CloudBeaver (full-featured web client)
 3. Adminer (clean web interface)
 4. phpMyAdmin (traditional web interface)
 5. sqlite-web (basic web interface)
@@ -104,24 +104,28 @@ When it comes to managing databases through a web browser, having the right tool
 5. phpMyAdmin (traditional setup)
 
 ### Feature Set
-1. CloudBeaver
-2. DbGate
+1. DbGate
+2. CloudBeaver
 3. phpMyAdmin
 4. Adminer
 5. sqlite-web
 
 ### Database Support
-1. CloudBeaver & DbGate (tie)
-2. Adminer
-3. phpMyAdmin
-4. sqlite-web
+1. DbGate
+2. CloudBeaver
+3. Adminer
+4. phpMyAdmin
+5. sqlite-web
+
+## Price (January 2025)
+
 
 ## Conclusion
 
 When choosing a web-based database management tool for your cloud environment:
 
-- If you need a cloud-native solution with excellent AWS integration, **CloudBeaver** is your best choice.
 - For a modern, feature-rich web experience across multiple database types, **DbGate** offers an excellent balance.
+- If you need a cloud-native solution with good AWS integration, **CloudBeaver** could be a reasonable choice.
 - If you're working primarily with MySQL in traditional hosting environments, **phpMyAdmin** remains a solid choice.
 - When simplicity and lightweight deployment are priorities, **Adminer** is perfect for quick setups.
 - For SQLite-specific projects needing web access, **sqlite-web** provides a focused solution.
