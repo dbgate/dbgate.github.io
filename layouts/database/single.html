@@ -15,8 +15,10 @@
   MacOS. Also runs in Web browser, when started from Docker container.
 </p>
 
-{{ if .Params.isPremium }} {{ .Params.name }} support is available exclusively
-in the <a href="/pricing/">Premium edition</a>
+{{ if eq .Params.name "MySQL" }}
+<p>DbGate Online MySQL Client is an excellent alternative to phpMyAdmin.</p>
+{{ end }} {{ if .Params.isPremium }} {{ .Params.name }} support is available
+exclusively in the <a href="/pricing/">Premium edition</a>
 {{ end }} {{ if .Params.screenshot }}
 <img src="/screenshots/{{ .Params.screenshot }}" />
 {{ else }} {{ partial "carousel.html" . }} {{ end }}
