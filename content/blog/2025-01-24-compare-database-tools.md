@@ -1,7 +1,9 @@
 ---
-title: "Comparing Popular Web-Based Database Management Tools in 2025"
+title: "Comparing Popular Online Database Clients in 2025"
+subtitle: MySQL, PostgreSQL, MongoDB and other online database clients
 date: 2025-01-24
 tags: ["database", "tools", "comparison", "phpmyadmin", "dbgate", "cloudbeaver", "adminer", "sqlite", "web-based", "cloud"]
+headDescription: "Compare five popular web-based database management tools that you can access directly from your browser: phpMyAdmin, DbGate, CloudBeaver, Adminer, and sqlite-web."
 ---
 
 When it comes to managing databases through a web browser, having the right tool can significantly improve your productivity and make database operations much more efficient. In this article, we'll compare five popular web-based database management tools that you can access directly from your browser: phpMyAdmin, DbGate, CloudBeaver, Adminer, and sqlite-web.
@@ -23,6 +25,7 @@ When it comes to managing databases through a web browser, having the right tool
   - Can be slow with large datasets
   - Interface might feel dated
   - Requires web server setup
+- **Pricing**: Free and open source
 
 ## DbGate
 - **Type**: Web-based + Desktop
@@ -40,6 +43,9 @@ When it comes to managing databases through a web browser, having the right tool
   - Relatively newer tool
   - Community size smaller compared to phpMyAdmin
   - User administration restricted to premium edition
+- **Pricing**:
+  - Community Edition: Free and open source
+  - Premium Edition: $150/user/year (minimum 2 users)
 
 ## CloudBeaver
 - **Type**: Web-based
@@ -55,6 +61,9 @@ When it comes to managing databases through a web browser, having the right tool
   - Setup can be complex
   - Some features restricted to enterprise version
   - Resource-intensive
+- **Pricing**:
+  - Community Edition: Free and open source
+  - Enterprise Edition: $200/user/year (minimum 5 users)
 
 ## Adminer
 - **Type**: Web-based
@@ -71,6 +80,7 @@ When it comes to managing databases through a web browser, having the right tool
   - Less feature-rich compared to others
   - Basic UI
   - Limited advanced features
+- **Pricing**: Free and open source
 
 ## sqlite-web
 - **Type**: Web-based
@@ -86,6 +96,7 @@ When it comes to managing databases through a web browser, having the right tool
   - Limited to SQLite only
   - Basic features
   - Limited visualization options
+- **Pricing**: Free and open source
 
 ## Comparison Summary
 
@@ -116,9 +127,6 @@ When it comes to managing databases through a web browser, having the right tool
 3. Adminer
 4. phpMyAdmin
 5. sqlite-web
-
-## Price (January 2025)
-
 
 ## Conclusion
 
