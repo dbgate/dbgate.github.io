@@ -140,8 +140,8 @@ sqlite-web is a simple web-based interface for managing SQLite databases. It's i
 When choosing a web-based database management tool for your cloud environment:
 
 - For a modern, feature-rich web experience across multiple database types, **DbGate** offers an excellent balance.
-- If you need a cloud-native solution with good AWS integration, **CloudBeaver** could be a reasonable choice.
-- If you're working primarily with MySQL in traditional hosting environments, **phpMyAdmin** remains a solid choice.
+- If you need a cloud-native solution with good AWS integration, **CloudBeaver** could be a reasonable alternative.
+- If you're working primarily with MySQL in traditional hosting environments, **phpMyAdmin** remains a solid alternative.
 - When simplicity and lightweight deployment are priorities, **Adminer** is perfect for quick setups.
 - For SQLite-specific projects needing web access, **sqlite-web** provides a focused solution.
 
