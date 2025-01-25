@@ -146,3 +146,5 @@ When choosing a web-based database management tool for your cloud environment:
 - For SQLite-specific projects needing web access, **sqlite-web** provides a focused solution.
 
 All these tools except from sqlite-web can be deployed on AWS, but they differ in deployment complexity and integration capabilities. CloudBeaver and DbGate offer the most streamlined cloud deployment experience, while others might require more setup but offer simpler architectures.
+
+I you now any tool, which is not covered in this list, let me know on [@db_gate](https://x.com/db_gate) on Twitter / X.
