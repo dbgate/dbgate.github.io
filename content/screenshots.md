@@ -5,4 +5,6 @@ layout: page
 permalink: /screenshots/
 ---
 
+**Mixed theme** \| [Dark theme](/screenshots-dark) \| [Light theme](/screenshots-light) 
+
 {{< allscreenshots >}}
