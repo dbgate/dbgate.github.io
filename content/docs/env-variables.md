@@ -29,6 +29,21 @@ These variables are available only in Premium edition.
   * ADMIN_PASSWORD - password for administrator. Administration is available on URL https://dbgate_url/admin.html. If password is not defined and STORAGE_DATABASE is defined, DbGate asks for admin password at first.
   * DBGATE_LICENSE - license key for DbGate. Please contact sales@dbgate.eu for trial license. If not defined, DbGate Premium asks for license at first. DbGate Community doesn't require any license.
 
+### Additional connetion params of storage connection
+  * STORAGE_SOCKET_PATH - socket path for storage connection
+  * STORAGE_DATABASE_URL - database URL for storage connection
+  * STORAGE_AUTH_TYPE - authentication type for storage connection. Values are the same as for AUTH_TYPE_xxx variable
+  * STORAGE_USE_SSL - set value 1 or true, when SSL should be used
+  * STORAGE_KEY_FILE - path to key file
+  * STORAGE_KEY_FILE_PASSWORD - key file passphrase
+  * STORAGE_SSL_CA_FILE - path to CA Cert file
+  * STORAGE_SSL_CERT_FILE - path to certificate file
+  * STORAGE_SSL_CERT_FILE_PASSWORD - certificate key file password
+  * STORAGE_SSL_KEY_FILE - path to key file
+  * STORAGE_SSL_KEY_FILE_PASSWORD - key file passphrase
+  * STORAGE_SSL_REJECT_UNAUTHORIZED - set value 1 or true if reject unauthorized connections
+  * STORAGE_SSL_TRUST_SERVER_CERTIFICATE - set value 1 or true for setting trustServerCertificate MSSQL option
+
 The following variables are available in both Community and Premium edition. However, in Premium edition, prefered way is to use storage database and use administration UI for configuration.
 
 ## Web & permission configuration
