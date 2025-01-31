@@ -42,8 +42,8 @@
   items:
   - name: diagram
     description: ER diagram
-  - name: charts
-    description: Charts
+  # - name: charts
+  #   description: Charts
   # - name: darkmode
   #   description: Dark mode
   - name: commandpalette
