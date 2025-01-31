@@ -1,18 +1,18 @@
-- src: datagrid.png
+- src: datagrid-dark
   alt: Data Grid screenshot
-- src: query.png
+- src: query-light
   alt: Query console screenshot
-- src: diagram.png
+- src: diagram-dark
   alt: Diagram screenshot
-- src: redis.png
-  alt: Redis connection screenshot
-- src: export.png
+# - src: redis
+#   alt: Redis connection screenshot
+- src: exportcsv-light
   alt: Export dialog screenshot
-- src: darkmode.png
-  alt: Dark mode screenshot
-- src: querydesigner.png
+# - src: darkmode
+#   alt: Dark mode screenshot
+- src: querydesigner-dark
   alt: Query designer screenshot
-- src: mongosave.png
+- src: mongosave-light
   alt: MongoDB save dialog screenshot
-- src: dbcompare.png
+- src: dbcompare-light
   alt: Database compare screenshot
