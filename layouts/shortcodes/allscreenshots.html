@@ -1,5 +1,5 @@
 <div class="columns is-multiline">
     {{ range $.Site.Data.screenshots }}
-    {{ partial "screenshots.html" (dict "collection" .items) }}
+    {{ partial "screenshots.html" (dict "collection" .items "theme" .theme) }}
     {{ end }}
 </div>

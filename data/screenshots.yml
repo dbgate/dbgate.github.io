@@ -1,100 +1,100 @@
 - feature: datagrid
   items:
-  - src: datagrid.png
+  - name: datagrid
     description: Data grid with expandable columns
-  - src: masterdetail.png
+  - name: masterdetail
     description: Master/detail view
-  - src: formview.png
+  - name: formview
     description: Form view
-  - src: freetable.png
+  - name: freetable
     description: Free table editor with macro preview
-  - src: macros.png
+  - name: macros
     description: Macros in table data editor
-  - src: perspective1.png
+  - name: perspective1
     description: Perspective with nested data
 - feature: sqledit
   items:
-  - src: query.png
+  - name: query
     description: Query editor
-  - src: joinwizard.png
+  - name: joinwizard
     description: SQL join wizard
-  - src: sqlgen.png
+  - name: sqlgen
     description: SQL Generator
-  - src: mongoquery.png
+  - name: mongoquery
     description: Run query on MongoDB database
-  - src: sqlpreview.png
+  - name: sqlpreview
     description: SQL preview
 - feature: designer
   items:
-  - src: mongoquerydesign.png
+  - name: mongoquerydesign
     description: Perspective query builder with MongoDB database
-  - src: querydesigner.png
+  - name: querydesigner
     description: Query designer
 - feature: export
   items:
-  - src: export.png
+  - name: export
     description: Export data screen
-  - src: importpreview.png
+  - name: importpreview
     description: Preview of imported MS Excel file
-  - src: dbshell.png
+  - name: dbshell
     description: JavaScript scripting
 - feature: other
   items:
-  - src: diagram.png
+  - name: diagram
     description: ER diagram
-  - src: charts.png
+  - name: charts
     description: Charts
-  - src: darkmode.png
+  - name: darkmode
     description: Dark mode
-  - src: commandpalette.png
+  - name: commandpalette
     description: Command palette
-  - src: keyboard.png
+  - name: keyboard
     description: Configure keyboard shortcuts
-  - src: map.png
+  - name: map
     description: Show points on map
 - feature: database
   items:
-  - src: connection.png
+  - name: connection
     description: Connection to database
-  - src: connsearch.png
+  - name: connsearch
     description: Search in connections and databases
 - feature: plugin
   items:
-  - src: plugin.png
+  - name: plugin
     description: View MS Excel plugin details
 - feature: mongo
   items:
-  - src: mongosave.png
+  - name: mongosave
     description: MongoDB data editor with save data preview
-  - src: collection.png
+  - name: collection
     description: Browse and expand MongoDB collection
 - feature: dbedit
   items:
-  - src: fkeditor.png
+  - name: fkeditor
     description: Foreign key editor
-  - src: structure.png
+  - name: structure
     description: View table structure
 - feature: dbcompare
   items:
-  - src: dbcompare.png
+  - name: dbcompare
     description: Database compare tool
-  - src: comparesettings.png
+  - name: comparesettings
     description: DB compare settings
 - feature: integration
   items:
-  - src: db-login.png
+  - name: db-login
     description: Database login
-  - src: multi-db.png
+  - name: multi-db
     description: Multiple database, multiple connection layout
-  - src: single-conn.png
+  - name: single-conn
     description: Multiple database, single connection layout
-  - src: single-db.png
+  - name: single-db
     description: Single DB layout
 - feature: administration
   items:
-  - src: connadmin.png
+  - name: connadmin
     description: Connection administration (Premium)
-  - src: roleadmin.png
+  - name: roleadmin
     description: Role administration (Premium)
-  - src: authadmin.png
+  - name: authadmin
     description: Authentization administration (Premium)

@@ -1,24 +1,32 @@
+{{ $theme := .theme }}
+{{ if not $theme }}
+  {{ if modBool .index 2 }}
+    {{ $theme = "dark" }}
+  {{ else }}
+    {{ $theme = "light" }}
+  {{ end }}
+{{ end }}
 <div>
   <a
-    onClick="document.getElementById('image-modal-{{.src}}').classList.add('is-active')"
+    onClick="document.getElementById('image-modal-{{.name}}').classList.add('is-active')"
     title="View large image"
   >
     <figure class='image {{ .ratio | default "is-16by9" }}'>
-      <img src="/screenshots/{{ .src }}" alt="{{ .alt }}" />
+      <img src="/themeshots/{{ .name }}-{{ $theme }}.png" alt="{{ .alt }}" />
     </figure>
   </a>
-  <div class="modal" id="image-modal-{{.src}}">
+  <div class="modal" id="image-modal-{{.name}}">
     <div
       class="modal-background"
-      onClick="document.getElementById('image-modal-{{.src}}').classList.remove('is-active')"
+      onClick="document.getElementById('image-modal-{{.name}}').classList.remove('is-active')"
     ></div>
     <div class="modal-content">
-      <img src="/screenshots/{{ .src }}" alt="{{ .alt }}" />
+      <img src="/themeshots/{{ .name }}-{{ $theme }}.png" alt="{{ .alt }}" />
     </div>
     <button
       class="modal-close is-large"
       aria-label="close"
-      onClick="document.getElementById('image-modal-{{.src}}').classList.remove('is-active')"
+      onClick="document.getElementById('image-modal-{{.name}}').classList.remove('is-active')"
     ></button>
   </div>
 </div>
