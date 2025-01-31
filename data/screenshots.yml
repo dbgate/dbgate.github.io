@@ -26,26 +26,26 @@
     description: SQL preview
 - feature: designer
   items:
-  - name: mongoquerydesign
-    description: Perspective query builder with MongoDB database
+  # - name: mongoquerydesign
+  #   description: Perspective query builder with MongoDB database
   - name: querydesigner
     description: Query designer
 - feature: export
   items:
-  - name: export
-    description: Export data screen
-  - name: importpreview
-    description: Preview of imported MS Excel file
-  - name: dbshell
-    description: JavaScript scripting
+  - name: exportcsv
+    description: CSV export
+  # - name: importpreview
+  #   description: Preview of imported MS Excel file
+  # - name: dbshell
+  #   description: JavaScript scripting
 - feature: other
   items:
   - name: diagram
     description: ER diagram
   - name: charts
     description: Charts
-  - name: darkmode
-    description: Dark mode
+  # - name: darkmode
+  #   description: Dark mode
   - name: commandpalette
     description: Command palette
   - name: keyboard
@@ -80,16 +80,16 @@
     description: Database compare tool
   - name: comparesettings
     description: DB compare settings
-- feature: integration
-  items:
-  - name: db-login
-    description: Database login
-  - name: multi-db
-    description: Multiple database, multiple connection layout
-  - name: single-conn
-    description: Multiple database, single connection layout
-  - name: single-db
-    description: Single DB layout
+# - feature: integration
+#   items:
+#   - name: db-login
+#     description: Database login
+#   - name: multi-db
+#     description: Multiple database, multiple connection layout
+#   - name: single-conn
+#     description: Multiple database, single connection layout
+#   - name: single-db
+#     description: Single DB layout
 - feature: administration
   items:
   - name: connadmin
