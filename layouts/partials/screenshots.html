@@ -1,9 +1,10 @@
 {{ $cls := .columns_class }}
+{{ $theme := .theme }}
 {{ range $index, $element := .collection }}
 <div class='{{ $cls | default "column is-4-desktop is-6-tablet"}}'>
     <div class="card">
         <div class="card-image">
-            {{ partial "image-modal.html" (dict "name" .name "alt" .description "index" $index) }}
+            {{ partial "image-modal.html" (dict "name" .name "alt" .description "index" $index "theme" $theme) }}
         </div>
         <div class="card-content">
             <div class="content">
