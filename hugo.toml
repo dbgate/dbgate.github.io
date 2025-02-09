@@ -9,7 +9,7 @@ title = 'DbGate'
 
 [pagination]
   disableAliases = false
-  pagerSize = 5
+  pagerSize = 50
   path = 'page'
 
 [markup]

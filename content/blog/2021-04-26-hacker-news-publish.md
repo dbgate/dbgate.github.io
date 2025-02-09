@@ -9,6 +9,8 @@ On thursday 23, DbGate was published on [Hacker News](https://news.ycombinator.c
 
 The most repeated feature request was supporting SQLite database, so this would be main feature of next release.
 
+<!--more--> 
+
 ## What's new in version 4.1.10
 - ADDED: Default database option in connectin settings (allows connecting to aws redshift)
 - FIX: Popup menu placement on smaller displays

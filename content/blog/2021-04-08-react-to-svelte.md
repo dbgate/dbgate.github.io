@@ -9,6 +9,9 @@ Recently I have rewritten a medium sized app in React (~250 React components) in
 
 This is not tutorial of Svelte for React programmers, if you don't know Svelte yet, the best starting point is official [Svelte tutorial](https://svelte.dev/tutorial/). This article contains lot of links to Svelte tutorials, instead of explaining Svelte principles.
 
+<!--more--> 
+
+
 ## CSS
 
 Svelte supports CSS directly in very nice and clean way. In React app, I have used [styled components](https://styled-components.com/). 

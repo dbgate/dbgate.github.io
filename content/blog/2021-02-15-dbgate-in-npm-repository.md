@@ -10,6 +10,8 @@ DbGate is now available as [NPM package](https://www.npmjs.com/package/dbgate) .
 
 Other useful NPM package is [dbgate-api](https://www.npmjs.com/package/dbgate-api), which can be used for running scripts exported from DbGate, eg. exporting table data to CSV or Excel.
 
+<!--more--> 
+
 ## SSH tunnel
 Other big improvement of DbGate is SSH tunneling feature. It allows connecting to database eg. on production server, which is not exposed to public internet.
 

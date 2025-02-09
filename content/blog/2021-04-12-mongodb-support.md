@@ -7,6 +7,8 @@ date:   2021-04-12 17:00:00
 
 We are proud to announce new version 4.1.0 with first NoSQL DB supported, MongoDB. Though DbGate was primarily designed to work with fixed schema databases, the architecture was designed with document databases in the mind.
 
+<!--more--> 
+
 ## MongoDB support
 Almost all operations, which are possible in DbGate with SQL databases, are implemented also with MongoDB:
 

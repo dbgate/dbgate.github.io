@@ -12,6 +12,8 @@ SQLite driver supports or operations supported on other drivers.
 
 Also now is officially supported Amazon Redshift and CockroachDB.
 
+<!--more--> 
+
 ## What's new in version 4.2.0
 - ADDED: Support of SQLite database
 - ADDED: Support of Amazon Redshift database
