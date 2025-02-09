@@ -1,0 +1,15 @@
+<a href="{{ .RelPermalink }}">
+    <div class="card">
+        <header class="card-header card-header-title">
+            {{ .Title}}
+        </header>
+        <div class="card-content">
+            <div class="content">
+                {{ .Summary }}
+            </div>
+        </div>
+        <footer class="card-footer">
+            <p class="card-footer-item">Published: {{ .Date.Format "Jan 2, 2006" }}</p>
+        </footer>
+    </div>
+</a>

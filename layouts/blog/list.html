@@ -1,10 +1,14 @@
-{{ define "main" }} {{ partial "pagination.html" . }}
-
-<section>
-  {{ range .Paginator.Pages }} {{ partial "post-card.html" . }} {{ end }}
-</section>
+{{ define "main" }}
 
 {{ partial "pagination.html" . }}
+
+<div class="columns is-multiline">
+  {{ range .Paginator.Pages }}
+  <div class="column is-half">
+    {{ partial "post-card-small.html" . }}
+  </div>
+  {{ end }}
+</div>
 
 <div class="has-text-centered mt-5">
   <a href="/blog/index.xml" class="button is-primary">
@@ -12,5 +16,7 @@
     <span>Subscribe</span>
   </a>
 </div>
+
+{{ partial "pagination.html" . }}
 
 {{ end }}
