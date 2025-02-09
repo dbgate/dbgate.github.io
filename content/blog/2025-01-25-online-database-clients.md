@@ -4,6 +4,7 @@ subtitle: MySQL, PostgreSQL, MongoDB and other online database clients
 date: 2025-01-25
 tags: ["database", "tools", "comparison", "phpmyadmin", "dbgate", "cloudbeaver", "adminer", "sqlite", "web-based", "cloud"]
 headDescription: "Compare five popular web-based database management tools that you can access directly from your browser: phpMyAdmin, DbGate, CloudBeaver, Adminer, and sqlite-web."
+blogOnly: true
 ---
 
 When it comes to managing databases through a web browser, having the right tool can significantly improve your productivity and make database operations much more efficient. In this article, we'll compare five popular web-based database management tools that you can access directly from your browser: phpMyAdmin, DbGate, CloudBeaver, Adminer, and sqlite-web.
