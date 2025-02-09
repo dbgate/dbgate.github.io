@@ -1,15 +1,19 @@
-<a href="{{ .RelPermalink }}">
-    <div class="card">
-        <header class="card-header card-header-title">
-            {{ .Title}}
-        </header>
-        <div class="card-content">
-            <div class="content">
-                {{ .Summary }}
-            </div>
+<div class="card card-link" onclick="if (!event.target.closest('a')) window.location.href='{{ .RelPermalink }}'">
+    <header class="card-header" >
+        <a class="card-header-title" href="{{ .RelPermalink }}">{{ .Title}}</a>
+    </header>
+    <div class="card-content">
+        <div class="content">
+            {{ .Summary }}
         </div>
-        <footer class="card-footer">
-            <p class="card-footer-item">Published: {{ .Date.Format "Jan 2, 2006" }}</p>
-        </footer>
     </div>
-</a>
+    <footer class="card-footer">
+        <p class="card-footer-item">Published: {{ .Date.Format "Jan 2, 2006" }}</p>
+    </footer>
+</div>
+
+<style>
+    .card-link {
+        cursor: pointer;
+    }
+</style>
