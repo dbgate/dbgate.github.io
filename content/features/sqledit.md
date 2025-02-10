@@ -27,6 +27,13 @@ SQL Generator allows to create SQL scripts from database. It has following optio
   * Drop
 You can combine options from all DB objects and generate customized SQL script containing database structure and data
 
-<!-- ## Demo links
-These links points to demo.dbgate.org, feel free to play with it
-* [Query designer](https://demo.dbgate.org/#favorite=designer) -->
+## AI Assistant (Premium)
+Use AI service for create and modify your queries. DbGate AI internally uses OpenAI API, but it knows structure if your database, so it could generate queries with right tables and columns.
+
+* Text to SQL - describe your query, DbGate will generate SQL query for you
+* Code completion - insert snippet on cursor
+* Change query - modify your query from task in natural language
+
+You could use any language, which is supported by OpenAI (almost all languages - English, French, German, Spanish, Portuguese, Italian, Japanese, Chinese, Korean, etc.)
+
+
