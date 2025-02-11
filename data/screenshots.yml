@@ -4,6 +4,8 @@
     description: Data grid with expandable columns
   - name: masterdetail
     description: Master/detail view
+  - name: modifydata
+    description: Modify data with SQL preview
   - name: formview
     description: Form view
   - name: freetable
