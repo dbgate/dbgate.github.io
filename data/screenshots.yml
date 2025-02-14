@@ -26,6 +26,8 @@
     description: Run query on MongoDB database
   - name: sqlpreview
     description: SQL preview
+- feature: ai
+  items:
   - name: aiassistant
     description: AI Assistant
 - feature: designer
