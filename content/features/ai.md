@@ -22,6 +22,7 @@ What information will be sent to DbGate's AI service:
   - data type name
 - primary key - column names
 - foreign keys - base and referenced table and column names
+- snippets of your SQL queries
 
 
 After that, the AI assistant offers three capabilities:
