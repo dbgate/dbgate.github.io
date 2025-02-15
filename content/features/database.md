@@ -21,6 +21,7 @@ aliases:
   * [Azure CosmosDB](/database/cosmosdb-client) (Premium)
   * [ClickHouse](/database/clickhouse-client)
   * [Redis](/database/redis-client)
+  * [Apache Cassandra](/database/cassandra-client)
 * Support connection over SSH tunnel, for accessing production databases behind firewall
 * Support SSL
 * Allows work with multiple database connections simultaneously
