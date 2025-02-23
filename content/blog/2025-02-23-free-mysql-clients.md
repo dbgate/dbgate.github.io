@@ -24,6 +24,11 @@ DbGate is a modern, versatile database client that offers both web-based and des
 - **Pricing** (February 2025): Free and open source
 - **Technology**: Electron, Svelte
 
+### DbGate Links
+- [Download DbGate](https://dbgate.org/download/)
+- [GitHub Repository](https://github.com/dbgate/dbgate)
+- [Try DbGate online](https://demo.dbgate.org/)
+
 <img src="/blog/2025-02-23/dbgate.png" alt="DbGate screenshot" width="600" />
 
 ## MySQL Workbench
@@ -43,6 +48,10 @@ It offers advanced tools for MySQL, like migration wizard, visual database desig
 - **Pricing**: Free
 - **Technology**: C++/Python
 
+### MySQL Workbench Links
+- [Download MySQL Workbench](https://dev.mysql.com/downloads/workbench/)
+- [GitHub Repository](https://github.com/mysql/mysql-workbench)
+
 <img src="/blog/2025-02-23/workbench.png" alt="MySQL Workbench screenshot" width="600" />
 
 ## phpMyAdmin
@@ -60,6 +69,10 @@ phpMyAdmin is a classic web-based MySQL administration tool that has been the go
   - Old-style interface
 - **Pricing**: Free and open source
 - **Technology**: PHP
+
+### phpMyAdmin Links
+- [Download phpMyAdmin](https://www.phpmyadmin.net/downloads/)
+- [GitHub Repository](https://github.com/phpmyadmin/phpmyadmin)
 
 <img src="/blog/2025-02-23/phpmyadmin.png" alt="phpMyAdmin screenshot" width="600" />
 
@@ -79,6 +92,10 @@ DBeaver is a powerful multi-platform database tool that supports multiple databa
 - **Pricing**: Community Edition - Free and open source
 - **Technology**: Java
 
+### DBeaver Links
+- [Download DBeaver](https://dbeaver.io/download/)
+- [GitHub Repository](https://github.com/dbeaver/dbeaver)
+
 <img src="/blog/2025-02-23/dbeaver.png" alt="DBeaver screenshot" width="600" />
 
 ## Beekeeper Studio
@@ -96,6 +113,10 @@ Beekeeper Studio is a modern, lightweight SQL editor and database manager focusi
   - Limited number of query result rows
 - **Pricing**: Community Edition - Free, with paid options available
 - **Technology**: Electron + VueJS
+
+### Beekeeper Studio Links
+- [Download Beekeeper Studio](https://www.beekeeperstudio.io/get)
+- [GitHub Repository](https://github.com/beekeeper-studio/beekeeper-studio)
 
 <img src="/blog/2025-02-23/beekeeper.png" alt="Beekeeper Studio screenshot" width="600" />
 
