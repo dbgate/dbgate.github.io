@@ -4,7 +4,7 @@ subtitle: "Comparing Top Open-Source PostgreSQL GUI Tools"
 date: 2025-02-09
 tags: ["database", "postgresql", "tools", "comparison", "dbgate", "pgadmin", "dbeaver", "heidisql", "beekeeper-studio"]
 headDescription: "Compare five popular free and open-source PostgreSQL database management tools: DbGate, pgAdmin, DBeaver, HeidiSQL, and Beekeeper Studio."
-# blogOnly: true
+blogOnly: true
 ---
 
 Managing PostgreSQL databases efficiently requires a reliable GUI client. In this article, we'll compare five popular free and open-source PostgreSQL database management tools: DbGate, pgAdmin, DBeaver, HeidiSQL, and Beekeeper Studio.
