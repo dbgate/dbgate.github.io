@@ -27,10 +27,10 @@
       icon: fa fa-download
       link: https://github.com/dbgate/dbgate/releases/latest/download/dbgate-latest-arm64.AppImage
       platform: arm64
-    - text: AppImage
-      icon: fa fa-download
-      link: https://github.com/dbgate/dbgate/releases/latest/download/dbgate-latest-armv7l.AppImage
-      platform: armv7l
+    # - text: AppImage
+    #   icon: fa fa-download
+    #   link: https://github.com/dbgate/dbgate/releases/latest/download/dbgate-latest-armv7l.AppImage
+    #   platform: armv7l
     - text: Flathub
       icon: fas fa-external-link-alt
       link: https://flathub.org/apps/org.dbgate.DbGate
