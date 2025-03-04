@@ -42,7 +42,9 @@ exclusively in the <a href="/pricing/">Premium edition</a>
   <li>Connect to multiple databases, directly or through SSH tunnel</li>
   {{ end }} {{ if or .Params.sql .Params.mongo }}
   <li>Browse or edit data in your tables or views, filter by column value</li>
+  {{ if not .Params.skipFk }}
   <li>Master/detail views, quick view lookup tables</li>
+  {{ end }} 
   {{ end }} {{ if .Params.sql }}
   <li>
     {{ .Params.name }} editor - edit SQL queries with auto-complete suggestions
