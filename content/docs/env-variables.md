@@ -142,6 +142,7 @@ You could configure connection list with env variables, than "Add connection: en
 * ALLOWED_DATABASES_[connection id] - allowed database names for specified connnection, pipe ("|") delimited
 * ALLOWED_DATABASES_REGEX_[connection id] - regular expression for allowed database names for specified connnection
 * USE_SEPARATE_SCHEMAS_[connection id] - set value 1 or true for load schemas separately. Use this if you have large schemas.
+* LOCAL_DATA_CENTER_[connection id] - local data center (for Apache Cassandra)
 
 
 SettingsModal.svelte , find string "name="/ If you need to define "true", use value "1". If you need "false", use empty string ("0" will not work)
