@@ -26,3 +26,4 @@ However, for most platforms and databases, there is posibility to install only c
   - Mac: install client with homebrew: `brew install libpq`
 - MySQL:
   - Windows - download and unpack ZIP from https://dev.mysql.com/downloads/mysql/
+  - Mac: brew install mysql-client
