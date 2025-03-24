@@ -7,9 +7,8 @@ items:
     subtitle: MySQL, PostgreSQL, MS SQL, Oracle, MongoDB, SQLite and others
     icon: fas fa-database
   - title: Cross platform
-    subtitle: Works on Windows, Linux, MacOS and in WEB browser, AWS and Azure
+    subtitle: Works on Windows, Linux, MacOS and in WEB browser
     icons: 
       - fab fa-windows
       - fab fa-linux
       - fab fa-apple
-      - fab fa-aws

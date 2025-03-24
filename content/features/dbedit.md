@@ -3,6 +3,7 @@ title: Schema editor and deployer
 subtitle: Edit table schema, database compare tool
 description: Edit table schema with keys and indexes. Use database compare tool, deploy your DB models.
 icon: dbedit.svg
+edition: 'community'
 weight: 9
 ---
 

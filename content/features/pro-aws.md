@@ -5,6 +5,7 @@ icon: aws.svg
 weight: 14
 demo_url: https://aws.amazon.com/marketplace/pp/prodview-glw7okfnhf4cy
 demo_title: View on AWS
+edition: 'premium'
 ---
 
 DbGate AWS edition is a collaborative, multi-user web platform specifically designed for database management within Amazon Web Services (AWS). By taking advantage of AWS infrastructure, it streamlines teamwork for organizations operating in cloud environments. Its shared, browser-based interface simplifies collaboration, data access, and database oversight while seamlessly integrating with AWS.

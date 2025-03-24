@@ -4,6 +4,7 @@ subtitle: Connect to multiple databases simultaneously
 description: Connect to multiple databases, directly or through SSH tunnel
 icon: database.svg
 weight: 1
+edition: 'community'
 aliases:
   - /features/
 ---

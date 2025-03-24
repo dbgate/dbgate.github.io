@@ -2,6 +2,7 @@
 title: SQL Editor and SQL Generator
 subtitle: Edit SQL queries with auto-complete suggestions
 icon: sql.svg
+edition: 'community'
 weight: 3
 ---
 

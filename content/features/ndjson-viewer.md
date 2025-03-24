@@ -2,6 +2,7 @@
 title: NDJSON viewer
 subtitle: Powerful viewer for NDJSON/JSON lines format
 icon: ndjson.png
+edition: 'community'
 weight: 10
 ---
 

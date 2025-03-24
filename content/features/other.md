@@ -2,6 +2,7 @@
 title: Other
 subtitle: ER diagrams, dark theme, charts, maps. Configurable keyboard shortcuts
 icon: chart.svg
+edition: 'community'
 weight: 11
 ---
 

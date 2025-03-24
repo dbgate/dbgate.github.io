@@ -1,9 +1,12 @@
 ---
-title: Administration (Premium)
+title: Administration
 subtitle: Administer authentization, users, roles, connections
 description: Administration of authentization, users, roles, connections
 icon: admin.svg
 weight: 13
+edition: 'premium'
+external_link: https://dbgate.io/features/administration/
+link_title: Visit dbgate.io
 ---
 
 Premium edition uses database storage for storing information about connections, users, roles and configuration.

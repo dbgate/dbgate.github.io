@@ -5,6 +5,7 @@ icon: azure.svg
 weight: 14
 demo_url: https://azuremarketplace.microsoft.com/en-us/marketplace/apps/sprinxsystemsas1582034211947.dbgate_azure_vm?tab=Overview
 demo_title: View on Azure
+edition: 'premium'
 ---
 
 DbGate Azure edition is a collaborative, multi-user web platform specifically designed for database management within Azure. By taking advantage of Azure infrastructure, it streamlines teamwork for organizations operating in cloud environments. Its shared, browser-based interface simplifies collaboration, data access, and database oversight while seamlessly integrating with Azure.

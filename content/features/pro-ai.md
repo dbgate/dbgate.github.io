@@ -1,9 +1,12 @@
 ---
-title: AI Assistant (Premium)
+title: AI Assistant
 subtitle: Leverage AI to effortlessly generate and refine your SQL queries with ease
 description: Context-aware AI assistant will help you to build, complete or change your SQL queries
 icon: ai.svg
 weight: 14
+edition: 'premium'
+external_link: https://dbgate.io/features/query/
+link_title: Visit dbgate.io
 ---
 
 AI assistant in DbGate helps you to create and modify SQL queries. It uses internally LLM gpt-4o-mini from OpenAI.

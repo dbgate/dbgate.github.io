@@ -2,6 +2,7 @@
 title: Data Editor
 subtitle: Browse or edit data in your tables or views, filter by column value.
 icon: table.svg
+edition: 'community'
 weight: 2
 ---
 

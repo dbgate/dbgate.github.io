@@ -1,8 +1,11 @@
 ---
-title: SQL+noSQL query builder (Premium)
+title: SQL+noSQL query builder
 subtitle: Visually design query or combine data from SQL or MongoDB databases
 icon: designer.svg
+edition: 'premium'
 weight: 8
+external_link: https://dbgate.io/features/designer/
+link_title: Visit dbgate.io
 ---
 
 There are two tools for visually obtain data from database:

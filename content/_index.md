@@ -8,13 +8,18 @@ download_button: true
 
 {{< carousel >}}
 
-{{< features >}}
 
-# Works with Databases
+## DbGate Community features
+{{< features "community" >}}
+
+## DbGate Premium features
+{{< features "premium" >}}
+
+## Works with Databases
 
 {{< databases >}}
 
-# Latest News
+## Latest News
 {{< latestnews >}}
 
 

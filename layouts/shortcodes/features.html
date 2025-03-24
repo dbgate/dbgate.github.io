@@ -1,35 +1,40 @@
 <div class="columns is-multiline">
     {{ range where $.Site.RegularPages "Section" "features" }}
-    <div class="column is-4-desktop is-6-tablet {{ .Params.additional_class }}">
-        <div class="card">
-            <div class="card-header">
-                <p class="card-header-title">
-                    {{ .Title }}
-                </p>
+    {{ if eq .Params.edition ($.Get 0) }}
+        <div class="column is-4-desktop is-6-tablet {{ .Params.additional_class }}">
+            <div class="card">
+                <div class="card-header">
+                    <p class="card-header-title">
+                        {{ .Title }}
+                        {{if eq .Params.edition "premium"}}
+                            <i class='fa fa-star ml-2' ></i>
+                        {{end}}
+                    </p>
+                </div>
+
+                <div class="card-content is-flex">
+                    <img src="/img/{{ .Params.icon }}" class="feature-avatar mr-4" width="5rem" height="5rem" alt="{{ .Title }}" />
+                    {{ with .Params.description }}
+                        {{ . }}
+                    {{ else }}
+                        {{ .Params.subtitle }}
+                    {{ end }}
+                </div>
             </div>
 
-            <div class="card-content is-flex">
-                <img src="/img/{{ .Params.icon }}" class="feature-avatar mr-4" width="5rem" height="5rem" alt="{{ .Title }}" />
-                {{ with .Params.description }}
-                    {{ . }}
-                {{ else }}
-                    {{ .Params.subtitle }}
+            <footer class="card-footer">
+                {{ if not .Params.hide_menu }}
+                    <a href="{{ .Params.external_link | default .RelPermalink }}" class="card-footer-item">
+                        {{ .Params.link_title | default "View details" }}
+                    </a>
                 {{ end }}
-            </div>
+                {{ if .Params.demo_url }}
+                    <a href="{{ .Params.demo_url }}" class="card-footer-item is-hidden-mobile" target="_blank">
+                        {{ .Params.demo_title | default "Try demo"}}
+                    </a>
+                {{ end }}
+            </footer>
         </div>
-
-        <footer class="card-footer">
-            {{ if not .Params.hide_menu }}
-                <a href="{{ .RelPermalink }}" class="card-footer-item">
-                    View details
-                </a>
-            {{ end }}
-            {{ if .Params.demo_url }}
-                <a href="{{ .Params.demo_url }}" class="card-footer-item is-hidden-mobile" target="_blank">
-                    {{ .Params.demo_title | default "Try demo"}}
-                </a>
-            {{ end }}
-        </footer>
-    </div>
+    {{ end }}
     {{ end }}
 </div>

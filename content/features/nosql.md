@@ -2,6 +2,7 @@
 title: NoSQL Database Support
 subtitle: Connect to MongoDB or Redis, browse or filter JSON document data
 icon: mongo.svg
+edition: 'community'
 weight: 6
 ---
 

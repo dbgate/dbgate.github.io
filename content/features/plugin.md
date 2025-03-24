@@ -2,6 +2,7 @@
 title: Plugins
 subtitle: Use custom plugins for import/export formats
 icon: plugin.svg
+edition: 'community'
 weight: 9
 draft: true
 ---

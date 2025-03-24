@@ -3,6 +3,7 @@ title: Export and Import
 subtitle: Export and import from/to CSV, JSON, XML or Excel
 description: Export and import from/to CSV, JSON or Excel. Use JavaScript scripting support
 icon: export.svg
+edition: 'community'
 weight: 5
 ---
 

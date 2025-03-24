@@ -1,8 +1,11 @@
 ---
-title: Database compare (Premium)
+title: Database compare
 subtitle: Compare SQL database structure - tables, columns, views. Deploy changes
 icon: compare.svg
+edition: 'premium'
 weight: 9
+external_link: https://dbgate.io/features/database-model/
+link_title: Visit dbgate.io
 ---
 
 Database compare tool allows comparing structure of two databases. Whhich objects are compared:

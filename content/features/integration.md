@@ -3,6 +3,7 @@ title: Web app configuration, authorization
 subtitle: Authorize web app using OAuth or with Active directory
 description: Web app authorization using OAuth or with LDAP/Active directory
 icon: authentication.svg
+edition: 'community'
 weight: 12
 ---
 
