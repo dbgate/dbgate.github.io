@@ -49,6 +49,9 @@
                         <a href="{{ .RelPermalink }}"
                            class="navbar-item {{ if eq (printf "%s" ( .Params.url | relURL)) $.Permalink }}is-active{{ end }}">
                           {{  .Params.title }}
+                          {{ if eq .Params.edition "premium" }}
+                            <i class='fa fa-star ml-2' ></i>
+                          {{ end }}
                         </a>
                       {{ end }}
                     {{ end }}

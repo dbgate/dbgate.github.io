@@ -10,6 +10,10 @@
         class="{{ if eq .RelPermalink $.context.RelPermalink }}is-active{{ end }}"
       >
         {{ .Title }}
+        {{ if eq .Params.edition "premium" }}
+          <i class='fa fa-star ml-2' ></i>
+        {{ end }}
+
       </a>
     </li>
     {{ end }}

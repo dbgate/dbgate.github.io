@@ -1,5 +1,15 @@
 {{ define "main" }}
-<p class="title is-3">{{ .Title }}</p>
+<p class="title is-3">{{ .Title }}                           
+{{ if eq .Params.edition "premium" }}
+  <i class='fa fa-star ml-2' ></i>
+{{ end }}
+</p>
+
+{{ if .Params.external_link }}
+  <p><i class="fa fa-hand-point-right"></i> View more details on <a href="{{ .Params.external_link }}" target="_blank">dbgate.io</a>
+</p>
+{{ end }}
+
 {{ .Content }}
 
 <div class="columns is-multiline">
