@@ -10,6 +10,6 @@
 - name: Blog
   link: /blog/
 - name: Docs
-  link: /docs/
-- name: Pricing
-  link: /pricing/
+  link: https://docs.dbgate.io
+- name: Premium
+  link: https://dbgate.io
