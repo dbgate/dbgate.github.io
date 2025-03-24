@@ -25,4 +25,4 @@ We would also appreciate, if you could write some review on DbGate and help othe
 
 ## Premium edition
 
-You could also support DbGate project by ordering [Premium](/purchase/premium/) edition of DbGate. Besides suporting DbGate, you have will also e-mail support and enterprise features included.
+You could also support DbGate project by ordering [Premium](https://dbgate.io/purchase/premium/) edition of DbGate. Besides suporting DbGate, you have will also e-mail support and enterprise features included.
