@@ -1,15 +1,11 @@
 ---
-title: Download DbGate Premium edition
-subtitle: All what you need to work with databases - for Windows, Linux and Mac and Web
+title: Download DbGate Community edition
+subtitle: Free and open-source edition of DbGate for Windows, Linux and Mac and Web
 layout: page
 permalink: /download/
+aliases:
+  - /download-community/
+
 ---
 
-# Download
-
-**Premium edition** \| [Community edition](/download-community) 
-
-
-30-day trial period is available. 
-
-{{< download type="download_premium" >}}
+{{< download >}}

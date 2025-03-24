@@ -1,9 +1,25 @@
+<h1>Download</h1>
 <p>
-Download the most recent stable version of DbGate.  <br />
-Older releases or BETA versions could be found on <a href='https://github.com/dbgate/dbgate/releases' target="_blank">github releases</a> page
+    For professional usage, we recommend DbGate Premium. It includes all features and support. 
+</p>
+<p>
+A <strong>30-day trial period</strong> is available. 
 </p>
 
-{{ $items := index .Site.Data (.Get "type") }}
+<a class="button is-medium is-primary" href="https://dbgate.io/download">
+    <i class="fas fa-external-link-alt mr-2"></i>
+    Download DbGate Premium
+</a>
+
+
+<h2>Download DbGate Community</h2>
+<p>DbGate Community is <strong>free</strong> and open-source</p>
+<p>
+    Download the most recent stable version of DbGate.  <br />
+    Older releases or BETA versions could be found on <a href='https://github.com/dbgate/dbgate/releases' target="_blank">github releases</a> page
+    </p>
+    
+{{ $items := index .Site.Data.download }}
 
 {{ range $items }}
 <div class="columns mb-6 ">
