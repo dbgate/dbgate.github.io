@@ -12,7 +12,7 @@ Typically you will need these packages:
 * dbgate-plugin-`engine` - set of connector plugins, implements connection to database and operations specific to given database engine
 * dbgate-plugin-`fileformat` - if you use export to CSV or XML, these format providers are implemented as external plugins
 
-[Documentation of API](/docs/apidoc)
+[Documentation of API](https://docs.dbgate.io/apidoc)
 
 ## Generating script from DbGate
 Lot of DbGate features are internally implemented with scripting interface. So when you are using some export-like operation, there is somewhere "Generate Shell script" button, which generates nodejs script for you.
@@ -25,7 +25,7 @@ If you want to use nodejs script for exporting, you could use following steps:
 
 
 ## Example 1 - export table to CSV
-This is simple example, we are using [tableReader](https://dbgate.org/docs/apidoc.html#tableReader) from `dbgateApi` package and writer from `dbgate-plugin-csv`. Also `dbgate-plugin-mysql` is required, because we are using engine parameter `mysql@dbgate-plugin-mysql`
+This is simple example, we are using [tableReader](https://docs.dbgate.io/apidoc#tableReader) from `dbgateApi` package and writer from `dbgate-plugin-csv`. Also `dbgate-plugin-mysql` is required, because we are using engine parameter `mysql@dbgate-plugin-mysql`
 ```js
 const dbgateApi = require('dbgate-api');
 const dbgatePluginMysql = require("dbgate-plugin-mysql");

@@ -21,5 +21,5 @@ Also you have some options, how to configure web access:
 - Web app could be also configured so that user creates custom connections, but this will be probably used only when running web app on localhost
 
 Please use docs for further information:
-  - [Web app configuration samples](/docs/web-app-config)
-  - [Environment variables description](/docs/env-variables)
+  - [Web app configuration samples](https://docs.dbgate.io/web-app-config)
+  - [Environment variables description](https://docs.dbgate.io/env-variables)
