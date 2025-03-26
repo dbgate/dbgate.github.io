@@ -10,7 +10,7 @@
     description: Form view
   - name: data-archive-macros
     description: Data archive editor with macro preview
-  - name: macros
+  - name: data-browser-macros
     description: Macros in table data editor
   - name: perspective-designer
     description: Perspective with nested data
@@ -52,7 +52,7 @@
   #   description: Charts
   # - name: darkmode
   #   description: Dark mode
-  - name: commandpalette
+  - name: command-palette
     description: Command palette
   - name: keyboard-configuration
     description: Configure keyboard shortcuts
