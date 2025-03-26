@@ -2,6 +2,7 @@
 layout: docs
 title: Data filtering
 weight: 2
+redirect: "https://docs.dbgate.io/data-filtering"
 ---
 
 DbGate has powerful data filtering engine, allowing both very easy data filtering or complex conditions.

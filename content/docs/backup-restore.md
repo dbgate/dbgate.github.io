@@ -2,6 +2,7 @@
 layout: docs
 title: Backup & restore (Premium)
 weight: 15
+redirect: "https://docs.dbgate.io/backup-restore"
 ---
 
 **This feature is not yet released**

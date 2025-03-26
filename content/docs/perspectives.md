@@ -2,6 +2,7 @@
 layout: docs
 title: Perspectives
 weight: 9
+redirect: "https://docs.dbgate.io/perspectives"
 ---
 
 # Perspectives

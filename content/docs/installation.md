@@ -2,6 +2,7 @@
 layout: docs
 title: Installation
 weight: 5
+redirect: "https://docs.dbgate.io/installation"
 ---
 
 DbGate is available for various platforms, installation process is dependend on platform.

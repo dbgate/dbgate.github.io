@@ -2,6 +2,7 @@
 layout: docs
 title: Scripting
 weight: 20
+redirect: "https://docs.dbgate.io/scripting"
 ---
 
 # NodeJS scripting

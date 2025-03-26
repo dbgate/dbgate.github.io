@@ -2,6 +2,7 @@
 layout: docs
 title: Database deploy
 weight: 7
+redirect: "https://docs.dbgate.io/dbdeploy"
 ---
 
 *Deploy functionality will be significantly changed in incoming release, this documentation is related to lastest BETA version*

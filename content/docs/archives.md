@@ -2,6 +2,7 @@
 layout: docs
 title: Archives
 weight: 4
+redirect: "https://docs.dbgate.io/archives"
 ---
 
 Archives or simply folders with data in JSONL (NDJSON) format.

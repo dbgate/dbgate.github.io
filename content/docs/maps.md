@@ -2,6 +2,7 @@
 layout: docs
 title: Maps
 weight: 8
+redirect: "https://docs.dbgate.io/maps"
 ---
 
 # Maps

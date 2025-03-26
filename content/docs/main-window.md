@@ -4,6 +4,7 @@ title: Main window
 weight: 1
 aliases:
   - /docs/
+redirect: "https://docs.dbgate.io/"
 ---
 
 DbGate is cross-platform SQL+noSQL database client.

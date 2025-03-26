@@ -2,6 +2,7 @@
 layout: docs
 title: API documentation
 weight: 21
+redirect: "https://docs.dbgate.io/apidoc"
 ---
 
 # API Documentation

@@ -2,6 +2,7 @@
 layout: docs
 title: Environment variables
 weight: 6
+redirect: "https://docs.dbgate.io/env-variables"
 ---
 
 # Environment variables

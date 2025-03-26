@@ -2,6 +2,7 @@
 layout: docs
 title: Export & import
 weight: 2
+redirect: "https://docs.dbgate.io/export-import"
 ---
 
 DbGate has flexible export/import system based on plugins and [nodejs streams](https://nodejs.org/api/stream.html).

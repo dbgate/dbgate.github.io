@@ -2,6 +2,7 @@
 layout: docs
 title: Adminstration (Premium)
 weight: 11
+redirect: "https://docs.dbgate.io/admin"
 ---
 
 # Administration
