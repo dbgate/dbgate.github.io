@@ -1,44 +1,44 @@
 - feature: datagrid
   items:
-  - name: datagrid
+  - name: common-data-browser
     description: Data grid with expandable columns
-  - name: masterdetail
+  - name: data-browser-master-detail
     description: Master/detail view
-  - name: modifydata
+  - name: data-browser-save-changes
     description: Modify data with SQL preview
-  - name: formview
+  - name: data-browser-form-view
     description: Form view
-  - name: freetable
-    description: Free table editor with macro preview
+  - name: data-archive-macros
+    description: Data archive editor with macro preview
   - name: macros
     description: Macros in table data editor
-  - name: perspective1
+  - name: perspective-designer
     description: Perspective with nested data
 - feature: sqledit
   items:
-  - name: query
+  - name: query-editor-code-completion
     description: Query editor
-  - name: joinwizard
+  - name: query-editor-join-wizard
     description: SQL join wizard
-  - name: sqlgen
+  - name: sql-generator
     description: SQL Generator
-  - name: mongoquery
+  - name: mongo-query-json-view
     description: Run query on MongoDB database
-  - name: sqlpreview
+  - name: sql-preview-create-index
     description: SQL preview
 - feature: ai
   items:
-  - name: aiassistant
+  - name: ai-assistant
     description: AI Assistant
 - feature: designer
   items:
   # - name: mongoquerydesign
   #   description: Perspective query builder with MongoDB database
-  - name: querydesigner
+  - name: query-designer
     description: Query designer
 - feature: export
   items:
-  - name: exportcsv
+  - name: configure-export-csv
     description: CSV export
   # - name: importpreview
   #   description: Preview of imported MS Excel file
@@ -46,7 +46,7 @@
   #   description: JavaScript scripting
 - feature: other
   items:
-  - name: diagram
+  - name: database-diagram
     description: ER diagram
   # - name: charts
   #   description: Charts
@@ -54,37 +54,37 @@
   #   description: Dark mode
   - name: commandpalette
     description: Command palette
-  - name: keyboard
+  - name: keyboard-configuration
     description: Configure keyboard shortcuts
-  - name: map
+  - name: cell-map-view
     description: Show points on map
 - feature: database
   items:
-  - name: connection
+  - name: new-connection
     description: Connection to database
-  - name: connsearch
+  - name: search-in-connections
     description: Search in connections and databases
 - feature: plugin
   items:
-  - name: plugin
+  - name: view-plugin-tab
     description: View MS Excel plugin details
 - feature: mongo
   items:
-  - name: mongosave
+  - name: save-changes-mongodb
     description: MongoDB data editor with save data preview
-  - name: collection
+  - name: mongodb-json-cell-view
     description: Browse and expand MongoDB collection
 - feature: dbedit
   items:
-  - name: fkeditor
+  - name: foreign-key-editor
     description: Foreign key editor
-  - name: structure
+  - name: table-structure-editor
     description: View table structure
 - feature: dbcompare
   items:
-  - name: dbcompare
+  - name: compare-database-models
     description: Database compare tool
-  - name: comparesettings
+  - name: compare-database-settings
     description: DB compare settings
 # - feature: integration
 #   items:
@@ -98,9 +98,9 @@
 #     description: Single DB layout
 - feature: administration
   items:
-  - name: connadmin
+  - name: connection-administration
     description: Connection administration (Premium)
-  - name: roleadmin
+  - name: role-administration
     description: Role administration (Premium)
-  - name: authadmin
+  - name: authentication-administration
     description: Authentization administration (Premium)

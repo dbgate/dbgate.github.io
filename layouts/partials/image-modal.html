@@ -12,7 +12,7 @@
     title="View large image"
   >
     <figure class='image {{ .ratio | default "is-16by9" }}'>
-      <img src="/themeshots/{{ .name }}-{{ $theme }}.png" alt="{{ .alt }}" />
+      <img src="https://media.dbgate.io/img/{{ .name }}-{{ $theme }}.png" alt="{{ .alt }}" />
     </figure>
   </a>
   <div class="modal" id="image-modal-{{.name}}">
@@ -21,7 +21,7 @@
       onClick="document.getElementById('image-modal-{{.name}}').classList.remove('is-active')"
     ></div>
     <div class="modal-content">
-      <img src="/themeshots/{{ .name }}-{{ $theme }}.png" alt="{{ .alt }}" />
+      <img src="https://media.dbgate.io/img/{{ .name }}-{{ $theme }}.png" alt="{{ .alt }}" />
     </div>
     <button
       class="modal-close is-large"
