@@ -1,3 +1,19 @@
+{{ if .Params.redirect }}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="refresh" content="0; url={{ .Params.redirect }}">
+  <link rel="canonical" href="{{ .Params.redirect }}">
+  <title>Redirecting…</title>
+</head>
+<body>
+  <p>If you are not redirected automatically, click <a href="{{ .Params.redirect }}">here</a>.</p>
+</body>
+</html>
+
+{{ else }}
+
 {{ $contentWidth := "is-12" }} {{ if or (eq .Section "features") (eq .Section "database") (eq .Section "docs")
 }} {{ $contentWidth = "is-9-desktop is-12-tablet" }} {{ end }}
 
@@ -54,3 +70,5 @@
     {{ if not .Params.hide_footer }} {{ partial "footer.html" . }} {{ end }}
   </body>
 </html>
+
+{{ end }}
