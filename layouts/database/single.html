@@ -33,6 +33,11 @@ exclusively in the <a href="/pricing/">Premium edition</a>
     Open SQLite files with drag & drop, with open-file dialog or as commandline
     parameter
   </li>
+  {{ end }} {{ if .Params.isDuckDb }}
+  <li>
+    Open DuckDB files with drag & drop, with open-file dialog or as commandline
+    parameter
+  </li>
   {{ end }} {{ if .Params.isMssql }}
   <li>
     Supports both SQL server and Windows authentication on Windows (on Linux and

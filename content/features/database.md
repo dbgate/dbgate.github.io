@@ -23,6 +23,8 @@ aliases:
   * [ClickHouse](/database/clickhouse-client)
   * [Redis](/database/redis-client)
   * [Apache Cassandra](/database/cassandra-client)
+  * [libSQL](/database/libsql-client) (Premium)
+  * [DuckDB](/database/duckdb-client)
 * Support connection over SSH tunnel, for accessing production databases behind firewall
 * Support SSL
 * Allows work with multiple database connections simultaneously
