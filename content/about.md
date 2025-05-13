@@ -16,6 +16,8 @@ I started to develop DbGate at the end of 2019. Main reason was, that I switched
 - Prepared for big databases - never load full table or query result into memory, use streams everywhere
 - Scriptable, using dbgate [nodejs packages](https://www.npmjs.com/package/dbgate-api)
 
+{{< feedback >}}
+
 # About author
 
 My name is [Jan Prochazka](https://github.com/janproch/), I live in Czech Republic. I was specialized to realtime computation software, which used heavy Miccrosoft SQL Server. Now I work mainly with JavaScript and modern techology stack around it. I am also creating music software for pianists, [PianoHub](https://pianohub.cloud).
