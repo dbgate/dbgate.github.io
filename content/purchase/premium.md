@@ -1,6 +1,3 @@
 ---
-title: "Purchase"
-subtitle: Buy a DbGate PREMIUM license
+redirect: "https://dbgate.io/purchase/premium/"
 ---
-
-{{< orderform >}}
