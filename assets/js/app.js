@@ -74,3 +74,23 @@ style.innerHTML =
   getOsClass("is-linux", "linux") +
   getOtherOsClass("is-other-os");
 document.getElementsByTagName("head")[0].appendChild(style);
+
+function sendDownloadEventToGoatCounter(event) {
+  if (!event) {
+    return;
+  }
+
+  window.goatcounter.count({
+    path: event,
+    title: "Download: " + event,
+    event: true,
+  });
+
+  window.goatcounter.count({
+    path: "download-aggregate",
+    title: "Download - aggregate",
+    event: true,
+  });
+}
+
+window.sendDownloadEventToGoatCounter = sendDownloadEventToGoatCounter;

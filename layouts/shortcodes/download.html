@@ -33,7 +33,7 @@ A <strong>30-day free trial period</strong> is available.
         <div class="columns is-multiline">
             {{ range .items }}
             <div class="column is-4">
-                <a class="button is-medium is-primary is-fullwidth" href="{{ .link }}" onClick="{{ .onClick }}">
+                <a class="button is-medium is-primary is-fullwidth" href="{{ .link }}" onClick="sendDownloadEventToGoatCounter('{{ .event }}')">
                     <i class="{{ .icon }} mr-2"></i>
                     {{ .text }}
                     {{ if .platform }}

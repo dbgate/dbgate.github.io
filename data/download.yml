@@ -4,29 +4,36 @@
     - text: Installer
       icon: fa fa-download
       link: https://github.com/dbgate/dbgate/releases/latest/download/dbgate-latest.exe
+      event: download-windows-exe
     - text: Portable ZIP
       icon: fa fa-download
       link: https://github.com/dbgate/dbgate/releases/latest/download/dbgate-windows-latest.zip
+      event: download-windows-zip
     - text: Portable ZIP
       icon: fa fa-download
       link: https://github.com/dbgate/dbgate/releases/latest/download/dbgate-windows-latest-arm64.zip
       platform: arm64
+      event: download-windows-zip-arm
 - text: Linux
   icon: fab fa-linux
   items:
     - text: AppImage
       icon: fa fa-download
       link: https://github.com/dbgate/dbgate/releases/latest/download/dbgate-latest.AppImage
+      event: download-linux-appimage
     - text: DEB
       icon: fa fa-download
       link: https://github.com/dbgate/dbgate/releases/latest/download/dbgate-latest.deb
+      event: download-linux-deb
     - text: Snap
       icon: fas fa-external-link-alt
       link: https://snapcraft.io/dbgate
+      event: download-linux-snap
     - text: AppImage
       icon: fa fa-download
       link: https://github.com/dbgate/dbgate/releases/latest/download/dbgate-latest-arm64.AppImage
       platform: arm64
+      event: download-linux-appimage-arm
     # - text: AppImage
     #   icon: fa fa-download
     #   link: https://github.com/dbgate/dbgate/releases/latest/download/dbgate-latest-armv7l.AppImage
@@ -34,6 +41,7 @@
     - text: Flathub
       icon: fas fa-external-link-alt
       link: https://flathub.org/apps/org.dbgate.DbGate
+      event: download-linux-flathub
 - text: MacOS
   icon: fab fa-apple
   items:
@@ -41,26 +49,32 @@
       icon: fa fa-download
       platform: Apple+Intel
       link: https://github.com/dbgate/dbgate/releases/latest/download/dbgate-latest.dmg
+      event: download-macos-combined
     - text: Installer
       icon: fa fa-download
       platform: Apple (arm64)
       link: https://github.com/dbgate/dbgate/releases/latest/download/dbgate-latest-arm64.dmg
+      event: download-macos-arm
     - text: Installer
       icon: fa fa-download
       platform: Intel (x86)
       link: https://github.com/dbgate/dbgate/releases/latest/download/dbgate-latest-x64.dmg
+      event: download-macos-x86
 - text: Web
   icon: fas fa-globe
   items:
     - text: Docker
       icon: fab fa-docker
       link: https://hub.docker.com/r/dbgate/dbgate
+      event: download-docker
     - text: NPM
       icon: fas fa-external-link-alt
       link: https://www.npmjs.com/package/dbgate-serve
+      event: download-npm
 - text: Source code
   icon: fas fa-code
   items:
     - text: GitHub
       icon: fab fa-github
       link: https://github.com/dbgate/dbgate
+      event: download-github
