@@ -11,3 +11,5 @@ aliases:
 {{< download >}}
 
 {{< feedback >}}
+
+{{< newsletter >}}

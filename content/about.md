@@ -51,3 +51,5 @@ You can see, what wrote about DbGate [Softpedia](https://www.softpedia.com/get/I
 Any feedback is welcome, please create issue on [GitHub](https://github.com/dbgate/dbgate/issues/new/choose)
 
 {{< sponsor >}}
+
+{{< newsletter >}}

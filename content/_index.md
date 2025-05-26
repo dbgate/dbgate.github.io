@@ -25,3 +25,4 @@ download_button: true
 
 {{< sponsor >}}
 {{< feedback >}}
+{{< newsletter >}}
