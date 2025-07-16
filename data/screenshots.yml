@@ -48,8 +48,12 @@
   items:
   - name: database-diagram
     description: ER diagram
-  # - name: charts
-  #   description: Charts
+  - name: new-object-window
+    description: New object window
+  - name: chart-grouped-bars
+    description: Chart - grouped bars
+  - name: choose-detected-chart
+    description: Chart auto-detection
   # - name: darkmode
   #   description: Dark mode
   - name: command-palette
