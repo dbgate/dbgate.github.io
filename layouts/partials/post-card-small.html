@@ -1,4 +1,4 @@
-<div class="card card-link" onclick="if (!event.target.closest('a')) window.location.href='{{ .Params.externalLink | default .RelPermalink }}'">
+<div class="card card-link" onclick="if (!event.target.closest('a')) {{if .Params.externalLink}}window.open('{{ .Params.externalLink }}', '_blank');{{else}}window.location.href='{{ .RelPermalink }}'{{end}}">
     <header class="card-header" >
         <a class="card-header-title" href="{{ .Params.externalLink | default .RelPermalink }}"
         {{ if .Params.externalLink }}target="_blank" {{ end }}
