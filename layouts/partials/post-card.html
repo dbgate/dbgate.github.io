@@ -1,6 +1,8 @@
 <div class="card">
     <header class="card-header">
-        <a class="card-header-title" href="{{ .RelPermalink }}">{{ .Title}}</a>
+        <a class="card-header-title" href="{{ .Params.externalLink | default .RelPermalink }}"
+        {{ if .Params.externalLink }}target="_blank" {{ end }}
+        >{{ .Title}}</a>
     </header>
     <div class="card-content">
         <div class="content">
@@ -8,7 +10,7 @@
         </div>
         <div class="has-text-centered">
             <a href="{{ .Params.externalLink | default .RelPermalink }}" class="button is-primary {{ if .Params.externalLink }} open-web-text {{else}} read-more-text {{ end }}" aria-label="{{ .Title }}"
-            {{ if .Params.externalLink }}target="_blank" rel="noopener noreferrer"{{ end }}
+            {{ if .Params.externalLink }}target="_blank" {{ end }}
             ></a>
         </div>
     </div>
