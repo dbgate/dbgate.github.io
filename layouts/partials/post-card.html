@@ -7,7 +7,9 @@
             {{ .Summary  }}
         </div>
         <div class="has-text-centered">
-            <a href="{{ .RelPermalink }}" class="button is-primary read-more" aria-label="{{ .Title }}"></a>
+            <a href="{{ .Params.externalLink | default .RelPermalink }}" class="button is-primary {{ if .Params.externalLink }} open-web-text {{else}} read-more-text {{ end }}" aria-label="{{ .Title }}"
+            {{ if .Params.externalLink }}target="_blank" rel="noopener noreferrer"{{ end }}
+            ></a>
         </div>
     </div>
     <footer class="card-footer">

@@ -34,6 +34,10 @@ img#carousel-image {
   align-items: center;
 }
 
-.read-more::after {
+.read-more-text::after {
   content: 'Read more';
+}
+
+.open-web-text::after {
+  content: 'Show article';
 }
