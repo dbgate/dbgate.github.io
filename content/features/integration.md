@@ -13,7 +13,7 @@ If you operate DbGate as web service for accessing your databases, you have seve
 - Authorization against Active Directory service
 - Authorization against OAuth2 provider (eg. Google, Facebook, Keycloak, ADFS)
 - Authorization with database credentials against database server
-- Microsoft Entra authorization for Azure SQL (Premuim edition only)
+- Microsoft Entra authorization for Azure SQL (Premium edition only)
 
 Also you have some options, how to configure web access:
 - With predefined database connections in environment variables
