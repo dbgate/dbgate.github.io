@@ -1,4 +1,4 @@
 ---
-redirect: https://github.com/dbgate/dbgate/discussions/1117
+redirect: https://github.com/dbgate/dbgate/discussions/1172
 ---
 
