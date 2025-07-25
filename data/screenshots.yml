@@ -28,8 +28,8 @@
     description: SQL preview
 - feature: ai
   items:
-  - name: ai-assistant
-    description: AI Assistant
+  - name: database-chat
+    description: Database chat
 - feature: designer
   items:
   # - name: mongoquerydesign
