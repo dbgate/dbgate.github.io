@@ -6,6 +6,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function closeModal($el) {
     $el.classList.remove("is-active");
+    if (window.onCloseModal) {
+      window.onCloseModal($el);
+    }
   }
 
   function closeAllModals() {

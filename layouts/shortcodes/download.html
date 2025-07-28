@@ -62,14 +62,14 @@
 <div id="download-modal" class="modal">
     <div class="modal-background"></div>
 
-    <div class="modal-content">
+    <div class="modal-content" style="width: auto">
         <div class="box">
             <h2>Please provide your e-mail address</h2>
 
             <div class="field">
                 <label class="label">Email</label>
                 <div class="control has-icons-left has-icons-right">
-                    <input class="input" type="email" placeholder="Your e-mail" oninput="emailChanged()"
+                    <input class="input" type="email" placeholder="Your e-mail" oninput="emailChanged()" style="width: 400px"
                         id="email-input" />
                     <span class="icon is-small is-left">
                         <i class="fas fa-envelope"></i>
@@ -105,7 +105,7 @@
                     Download
                 </a>
 
-                <p>
+                <p style="margin-left: 20px">
                     <a id="download-no-email">Continue without e-mail</a>
                 </p>
             </div>
@@ -117,10 +117,23 @@
 
 <script lang="text/javascript">
     function openDownloadModal(link, event, icon, osname, title, platform) {
+        window.closeDownloadData = {
+            email: document.getElementById('email-input').value,
+            osname: osname,
+            bundle: title,
+            platform,
+            link,
+            job_title: document.getElementById('job-title-select').value,
+            event,
+            action: 'close'
+        }
+
         const doDownload = () => {
+            window.closeDownloadData = null;
             sendDownloadEventToGoatCounter(event);
             const modal = document.getElementById('download-modal');
             modal.classList.remove('is-active');
+
             const data = {
                 email: document.getElementById('email-input').value,
                 osname: osname,
@@ -129,6 +142,7 @@
                 link,
                 job_title: document.getElementById('job-title-select').value,
                 event,
+                action: 'download',
             }
 
             fetch(
@@ -165,5 +179,23 @@
         } else {
             button.classList.add('is-static');
         }
+    }
+
+    window.onCloseModal = () => {
+        setTimeout(() => {
+            if (window.closeDownloadData) {
+                fetch(
+                    'https://api.dbgate.io/download/community',
+                    {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify(window.closeDownloadData),
+                    }
+                );
+            }
+            window.closeDownloadData = null;
+        }, 1000);
     }
 </script>
