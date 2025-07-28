@@ -1,12 +1,13 @@
 <h2>Download DbGate Premium</h2>
 <p>
-    For professional usage, we recommend DbGate Premium. It includes all features and support. 
+    For professional usage, we recommend DbGate Premium. It includes all features and support.
 </p>
 <p>
-A <strong>30-day free trial period</strong> is available. 
+    A <strong>30-day free trial period</strong> is available.
 </p>
 
-<a class="button is-medium is-primary" href="https://dbgate.io/download" data-goatcounter-click="button-download-premium" data-goatcounter-title="Button: Download from dbgate.io">
+<a class="button is-medium is-primary" href="https://dbgate.io/download"
+    data-goatcounter-click="button-download-premium" data-goatcounter-title="Button: Download from dbgate.io">
     <i class="fas fa-external-link-alt mr-2"></i>
     Download from dbgate.io
 </a>
@@ -15,13 +16,15 @@ A <strong>30-day free trial period</strong> is available.
 <h2>Download DbGate Community</h2>
 <p>DbGate Community is <strong>free</strong> and open-source</p>
 <p>
-    Download the most recent stable version of DbGate.  <br />
-    Older releases or BETA versions could be found on <a href='https://github.com/dbgate/dbgate/releases' target="_blank">github releases</a> page
-    </p>
-    
+    Download the most recent stable version of DbGate. <br />
+    Older releases or BETA versions could be found on <a href='https://github.com/dbgate/dbgate/releases'
+        target="_blank">github releases</a> page
+</p>
+
 {{ $items := index .Site.Data.download }}
 
 {{ range $items }}
+{{ $osname := .text }}
 <div class="columns mb-6 ">
     <div class="column is-3">
         <button class="button is-medium is-static mr-5 is-fullwidth">
@@ -32,8 +35,12 @@ A <strong>30-day free trial period</strong> is available.
     <div class="column">
         <div class="columns is-multiline">
             {{ range .items }}
+
             <div class="column is-4">
-                <a class="button is-medium is-primary is-fullwidth" href="{{ .link }}" onClick="sendDownloadEventToGoatCounter('{{ .event }}')">
+                <a class="button is-medium is-primary is-fullwidth" {{ if .isLink }} href="{{ .link }}"
+                    onClick="sendDownloadEventToGoatCounter('{{ .event }}')" {{ else }}
+                    onClick="openDownloadModal('{{ .link }}', '{{ .event }}', '{{ .icon }}', '{{ $osname }}', '{{ .text }}', '{{ .platform }}')"
+                    {{ end }}>
                     <i class="{{ .icon }} mr-2"></i>
                     {{ .text }}
                     {{ if .platform }}
@@ -49,3 +56,114 @@ A <strong>30-day free trial period</strong> is available.
     </div>
 </div>
 {{ end }}
+
+
+
+<div id="download-modal" class="modal">
+    <div class="modal-background"></div>
+
+    <div class="modal-content">
+        <div class="box">
+            <h2>Please provide your e-mail address</h2>
+
+            <div class="field">
+                <label class="label">Email</label>
+                <div class="control has-icons-left has-icons-right">
+                    <input class="input" type="email" placeholder="Your e-mail" oninput="emailChanged()"
+                        id="email-input" />
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-envelope"></i>
+                    </span>
+                    <!-- <span class="icon is-small is-right">
+            <i class="fas fa-exclamation-triangle"></i>
+            </span> -->
+                </div>
+                <!-- <p class="help is-danger">This email is invalid</p> -->
+            </div>
+
+
+            <div class="field">
+                <label class="label">Job title - optional</label>
+                <div class="control">
+                    <div class="select">
+                        <select id="job-title-select">
+                            <option value="">(Choose)</option>
+                            <option value="developer">Developer</option>
+                            <option value="analyst">Analyst</option>
+                            <option value="data-scientist">Data Scientist</option>
+                            <option value="tester">Tester</option>
+                            <option value="project-manager">Project/Product Manager</option>
+                            <option value="database-administrator">Database Administrator</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class='is-flex is-flex-direction-row is-justify-content-space-between is-align-items-end'>
+                <a class="button is-medium is-primary is-static" id="download-button">
+                    Download
+                </a>
+
+                <p>
+                    <a id="download-no-email">Continue without e-mail</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <button class="modal-close is-large" aria-label="close"></button>
+</div>
+
+<script lang="text/javascript">
+    function openDownloadModal(link, event, icon, osname, title, platform) {
+        const doDownload = () => {
+            sendDownloadEventToGoatCounter(event);
+            const modal = document.getElementById('download-modal');
+            modal.classList.remove('is-active');
+            const data = {
+                email: document.getElementById('email-input').value,
+                osname: osname,
+                bundle: title,
+                platform,
+                link,
+                job_title: document.getElementById('job-title-select').value,
+                event,
+            }
+
+            fetch(
+                'https://api.dbgate.io/download/community',
+                {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(data),
+                }
+            );
+
+        }
+        const modal = document.getElementById('download-modal');
+        modal.classList.add('is-active');
+        const button = document.getElementById('download-button');
+        button.href = link;
+        button.onclick = doDownload;
+        button.innerHTML = `<i class="${icon} mr-2"></i> Download DbGate for ${osname} - ${title}`;
+        if (platform) {
+            button.innerHTML += ` (${platform})`;
+        }
+        const linkButton = document.getElementById('download-no-email');
+        linkButton.href = link;
+        linkButton.onclick = doDownload;
+    }
+
+    function emailChanged() {
+        const input = document.getElementById('email-input');
+        const button = document.getElementById('download-button');
+        if (input.value && input.value.includes('@')) {
+            button.classList.remove('is-static');
+        } else {
+            button.classList.add('is-static');
+        }
+    }
+</script>
