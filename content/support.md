@@ -19,9 +19,13 @@ There are a few ways in which you can make a donation:
 
 If you want to help and you prefer another way than financial support, please check [contribution info](https://github.com/dbgate/dbgate#how-to-contribute) on GitHub
 
+## Write about us
 We would also appreciate, if you could write some review on DbGate and help other users to decide to try DbGate
  - Write [testimonial](https://testimonial.to/dbgate) 
  - Write [review on G2](https://www.g2.com/products/dbgate/reviews) 
+
+Reviews are very valuable for our product, you will obtain 2-year license for DbGate Premium (please notify us on sales@dbage.io)
+
 
 ## Premium edition
 
