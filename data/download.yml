@@ -9,11 +9,6 @@
       icon: fa fa-download
       link: https://github.com/dbgate/dbgate/releases/latest/download/dbgate-windows-latest.zip
       event: download-windows-zip
-    - text: Portable ZIP
-      icon: fa fa-download
-      link: https://github.com/dbgate/dbgate/releases/latest/download/dbgate-windows-latest-arm64.zip
-      platform: arm64
-      event: download-windows-zip-arm
 - text: Linux
   icon: fab fa-linux
   items:
