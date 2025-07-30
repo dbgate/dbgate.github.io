@@ -4,11 +4,13 @@ subtitle: Write review about DbGate - you will get 2-year PREMIUM license
 layout: page
 ---
 
-# Obtain PREMIUM license for free
+# Obtain PREMIUM license for free (time-limited offer)
 
 **Write a review about DbGate — get a 2‑year PREMIUM license**
 
 We’re grateful for every user who takes the time to share feedback. To say thanks, we’ll give you a **2‑year DbGate PREMIUM license** when you post an **honest review** of DbGate.
+
+Please note that this offer is **time-limited**.
 
 > This offer applies to any honest review—positive, neutral, or critical. We value transparency and follow platform guidelines.
 
