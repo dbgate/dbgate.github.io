@@ -26,6 +26,12 @@ Please note that this offer is **time-limited**.
 1. Get your license:
    After verification, we’ll email your 2‑year PREMIUM license key (usually within a few business days).
 
+<a class="button is-medium is-primary" href="https://dbgate.io/download"
+    data-goatcounter-click="button-download-premium" data-goatcounter-title="Button: Download from dbgate.io">
+    <i class="fas fa-external-link-alt mr-2"></i>
+    Download DbGate PREMIUM
+</a>
+
 
 ## What you’ll receive
 - DbGate PREMIUM license valid for 24 months
