@@ -1,6 +1,6 @@
 baseURL = 'https://dbgate.org/'
 languageCode = 'en-us'
-title = 'DbGate'
+title = 'DbGate Community'
 
 [module]
   [module.hugoVersion]
