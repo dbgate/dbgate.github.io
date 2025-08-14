@@ -7,4 +7,5 @@ icon: cosmosdb.svg
 weight: 11
 skipSsh: true
 isPremium: true
+redirect: https://dbgate.io/databases/cosmosdb
 ---

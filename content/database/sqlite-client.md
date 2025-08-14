@@ -8,4 +8,5 @@ weight: 5
 skipSsh: true
 isSqlite: true
 sql: true
+redirect: https://dbgate.io/databases/sqlite
 ---

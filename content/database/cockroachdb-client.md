@@ -6,4 +6,5 @@ name: CockroachDB
 icon: cockroachdb.svg
 weight: 9
 skipSsh: true
+redirect: https://dbgate.io/databases/cockroachdb
 ---

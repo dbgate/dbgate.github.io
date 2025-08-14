@@ -7,4 +7,5 @@ icon: mysql.svg
 weight: 1
 sql: true
 online_demo: true
+redirect: https://dbgate.io/databases/mysql
 ---

@@ -6,6 +6,7 @@ name: MariaDB
 icon: mariadb.svg
 weight: 7
 sql: true
+redirect: https://dbgate.io/databases/mariadb
 ---
 
 {% include client.html name='MariaDB' sql='1' %}

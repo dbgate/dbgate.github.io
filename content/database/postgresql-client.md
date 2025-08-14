@@ -7,4 +7,5 @@ icon: postgres.svg
 weight: 4
 sql: true
 online_demo: true
+redirect: https://dbgate.io/databases/postgresql
 ---

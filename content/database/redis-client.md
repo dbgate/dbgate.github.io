@@ -8,4 +8,5 @@ weight: 10
 redis: true
 online_demo: true
 screenshot: redis.png
+redirect: https://dbgate.io/databases/redis
 ---

@@ -8,4 +8,5 @@ weight: 6
 mongo: true
 online_demo: true
 screenshot: mongosave.png
+redirect: https://dbgate.io/databases/mongodb
 ---

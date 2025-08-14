@@ -7,4 +7,5 @@ icon: mssql.svg
 weight: 2
 isMssql: true
 sql: 1
+redirect: https://dbgate.io/databases/sqlserver
 ---

@@ -7,4 +7,5 @@ icon: firestore.svg
 weight: 17
 skipSsh: true
 isPremium: true
+redirect: https://dbgate.io/databases/firestore
 ---

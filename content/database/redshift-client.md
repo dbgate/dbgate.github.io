@@ -7,4 +7,5 @@ icon: redshift.svg
 weight: 8
 isPremium: true
 sql: true
+redirect: https://dbgate.io/databases/redshift
 ---

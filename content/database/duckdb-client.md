@@ -8,4 +8,5 @@ weight: 15
 skipSsh: true
 isDuckDb: true
 sql: true
+redirect: https://dbgate.io/databases/duckdb
 ---

@@ -9,4 +9,5 @@ skipSsh: true
 isSqlite: true
 isPremium: true
 sql: true
+redirect: https://dbgate.io/databases/libsql
 ---

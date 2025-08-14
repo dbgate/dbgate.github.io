@@ -6,4 +6,5 @@ name: Firebird
 icon: firebird.svg
 weight: 16
 sql: true
+redirect: https://dbgate.io/databases/firebird
 ---

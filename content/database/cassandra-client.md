@@ -7,4 +7,5 @@ icon: cassandra.svg
 weight: 13
 sql: true
 skipFk: true
+redirect: https://dbgate.io/databases/cassandra
 ---

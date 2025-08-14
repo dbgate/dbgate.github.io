@@ -6,4 +6,5 @@ name: Oracle
 icon: oracle.svg
 weight: 3
 sql: true
+redirect: https://dbgate.io/databases/oracle
 ---

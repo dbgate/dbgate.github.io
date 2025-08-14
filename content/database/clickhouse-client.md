@@ -6,4 +6,5 @@ name: ClickHouse
 icon: clickhouse.png
 weight: 12
 skipSsh: true
+redirect: https://dbgate.io/databases/clickhouse
 ---
