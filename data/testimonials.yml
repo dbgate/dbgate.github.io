@@ -1,0 +1,157 @@
+- text: |
+    The most useful feature has been the table creator, it really makes creating complex schemas with relationships and indexes simple and user friendly. 
+    DBGate is a genuinely awesome database manager, carried me from junior to senior, passion projects to corporate management. 
+    I would recommend it to anyone who has to interface with DB's, it's simple, has tons of features and frequent updates so if it can't do it yet then it surely will be able to do it soon. 
+    I didn't migrate from anything as I was lucky enough to land on DBGate as my first database manager and at this point it may very well be my last.
+  name: Adam Chehade
+  date: 2025-08-15
+  stars: 5
+  source: testimonials.to
+- text: |
+    DbGate impressed me with how practical it is. 
+    In a single web interface I can connect to multiple engines (PostgreSQL, MySQL/MariaDB, SQL Server, SQLite, and more) without switching tools or context. 
+    The UI is clean and predictable, with tabs for queries, results, and schema—so the daily loop is fast: write SQL, run, filter, sort, edit rows, and export to CSV/JSON in seconds. 
+    The learning curve is minimal: open the app, add a connection, and you’re working. 
+    The query editor feels snappy, and managing schemas (tables, indexes, views) is straightforward. For teams, deploying via Docker and exposing it on an intranet is a big win: 
+    consistent experience for everyone, zero fiddly installs. 
+    What I value most is the balance: DbGate is light enough for everyday tasks, yet complete enough to cover 90% of development, support, and operational analytics needs. 
+    Less friction, fewer windows, more focus on the data.
+  name: Martin Aparicio
+  date: 2025-08-13
+  stars: 5
+  source: testimonials.to
+- text: |
+    Amazing Application. Highly recommended
+  name: Fadi Shebib
+  date: 2025-08-10
+  stars: 5
+  source: testimonials.to
+- text: |
+    As a developer, I especially appreciate the speed, simplicity, and clarity of dbGate—everything important is right at your fingertips. 
+    It makes it easy to work with data, edit it, and visualize it clearly. Working with MongoDB and SQL databases is natural and convenient. 
+    I would never go back to older, more cumbersome tools.
+  name: Petr Bazgier
+  date: 2025-08-04
+  stars: 5
+  source: testimonials.to
+- text: |
+    I have been utilizing DbGate to manage SQLite databases throughout my development process for some time. 
+    DbGate provides comprehensive features that meet all of my requirements and offers additional functionalities beyond those. 
+    It also facilitates seamless support for various database systems, such as MySQL, PostgreSQL, and MS SQL Server, within a single application. 
+    Furthermore, DbGate accommodates certain NoSQL databases; for instance, I recently needed access to a MongoDB database and appreciated being able to use a familiar tool for this purpose. 
+    A significant benefit is DbGate's compatibility with both Windows and Mac operating systems, enabling access to MS SQL Server databases on a Mac without the need for a virtual machine or Microsoft SQL Server Management Studio. 
+    For those who prefer not to install the desktop version, DbGate is also available as a Docker image, which I intend to explore soon. 
+    I use DbGate on Windows 11 (x64 and ARM64), macOS 15 (Sequoia), and even on macOS 26 Developer Beta (Tahoe). 
+    For individuals seeking a robust cross-platform database management solution, DbGate represents an excellent choice.
+  name: Joerg Hochwald
+  date: 2025-08-04
+  stars: 5
+  source: testimonials.to
+- text: |
+    DbGate is one of the best database tools I’ve used. 
+    It’s lightweight, open-source, and works across Windows, macOS, and Linux without any hassle. 
+    What makes it stand out for me is the ability to connect to multiple databases (SQL & NoSQL) in one place, run queries, 
+    and easily visualize or edit tables. 
+    Importing, exporting, and transforming data is super straightforward, and the plugin system adds even more flexibility. 
+    It’s simple, powerful, and saves me a lot of time in daily work. Highly recommend it to developers, DBAs, and anyone 
+    who needs a reliable database manager. DbGate solves the problem of juggling multiple database tools. 
+    Instead of switching between different clients for SQL and NoSQL, I can manage everything in one clean and lightweight interface. 
+    It makes querying, editing tables, and importing/exporting data much faster and easier. 
+    The cross-platform support is a big benefit for me since I work on both Windows and Linux. 
+    Also, the fact that it’s open-source and extensible with plugins means I can adapt it to my workflow without being locked 
+    into a heavy or commercial tool. Overall, DbGate saves me time, keeps my workflow organized, and gives me a smooth experience 
+    across all the databases I work with.
+  name: Khaled Msouti
+  date: 2025-22-25
+  stars: 5
+  source: testimonials.to
+- text: |
+    I recently moved my workflow from Windows to macOS. As a longtime Windows user, I've been searching for apps and utilities to replace those that aren't present 
+    on macOS so I don't have to utilize a VM or remote into a Windows box to complete tasks. One big hole for me was Microsoft's SQL Server Management Studio. 
+    My organization uses integrated Windows Authentication for its SQL servers and I couldn't get the SQL Extension to work in Visual Studio Code due to issues with Kerberos. 
+    Similar problems occurred with other SQL clients, but DbGate worked out of the box.
+    Admittedly, I fumbled around a bit with the UI since I am so used to SSMS but I've gotten comfortable with it now and have made it a permanent part of my toolbelt. 
+    I'd recommend anyone looking for a cross-platform SQL client to give DbGate a shot.
+  name: Kevin Mills
+  date: 2025-07-31
+  stars: 4
+  source: producthunt.com
+
+
+- text: |
+    I've been using DBGate for several months now as my go-to database client, and it's quickly become an indispensable part of my workflow. As someone who juggles multiple database systems like PostgreSQL, MySQL, and SQLite on a daily basis, I appreciate how DBGate streamlines everything without overwhelming me with complexity.
+    First off, the ease of use is a game-changer. Setting up connections is straightforward—just enter your credentials, and you're in. No convoluted configurations or steep learning curves here. Querying data feels intuitive, with features like auto-completion, syntax highlighting, and a built-in SQL editor that makes writing and executing queries a breeze. Whether you're importing/exporting data, browsing tables, or running scripts, the process is smooth and efficient, even for beginners.
+    What really sets DBGate apart is its nice GUI. Built on Electron, it has a clean, modern interface that's visually appealing and highly customizable. The dark mode is a lifesaver for late-night sessions, and the tabbed layout keeps everything organized without clutter. Visual tools like the ER diagram viewer and data grid editor add a layer of polish that makes database management feel almost enjoyable.
+    It's open-source and free, with no hidden costs, and it supports a wide range of databases out of the box. If I had to nitpick, I'd say advanced enterprise features might require plugins, but for most users, it's perfect as is. Overall, I'd rate DBGate 5/5 stars—highly recommended for developers, analysts, or anyone tired of clunky database tools!
+  name: Robert Youssef
+  date: 2025-08-22
+  stars: 5
+  source: producthunt.com
+
+- text: |
+    I'm genuinely impressed with how well this works. After a long search, I’ve finally found the most suitable solution. In the past, I relied on a desktop SQL client to manage my database, which meant constantly launching and closing the application. Now, I can easily modify and manage my database directly without the hassle of using a desktop client every time.
+  name: Kodaxe Duhman
+  date: 2025-08-21
+  stars: 5
+  source: producthunt.com
+
+- text: |
+    I’m using the community (free) version of DbGate, and I must say the features it offers for a free database client are truly powerful and helpful. Many of the features that are usually only available in paid versions of similar tools are provided by DbGate for free. Honestly, DbGate has been a great help for me—it’s lightweight, fast, and its features make my work easier.
+    If I may give one note, I often work with multiple databases open at the same time, and I usually handle two environments (staging and production) that use the same database names. While the sidebar helps distinguish them, the tabs can sometimes be confusing. It would be great if there were a way to visually differentiate databases with the same name but from different connections/environments.
+    You’re awesome, DbGate team!
+  name: Achmad Fachrie
+  date: 2025-08-21
+  stars: 5
+  source: producthunt.com
+
+- text: |
+    I primarily use DbGate to learn and practice SQL because it feels more intuitive and beginner-friendly than the default MySQL tools. The clean interface, support for multiple databases in one place, and the SQL editor’s syntax highlighting and autocomplete features make the learning process much smoother. Compared to MySQL Workbench, DbGate starts up faster, uses fewer resources, and feels much lighter overall.
+    One area for improvement would be the addition of more built-in tutorials or example projects for beginners, as well as more comprehensive documentation for advanced features. Overall, DbGate is an excellent choice for anyone looking to learn SQL or manage databases quickly without the hassle of a complicated setup.
+  name: Mateen Kadwaikar
+  date: 2025-08-21
+  stars: 4
+  source: producthunt.com
+
+- text: |
+    I use DbGate mainly to learn and practice SQL. I chose it instead of the default MySQL tools because it feels more intuitive and beginner-friendly. I like the clean interface, the ability to work with multiple databases in one place, and the SQL editor with syntax highlighting and autocomplete, which makes learning much easier.
+    Compared to MySQL Workbench, DbGate starts faster, uses fewer resources, and feels much lighter overall.
+    One thing that could be improved is having more built-in tutorials or example projects for beginners, as well as more detailed documentation for advanced features.
+    Overall, DbGate is a great choice if you want to learn SQL or work with databases quickly without spending time on complicated setup.
+  name: Dragoş Butnaru
+  date: 2025-08-17
+  stars: 5
+  source: producthunt.com
+
+- text: |
+    DbGate is generally well-liked for being lightweight, open-source, and supporting both SQL and NoSQL in a single, clean interface.
+  name: Dmytro Bazeliuk
+  date: 2025-08-13
+  stars: 5
+  source: producthunt.com
+
+- text: |
+    DbGate solves the problem of managing multiple types of databases from a unified interface. Instead of switching between different tools for SQL Server, PostgreSQL, MongoDB, etc., I can handle all operations—querying, schema exploration, data import/export, and script execution—from a single platform.
+    This centralized approach significantly improves my workflow efficiency, especially when working in environments with heterogeneous data systems. Its lightweight nature and fast schema scanning also help reduce downtime and improve responsiveness compared to traditional tools like SSMS. Additionally, the ability to run DbGate in a web environment allows for broader access and easier collaboration across teams.
+    It works seamlessly on both desktop and web platforms.
+    It supports connections to multiple database management systems as advertised—very useful for DBAs.
+    I tried using DbGate as a replacement for SQL Server Management Studio (SSMS) for 2 days and was completely satisfied with its features.
+    Schema scanning is extremely fast and doesn't lock up when right-clicking, unlike SSMS.
+    It offers many useful features, such as:
+    - Automatically querying the top 100 rows when clicking on a table, with quick options to switch between data view, DDL, and generating SELECT/INSERT statements.
+    - Instantly showing the DDL of objects like stored procedures and functions when clicked.
+    - Built-in code formatting.
+    - A wide variety of editor themes to choose from.
+    - Query history tracking.
+    - Powerful and convenient flat file import/export utilities — I tested exporting a table with 112,561 rows and it took only 3.7 seconds.
+    This is truly a powerful and handy tool I’ve been looking for, especially for web-based deployment.
+  name: Hiếu Đào Minh
+  date: 2025-08-08
+  stars: 5
+  source: producthunt.com
+
+- text: |
+    It is simple to understand intricate relationships and change data effectively thanks to its user-friendly interface and robust data browser, above all the data speed is too impresive as compare to other DB tools. All things considered, it's a good option for handling various databases in a contemporary way. Highly Recommended.
+  name: Dawood Ellahi Sheikh
+  date: 2025-07-31
+  stars: 5
+  source: producthunt.com

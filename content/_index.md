@@ -19,6 +19,9 @@ download_button: true
 
 {{< databases >}}
 
+## What users say about DbGate?
+{{< testimonials >}}
+
 ## Latest News
 {{< latestnews >}}
 
