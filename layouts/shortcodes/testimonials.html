@@ -1,21 +1,21 @@
 <div class="block-item content-main" id="testimonials">
     <div class="block-container container">
-        <div class="row">
+        <div class="columns is-multiline">
             {{ range $index, $testimonial := .Site.Data.testimonials }}
-            <div class="col-md-4 pricing-item testimonial-item{{ if ge $index 3 }} testimonial-hidden{{ end }}">
-                <div class="card mb-3">
-                    <div class="card-body">
-                        <h5 class="card-title mb-2 text-start">{{ $testimonial.name }}</h5>
+            <div class="column is-4-desktop is-6-tablet pricing-item testimonial-item{{ if ge $index 3 }} testimonial-hidden{{ end }}">
+                <div class="card mb-5">
+                    <div class="card-content">
+                        <h5 class="card-header-title mb-2 has-text-left">{{ $testimonial.name }}</h5>
                         <div class="mb-2">
                             {{ $stars := $testimonial.stars }}
                             {{ range seq 1 5 }}
                                 {{ if le . $stars }}
-                                    <i class="fa fa-star text-warning"></i>
+                                    <i class="fa fa-star has-text-warning"></i>
                                 {{ end }}
                             {{ end }}
                         </div>
                         
-                        <div class="card-text testim-text testim-limited"><cite>{{ $testimonial.text }}</cite></div>
+                        <div class="content testim-text testim-limited"><cite>{{ $testimonial.text }}</cite></div>
                         <a href="#" class="read-more-link" style="display:none;"
                             onclick="toggleTestimonial(this); return false;">Show more</a>
                         <div class="testim-date">{{ $testimonial.date }}</div>
@@ -25,12 +25,12 @@
             {{ end }}
         </div>
 
-        <div class="row mt-3 text-center">
-            <div class="col-12">
-                <a class="btn btn-secondary" id="view-all-btn" onclick="toggleAllTestimonials(); return false;">View more</a>
-                <a class="btn btn-secondary" href="https://www.producthunt.com/products/dbgate" target="_blank">ProductHunt</a>
-                <a class="btn btn-secondary" href="https://testimonial.to/dbgate" target="_blank">Testimonials.to</a>
-                <a class="btn btn-secondary" href="https://www.g2.com/products/dbgate/reviews" target="_blank">G2</a>
+        <div class="columns mt-5">
+            <div class="column has-text-centered">
+                <a class="button is-light mr-2" id="view-all-btn" onclick="toggleAllTestimonials(); return false;">View more</a>
+                <a class="button is-light mr-2" href="https://www.producthunt.com/products/dbgate" target="_blank">ProductHunt</a>
+                <a class="button is-light mr-2" href="https://testimonial.to/dbgate" target="_blank">Testimonials.to</a>
+                <a class="button is-light" href="https://www.g2.com/products/dbgate/reviews" target="_blank">G2</a>
             </div>
         </div>
 
