@@ -2,7 +2,7 @@
     <div class="block-container container">
         <div class="columns is-multiline">
             {{ range $index, $testimonial := .Site.Data.testimonials }}
-            <div class="column is-4-desktop is-6-tablet pricing-item testimonial-item{{ if ge $index 3 }} testimonial-hidden{{ end }}">
+            <div class="column is-4-desktop is-6-tablet pricing-item testimonial-item">
                 <div class="card mb-5">
                     <div class="card-content">
                         <h5 class="card-header-title mb-2 has-text-left">{{ $testimonial.name }}</h5>
@@ -27,7 +27,7 @@
 
         <div class="columns mt-5">
             <div class="column has-text-centered">
-                <a class="button is-light mr-2" id="view-all-btn" onclick="toggleAllTestimonials(); return false;">View more</a>
+                <a class="button is-light mr-2" href="https://dbgate.io/testimonials" target="_blank">View more</a>
                 <a class="button is-light mr-2" href="https://www.producthunt.com/products/dbgate" target="_blank">ProductHunt</a>
                 <a class="button is-light mr-2" href="https://testimonial.to/dbgate" target="_blank">Testimonials.to</a>
                 <a class="button is-light" href="https://www.g2.com/products/dbgate/reviews" target="_blank">G2</a>
@@ -38,10 +38,6 @@
 </div>
 
 <style>
-    .testimonial-hidden {
-        display: none;
-    }
-    
     .testim-limited {
         max-height: 4.5em;
         overflow: hidden;
@@ -93,28 +89,6 @@
                 link.style.display = '';
             }
         });
-    }
-
-    function toggleAllTestimonials() {
-        const hiddenTestimonials = document.querySelectorAll('.testimonial-hidden');
-        const viewAllBtn = document.getElementById('view-all-btn');
-        
-        if (hiddenTestimonials.length > 0) {
-            // Show all hidden testimonials
-            hiddenTestimonials.forEach(function(testimonial) {
-                testimonial.classList.remove('testimonial-hidden');
-            });
-            viewAllBtn.textContent = 'Show less';
-            // Re-initialize "Show more" links for newly visible testimonials
-            setTimeout(initializeTestimonialLinks, 10);
-        } else {
-            // Hide testimonials beyond the first 3
-            const allTestimonials = document.querySelectorAll('.testimonial-item');
-            for (let i = 3; i < allTestimonials.length; i++) {
-                allTestimonials[i].classList.add('testimonial-hidden');
-            }
-            viewAllBtn.textContent = 'View more';
-        }
     }
 
     document.addEventListener('DOMContentLoaded', function () {
