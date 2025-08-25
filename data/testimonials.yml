@@ -1,4 +1,21 @@
 - text: |
+    I’m using the community (free) version of DbGate, and I must say the features it offers for a free database client are truly powerful and helpful. Many of the features that are usually only available in paid versions of similar tools are provided by DbGate for free. Honestly, DbGate has been a great help for me—it’s lightweight, fast, and its features make my work easier.
+    If I may give one note, I often work with multiple databases open at the same time, and I usually handle two environments (staging and production) that use the same database names. While the sidebar helps distinguish them, the tabs can sometimes be confusing. It would be great if there were a way to visually differentiate databases with the same name but from different connections/environments.
+    You’re awesome, DbGate team!
+  name: Achmad Fachrie
+  date: 2025-08-21
+  stars: 5
+  source: producthunt.com
+
+- text: |
+    I primarily use DbGate to learn and practice SQL because it feels more intuitive and beginner-friendly than the default MySQL tools. The clean interface, support for multiple databases in one place, and the SQL editor’s syntax highlighting and autocomplete features make the learning process much smoother. Compared to MySQL Workbench, DbGate starts up faster, uses fewer resources, and feels much lighter overall.
+    One area for improvement would be the addition of more built-in tutorials or example projects for beginners, as well as more comprehensive documentation for advanced features. Overall, DbGate is an excellent choice for anyone looking to learn SQL or manage databases quickly without the hassle of a complicated setup.
+  name: Mateen Kadwaikar
+  date: 2025-08-21
+  stars: 4
+  source: producthunt.com
+
+- text: |
     The most useful feature has been the table creator, it really makes creating complex schemas with relationships and indexes simple and user friendly. 
     DBGate is a genuinely awesome database manager, carried me from junior to senior, passion projects to corporate management. 
     I would recommend it to anyone who has to interface with DB's, it's simple, has tons of features and frequent updates so if it can't do it yet then it surely will be able to do it soon. 
@@ -95,22 +112,6 @@
   stars: 5
   source: producthunt.com
 
-- text: |
-    I’m using the community (free) version of DbGate, and I must say the features it offers for a free database client are truly powerful and helpful. Many of the features that are usually only available in paid versions of similar tools are provided by DbGate for free. Honestly, DbGate has been a great help for me—it’s lightweight, fast, and its features make my work easier.
-    If I may give one note, I often work with multiple databases open at the same time, and I usually handle two environments (staging and production) that use the same database names. While the sidebar helps distinguish them, the tabs can sometimes be confusing. It would be great if there were a way to visually differentiate databases with the same name but from different connections/environments.
-    You’re awesome, DbGate team!
-  name: Achmad Fachrie
-  date: 2025-08-21
-  stars: 5
-  source: producthunt.com
-
-- text: |
-    I primarily use DbGate to learn and practice SQL because it feels more intuitive and beginner-friendly than the default MySQL tools. The clean interface, support for multiple databases in one place, and the SQL editor’s syntax highlighting and autocomplete features make the learning process much smoother. Compared to MySQL Workbench, DbGate starts up faster, uses fewer resources, and feels much lighter overall.
-    One area for improvement would be the addition of more built-in tutorials or example projects for beginners, as well as more comprehensive documentation for advanced features. Overall, DbGate is an excellent choice for anyone looking to learn SQL or manage databases quickly without the hassle of a complicated setup.
-  name: Mateen Kadwaikar
-  date: 2025-08-21
-  stars: 4
-  source: producthunt.com
 
 - text: |
     I use DbGate mainly to learn and practice SQL. I chose it instead of the default MySQL tools because it feels more intuitive and beginner-friendly. I like the clean interface, the ability to work with multiple databases in one place, and the SQL editor with syntax highlighting and autocomplete, which makes learning much easier.

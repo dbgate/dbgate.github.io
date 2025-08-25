@@ -41,6 +41,42 @@
     .testimonial-hidden {
         display: none;
     }
+    
+    .testim-limited {
+        max-height: 4.5em;
+        overflow: hidden;
+        position: relative;
+    }
+    
+    .testim-limited::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 1.5em;
+        background: linear-gradient(transparent, white);
+        pointer-events: none;
+    }
+    
+    .read-more-link {
+        color: #188eac;
+        text-decoration: none;
+        font-size: 0.9em;
+        margin-top: 0.5rem;
+        display: inline-block;
+    }
+    
+    .read-more-link:hover {
+        text-decoration: underline;
+    }
+    
+    .testim-date {
+        color: #666;
+        font-size: 0.85em;
+        margin-top: 0.75rem;
+        font-style: italic;
+    }
 </style>
 
 <script>
