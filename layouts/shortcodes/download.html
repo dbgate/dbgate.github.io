@@ -44,7 +44,7 @@
 
             <div class="column is-4">
                 <a class="button is-medium is-primary is-fullwidth" {{ if .isLink }} href="{{ .link }}"
-                    onClick="sendDownloadEventToGoatCounter('{{ .event }}');fathom.trackEvent('download-community');" {{ else }}
+                    onClick="sendDownloadEventToGoatCounter('{{ .event }}')" {{ else }}
                     onClick="openDownloadModal('{{ .link }}', '{{ .event }}', '{{ .icon }}', '{{ $osname }}', '{{ .text }}', '{{ .platform }}')"
                     {{ end }}>
                     <i class="{{ .icon }} mr-2"></i>
@@ -140,7 +140,6 @@
         const doDownload = () => {
             window.closeDownloadData = null;
             sendDownloadEventToGoatCounter(event);
-            fathom.trackEvent('download-community');
             const modal = document.getElementById('download-modal');
             modal.classList.remove('is-active');
 
