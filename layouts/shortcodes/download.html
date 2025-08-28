@@ -110,6 +110,15 @@
                 </div>
             </div>
 
+            <div class="field">
+                <label class="label">How did you hear about DbGate? - optional</label>
+                <div class="control">
+                    <input class="input" type="text" placeholder="Your answer here helps us very much" oninput="emailChanged()" style="width: 400px"
+                        id="referer-input" />
+                </div>
+            </div>
+
+
             <div class='is-flex is-flex-direction-row is-justify-content-space-between is-align-items-end'
                 style="margin-top: 50px">
                 <a class="button is-medium is-primary is-static" id="download-button">
@@ -133,6 +142,7 @@
             platform,
             link,
             job_title: document.getElementById('job-title-select').value,
+            referer: document.getElementById('referer-input').value,
             event,
             action: 'close'
         }
@@ -150,6 +160,7 @@
                 platform,
                 link,
                 job_title: document.getElementById('job-title-select').value,
+                referer: document.getElementById('referer-input').value,
                 event,
                 action: 'download',
             }
