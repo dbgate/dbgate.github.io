@@ -7,3 +7,25 @@
 
   gtag('config', 'G-RXLRS09RMZ');
 </script>
+
+<script src="https://cdn.usefathom.com/script.js" data-site="HBACGPGP" defer></script>
+
+<script>
+window.addEventListener('load', (event) => {
+  document.querySelectorAll('a').forEach(item => {
+    let url = item.getAttribute('href');
+
+    if (url && url.startsWith('https://dbgate.io')) {
+      item.addEventListener('click', event => {
+        fathom.trackEvent('moveto-premium');
+      });
+    }
+
+   if (url && url.startsWith('https://demo.dbgate.org')) {
+      item.addEventListener('click', event => {
+        fathom.trackEvent('open-demo');
+      });
+    }
+  });
+});
+</script>

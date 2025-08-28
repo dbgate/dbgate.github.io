@@ -80,6 +80,8 @@ function sendDownloadEventToGoatCounter(event) {
     return;
   }
 
+  fathom.trackEvent('download-community');
+
   window.goatcounter.count({
     path: event,
     title: "Download: " + event,
