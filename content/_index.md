@@ -2,9 +2,11 @@
 title: DbGate Community
 headTitle: DbGate | Open Source SQL+noSQL Database Client
 subtitle: The Smartest SQL+noSQL Database Client
-callouts: home_callouts
+# callouts: home_callouts
 download_button: true
 ---
+
+{{< editions >}}
 
 {{< carousel >}}
 
