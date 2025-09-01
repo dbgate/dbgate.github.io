@@ -29,15 +29,18 @@
 
 {{ $items := index .Site.Data.download }}
 
+<div id="download-sections-container">
 {{ range $items }}
 {{ $osname := .text }}
-<div class="download-section mb-6">
+<div class="download-section mb-6" data-os="{{.text}}">
     <div class="os-header">
         <div class="os-icon-container">
             <i class="{{.icon}} os-icon"></i>
         </div>
         <div class="os-info">
-            <h3 class="os-name">{{.text}}</h3>
+            <h3 class="os-name">
+                {{.text}}
+            </h3>
             <p class="os-description">{{ if eq .text "Windows" }}Compatible with Windows 10, 11 and Server editions{{ else if eq .text "Linux" }}Supports major Linux distributions{{ else if eq .text "MacOS" }}For macOS 10.15 Catalina and later{{ else if eq .text "Web" }}Platform-independent solutions{{ else if eq .text "Source code" }}Build from source{{ end }}</p>
         </div>
     </div>
@@ -65,6 +68,7 @@
     </div>
 </div>
 {{ end }}
+</div>
 
 
 
@@ -221,4 +225,49 @@
             window.closeDownloadData = null;
         }, 1000);
     }
+
+    // OS Detection and Reordering
+    function detectOS() {
+        const userAgent = navigator.userAgent;
+        const platform = navigator.platform;
+        
+        if (userAgent.indexOf('Win') !== -1 || platform.indexOf('Win') !== -1) {
+            return 'Windows';
+        } else if (userAgent.indexOf('Mac') !== -1 || platform.indexOf('Mac') !== -1) {
+            return 'MacOS';
+        } else if (userAgent.indexOf('Linux') !== -1 || platform.indexOf('Linux') !== -1) {
+            return 'Linux';
+        }
+        return null;
+    }
+
+    function reorderDownloadSections() {
+        const detectedOS = detectOS();
+        if (!detectedOS) return;
+
+        const container = document.getElementById('download-sections-container');
+        const sections = Array.from(container.querySelectorAll('.download-section'));
+        
+        // Find the section for the detected OS
+        const userOSSection = sections.find(section => 
+            section.getAttribute('data-os') === detectedOS
+        );
+
+        if (userOSSection) {
+            // Add "Your OS" badge
+            const badge = userOSSection.querySelector('.your-os-badge');
+            if (badge) {
+                badge.style.display = 'inline-block';
+            }
+
+            // Add special styling to user's OS section
+            userOSSection.classList.add('user-os-section');
+
+            // Move to the top
+            container.insertBefore(userOSSection, container.firstChild);
+        }
+    }
+
+    // Run OS detection when page loads
+    document.addEventListener('DOMContentLoaded', reorderDownloadSections);
 </script>

@@ -125,3 +125,18 @@ div.highlight {
         margin-bottom: 0.75rem;
     }
 }
+
+// Special styling for user's OS section
+.user-os-section {
+    border: 2px solid #28a745;
+    background: linear-gradient(135deg, #f8fff9 0%, #ffffff 100%);
+    
+    &:hover {
+        box-shadow: 0 8px 25px rgba(40, 167, 69, 0.15);
+    }
+    
+    .os-icon-container {
+        background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+        box-shadow: 0 4px 12px rgba(40, 167, 69, 0.4);
+    }
+}
