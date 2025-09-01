@@ -28,6 +28,7 @@
 </p>
 
 {{ $items := index .Site.Data.download }}
+{{ $osDescriptions := index .Site.Data "download-os" }}
 
 <div id="download-sections-container">
 {{ range $items }}
@@ -41,7 +42,7 @@
             <h3 class="os-name">
                 {{.text}}
             </h3>
-            <p class="os-description">{{ if eq .text "Windows" }}Compatible with Windows 10, 11 and Server editions{{ else if eq .text "Linux" }}Supports major Linux distributions{{ else if eq .text "MacOS" }}For macOS 10.15 Catalina and later{{ else if eq .text "Web" }}Platform-independent solutions{{ else if eq .text "Source code" }}Build from source{{ end }}</p>
+            <p class="os-description">{{ (index $osDescriptions .text).description }}</p>
         </div>
     </div>
     <div class="download-options">

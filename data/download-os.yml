@@ -1,0 +1,14 @@
+Windows:
+  description: "Compatible with Windows 10, 11 and Server editions"
+
+Linux:
+  description: "Supports major Linux distributions"
+
+MacOS:
+  description: "For macOS 10.15 Catalina and later"
+
+Web:
+  description: "Platform-independent solutions"
+
+"Source code":
+  description: "Build from source"
