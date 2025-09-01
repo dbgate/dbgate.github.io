@@ -12,8 +12,8 @@
     Download from dbgate.io
 </a>
 
-<a class="button is-medium is-primary ml-4" href="/review"
-    data-goatcounter-click="button-write-review" data-goatcounter-title="Button: Write a review">
+<a class="button is-medium is-primary ml-4" href="/review" data-goatcounter-click="button-write-review"
+    data-goatcounter-title="Button: Write a review">
     <i class="fas fa-comment-dollar mr-2"></i>
     Obtain PREMIUM license for free
 </a>
@@ -31,14 +31,17 @@
 
 {{ range $items }}
 {{ $osname := .text }}
-<div class="columns mb-6 ">
-    <div class="column is-3">
-        <button class="button is-medium is-static mr-5 is-fullwidth">
-            <i class="{{.icon}} mr-2"></i>
-            {{.text}}
-        </button>
+<div class="download-section mb-6">
+    <div class="os-header">
+        <div class="os-icon-container">
+            <i class="{{.icon}} os-icon"></i>
+        </div>
+        <div class="os-info">
+            <h3 class="os-name">{{.text}}</h3>
+            <p class="os-description">{{ if eq .text "Windows" }}Compatible with Windows 10, 11 and Server editions{{ else if eq .text "Linux" }}Supports major Linux distributions{{ else if eq .text "MacOS" }}For macOS 10.15 Catalina and later{{ else if eq .text "Web" }}Platform-independent solutions{{ else if eq .text "Source code" }}Build from source{{ end }}</p>
+        </div>
     </div>
-    <div class="column">
+    <div class="download-options">
         <div class="columns is-multiline">
             {{ range .items }}
 
@@ -79,8 +82,8 @@
             <div class="field">
                 <label class="label">Email</label>
                 <div class="control has-icons-left has-icons-right">
-                    <input class="input" type="email" placeholder="Your e-mail" oninput="emailChanged()" style="width: 400px"
-                        id="email-input" />
+                    <input class="input" type="email" placeholder="Your e-mail" oninput="emailChanged()"
+                        style="width: 400px" id="email-input" />
                     <span class="icon is-small is-left">
                         <i class="fas fa-envelope"></i>
                     </span>
@@ -113,8 +116,8 @@
             <div class="field">
                 <label class="label">How did you hear about DbGate? - optional</label>
                 <div class="control">
-                    <input class="input" type="text" placeholder="Your answer here helps us very much" oninput="emailChanged()" style="width: 400px"
-                        id="referer-input" />
+                    <input class="input" type="text" placeholder="Your answer here helps us very much"
+                        oninput="emailChanged()" style="width: 400px" id="referer-input" />
                 </div>
             </div>
 
@@ -125,7 +128,7 @@
                     Download
                 </a>
 
-                <a href='#' id="download-no-email" >Continue without email</a>
+                <a href='#' id="download-no-email">Continue without email</a>
             </div>
         </div>
     </div>
