@@ -1,5 +1,22 @@
 {
   "routes": [
-    { "route": "/database/mysql-client", "redirect": "https://dbgate.io/databases/mysql", "statusCode": 301 }
+    { "route": "/database/cassandra-client", "redirect": "https://dbgate.io/databases/cassandra", "statusCode": 301 },
+    { "route": "/database/clickhouse-client", "redirect": "https://dbgate.io/databases/clickhouse", "statusCode": 301 },
+    { "route": "/database/cockroachdb-client", "redirect": "https://dbgate.io/databases/cockroachdb", "statusCode": 301 },
+    { "route": "/database/cosmosdb-client", "redirect": "https://dbgate.io/databases/cosmosdb", "statusCode": 301 },
+    { "route": "/database/duckdb-client", "redirect": "https://dbgate.io/databases/duckdb", "statusCode": 301 },
+    { "route": "/database/firebird-client", "redirect": "https://dbgate.io/databases/firebird", "statusCode": 301 },
+    { "route": "/database/firestore-client", "redirect": "https://dbgate.io/databases/firestore", "statusCode": 301 },
+    { "route": "/database/libsql-client", "redirect": "https://dbgate.io/databases/libsql", "statusCode": 301 },
+    { "route": "/database/mariadb-client", "redirect": "https://dbgate.io/databases/mariadb", "statusCode": 301 },
+    { "route": "/database/mongodb-client", "redirect": "https://dbgate.io/databases/mongodb", "statusCode": 301 },
+    { "route": "/database/mssql-client", "redirect": "https://dbgate.io/databases/mssql", "statusCode": 301 },
+    { "route": "/database/mysql-client", "redirect": "https://dbgate.io/databases/mysql", "statusCode": 301 },
+    { "route": "/database/oracle-client", "redirect": "https://dbgate.io/databases/oracle", "statusCode": 301 },
+    { "route": "/database/postgresql-client", "redirect": "https://dbgate.io/databases/postgresql", "statusCode": 301 },
+    { "route": "/database/redis-client", "redirect": "https://dbgate.io/databases/redis", "statusCode": 301 },
+    { "route": "/database/redshift-client", "redirect": "https://dbgate.io/databases/redshift", "statusCode": 301 },
+    { "route": "/database/sqlite-client", "redirect": "https://dbgate.io/databases/sqlite", "statusCode": 301 },
+    { "route": "/pricing", "redirect": "https://dbgate.io/pricing", "statusCode": 301 }
   ]
 }
