@@ -10,7 +10,7 @@
     { "route": "/database/libsql-client", "redirect": "https://dbgate.io/databases/libsql", "statusCode": 301 },
     { "route": "/database/mariadb-client", "redirect": "https://dbgate.io/databases/mariadb", "statusCode": 301 },
     { "route": "/database/mongodb-client", "redirect": "https://dbgate.io/databases/mongodb", "statusCode": 301 },
-    { "route": "/database/mssql-client", "redirect": "https://dbgate.io/databases/mssql", "statusCode": 301 },
+    { "route": "/database/mssql-client", "redirect": "https://dbgate.io/databases/sqlserver", "statusCode": 301 },
     { "route": "/database/mysql-client", "redirect": "https://dbgate.io/databases/mysql", "statusCode": 301 },
     { "route": "/database/oracle-client", "redirect": "https://dbgate.io/databases/oracle", "statusCode": 301 },
     { "route": "/database/postgresql-client", "redirect": "https://dbgate.io/databases/postgresql", "statusCode": 301 },
