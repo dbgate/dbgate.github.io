@@ -1,0 +1,5 @@
+{
+  "routes": [
+    { "route": "/database/mysql-client", "redirect": "https://dbgate.io/databases/mysql", "statusCode": 301 }
+  ]
+}
