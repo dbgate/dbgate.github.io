@@ -17,6 +17,15 @@
     { "route": "/database/redis-client", "redirect": "https://dbgate.io/databases/redis", "statusCode": 301 },
     { "route": "/database/redshift-client", "redirect": "https://dbgate.io/databases/redshift", "statusCode": 301 },
     { "route": "/database/sqlite-client", "redirect": "https://dbgate.io/databases/sqlite", "statusCode": 301 },
-    { "route": "/pricing", "redirect": "https://dbgate.io/pricing", "statusCode": 301 }
+    { "route": "/pricing", "redirect": "https://dbgate.io/pricing", "statusCode": 301 },
+
+    { "route": "/blog/2025-02-08-free-postgresql-clients/", "redirect": "https://dbgate.io/news/2025-02-09-free-postgresql-clients/", "statusCode": 301 },
+    { "route": "/blog/2025-02-23-free-mysql-clients/", "redirect": "https://dbgate.io/news/2025-02-23-free-mysql-clients/", "statusCode": 301 },
+    { "route": "/blog/2025-01-25-online-database-clients//", "redirect": "https://dbgate.io/news/2025-01-25-online-database-clients/", "statusCode": 301 },
+    
+    { "route": "/download", "redirect": "https://dbgate.io/download", "statusCode": 301 },
+    { "route": "/features/*", "redirect": "https://dbgate.io/features", "statusCode": 301 },
+
+    { "route": "/*", "redirect": "https://dbgate.io", "statusCode": 301 }
   ]
 }
