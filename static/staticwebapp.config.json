@@ -18,6 +18,7 @@
     { "route": "/database/redshift-client", "redirect": "https://dbgate.io/databases/redshift", "statusCode": 301 },
     { "route": "/database/sqlite-client", "redirect": "https://dbgate.io/databases/sqlite", "statusCode": 301 },
     { "route": "/pricing", "redirect": "https://dbgate.io/pricing", "statusCode": 301 },
+    { "route": "/screenshots", "redirect": "https://dbgate.io/screenshots", "statusCode": 301 },
 
     { "route": "/blog/2025-02-08-free-postgresql-clients/", "redirect": "https://dbgate.io/news/2025-02-09-free-postgresql-clients/", "statusCode": 301 },
     { "route": "/blog/2025-02-23-free-mysql-clients/", "redirect": "https://dbgate.io/news/2025-02-23-free-mysql-clients/", "statusCode": 301 },
