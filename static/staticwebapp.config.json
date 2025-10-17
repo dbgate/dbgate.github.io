@@ -26,7 +26,7 @@
     
     { "route": "/download", "redirect": "https://www.dbgate.io/download", "statusCode": 301 },
     { "route": "/features/*", "redirect": "https://www.dbgate.io/features", "statusCode": 301 },
-    { "route": "/review", "redirect": "https://www.dbgate.io/review?utm_campaign=communityWidget", "statusCode": 301 },
+    { "route": "/review", "redirect": "https://www.dbgate.io/review?utm_campaign=premiumPromoWidget", "statusCode": 301 },
 
     { "route": "/*", "redirect": "https://www.dbgate.io", "statusCode": 301 }
   ]
